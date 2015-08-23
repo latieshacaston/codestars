@@ -8,7 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+@class ThingsToDoList;
+
 @interface ViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet UILabel *thingToDoLabel;
+
+
+@property (strong, nonatomic) ThingsToDoList *thingsToDoList;
+
 
 
 @end

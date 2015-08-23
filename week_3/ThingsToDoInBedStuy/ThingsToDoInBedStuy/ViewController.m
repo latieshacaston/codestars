@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ThingsToDoList.h"
 
 @interface ViewController ()
 
@@ -16,12 +17,29 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+
+    
+    self.thingsToDoList = [[ThingsToDoList alloc] init];
+    
+    self.thingToDoLabel.text = [self.thingsToDoList returnARandomThingToDo];
+
+
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+    
     // Dispose of any resources that can be recreated.
+}
+
+
+- (IBAction)showThingToDo {
+    
+    
+
+    self.thingToDoLabel.text = [self.thingsToDoList returnARandomThingToDo];
+    
 }
 
 @end

@@ -10,4 +10,13 @@
 
 @interface ThingsToDoList : NSObject
 
+
+@property (strong, nonatomic) NSArray *thingsToDo;
+
+
+
+- (NSString *)returnARandomThingToDo;
+
+
+
 @end

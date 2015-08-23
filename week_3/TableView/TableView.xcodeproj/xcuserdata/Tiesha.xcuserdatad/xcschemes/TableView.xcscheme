@@ -14,10 +14,24 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7B16B8631B84AD3500A890EA"
-               BuildableName = "changeArray"
-               BlueprintName = "changeArray"
-               ReferencedContainer = "container:changeArray.xcodeproj">
+               BlueprintIdentifier = "7B16B8F31B86F54F00A890EA"
+               BuildableName = "TableView.app"
+               BlueprintName = "TableView"
+               ReferencedContainer = "container:TableView.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "7B16B90C1B86F54F00A890EA"
+               BuildableName = "TableViewTests.xctest"
+               BlueprintName = "TableViewTests"
+               ReferencedContainer = "container:TableView.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,14 +42,24 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "7B16B90C1B86F54F00A890EA"
+               BuildableName = "TableViewTests.xctest"
+               BlueprintName = "TableViewTests"
+               ReferencedContainer = "container:TableView.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7B16B8631B84AD3500A890EA"
-            BuildableName = "changeArray"
-            BlueprintName = "changeArray"
-            ReferencedContainer = "container:changeArray.xcodeproj">
+            BlueprintIdentifier = "7B16B8F31B86F54F00A890EA"
+            BuildableName = "TableView.app"
+            BlueprintName = "TableView"
+            ReferencedContainer = "container:TableView.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -52,10 +76,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7B16B8631B84AD3500A890EA"
-            BuildableName = "changeArray"
-            BlueprintName = "changeArray"
-            ReferencedContainer = "container:changeArray.xcodeproj">
+            BlueprintIdentifier = "7B16B8F31B86F54F00A890EA"
+            BuildableName = "TableView.app"
+            BlueprintName = "TableView"
+            ReferencedContainer = "container:TableView.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -71,10 +95,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7B16B8631B84AD3500A890EA"
-            BuildableName = "changeArray"
-            BlueprintName = "changeArray"
-            ReferencedContainer = "container:changeArray.xcodeproj">
+            BlueprintIdentifier = "7B16B8F31B86F54F00A890EA"
+            BuildableName = "TableView.app"
+            BlueprintName = "TableView"
+            ReferencedContainer = "container:TableView.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
