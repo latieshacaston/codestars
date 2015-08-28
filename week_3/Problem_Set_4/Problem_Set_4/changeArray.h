@@ -16,6 +16,7 @@
 
 - (NSArray *) capObjectsInArray: (NSArray *) array1;
 
+
 // Question 2
 
 - (NSArray *) combineArraysOne: (NSArray *) arrayOne
@@ -24,7 +25,6 @@
 
 
 // Question 3
-
 
 - (NSMutableArray *) printOutDictionaryValues: (NSArray *) carArray;
 

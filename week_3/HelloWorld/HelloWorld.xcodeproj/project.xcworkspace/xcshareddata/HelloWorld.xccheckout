@@ -5,16 +5,16 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>EA615FAC-1E70-4EB4-8B61-D00B22F54094</string>
+	<string>0A873962-3245-4A97-B07F-9345358F5BD1</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Problem_Set_4</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>B95C452BE9075B1D90E1B2217A774DF799BF7E33</key>
 		<string>https://github.com/latieshacaston/codestars.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>week_3/Problem_Set_4/Problem_Set_4.xcodeproj</string>
+	<string>week_3/HelloWorld/HelloWorld.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>B95C452BE9075B1D90E1B2217A774DF799BF7E33</key>
