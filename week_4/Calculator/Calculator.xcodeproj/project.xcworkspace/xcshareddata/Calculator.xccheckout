@@ -5,16 +5,16 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>4157B846-DD6D-4019-AEE7-DD6DBCBA20E8</string>
+	<string>A240AEC1-BD38-4EAD-BAE7-6D5644546E53</string>
 	<key>IDESourceControlProjectName</key>
-	<string>ThingsToDoInBedStuy</string>
+	<string>Calculator</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>B95C452BE9075B1D90E1B2217A774DF799BF7E33</key>
 		<string>https://github.com/latieshacaston/codestars.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>week_3/ThingsToDoInBedStuy/ThingsToDoInBedStuy.xcodeproj</string>
+	<string>week_4/Calculator/Calculator.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>B95C452BE9075B1D90E1B2217A774DF799BF7E33</key>
