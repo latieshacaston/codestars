@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7B16B8C11B86E3B200A890EA"
-               BuildableName = "HelloWorld.app"
-               BlueprintName = "HelloWorld"
-               ReferencedContainer = "container:HelloWorld.xcodeproj">
+               BlueprintIdentifier = "7B16B8F31B86F54F00A890EA"
+               BuildableName = "TableView.app"
+               BlueprintName = "TableView"
+               ReferencedContainer = "container:TableView.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -28,10 +28,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7B16B8DA1B86E3B200A890EA"
-               BuildableName = "HelloWorldTests.xctest"
-               BlueprintName = "HelloWorldTests"
-               ReferencedContainer = "container:HelloWorld.xcodeproj">
+               BlueprintIdentifier = "7B16B90C1B86F54F00A890EA"
+               BuildableName = "TableViewTests.xctest"
+               BlueprintName = "TableViewTests"
+               ReferencedContainer = "container:TableView.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,20 +46,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7B16B8DA1B86E3B200A890EA"
-               BuildableName = "HelloWorldTests.xctest"
-               BlueprintName = "HelloWorldTests"
-               ReferencedContainer = "container:HelloWorld.xcodeproj">
+               BlueprintIdentifier = "7B16B90C1B86F54F00A890EA"
+               BuildableName = "TableViewTests.xctest"
+               BlueprintName = "TableViewTests"
+               ReferencedContainer = "container:TableView.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7B16B8C11B86E3B200A890EA"
-            BuildableName = "HelloWorld.app"
-            BlueprintName = "HelloWorld"
-            ReferencedContainer = "container:HelloWorld.xcodeproj">
+            BlueprintIdentifier = "7B16B8F31B86F54F00A890EA"
+            BuildableName = "TableView.app"
+            BlueprintName = "TableView"
+            ReferencedContainer = "container:TableView.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -76,10 +76,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7B16B8C11B86E3B200A890EA"
-            BuildableName = "HelloWorld.app"
-            BlueprintName = "HelloWorld"
-            ReferencedContainer = "container:HelloWorld.xcodeproj">
+            BlueprintIdentifier = "7B16B8F31B86F54F00A890EA"
+            BuildableName = "TableView.app"
+            BlueprintName = "TableView"
+            ReferencedContainer = "container:TableView.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,10 +95,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7B16B8C11B86E3B200A890EA"
-            BuildableName = "HelloWorld.app"
-            BlueprintName = "HelloWorld"
-            ReferencedContainer = "container:HelloWorld.xcodeproj">
+            BlueprintIdentifier = "7B16B8F31B86F54F00A890EA"
+            BuildableName = "TableView.app"
+            BlueprintName = "TableView"
+            ReferencedContainer = "container:TableView.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
