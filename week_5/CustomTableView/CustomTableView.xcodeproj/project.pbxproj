@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B53AE141B97D936002F3450 /* recipes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7B53AE131B97D936002F3450 /* recipes.plist */; };
+		7B53AE161B98058C002F3450 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B53AE151B98058C002F3450 /* Launch Screen.xib */; };
 		D5C35F5E1B8D541B0042B20D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C35F5D1B8D541B0042B20D /* main.m */; };
 		D5C35F611B8D541B0042B20D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C35F601B8D541B0042B20D /* AppDelegate.m */; };
 		D5C35F671B8D541B0042B20D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5C35F651B8D541B0042B20D /* Main.storyboard */; };
 		D5C35F691B8D541B0042B20D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5C35F681B8D541B0042B20D /* Images.xcassets */; };
-		D5C35F6C1B8D541B0042B20D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5C35F6A1B8D541B0042B20D /* LaunchScreen.xib */; };
 		D5C35F781B8D541C0042B20D /* CustomTableViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C35F771B8D541C0042B20D /* CustomTableViewTests.m */; };
 		D5C35F831B8D575C0042B20D /* CustomTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C35F821B8D575C0042B20D /* CustomTableViewController.m */; };
 		D5C35F861B8D6FD70042B20D /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C35F851B8D6FD70042B20D /* CustomTableViewCell.m */; };
@@ -28,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7B53AE131B97D936002F3450 /* recipes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = recipes.plist; sourceTree = "<group>"; };
+		7B53AE151B98058C002F3450 /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
 		D5C35F581B8D541B0042B20D /* CustomTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5C35F5C1B8D541B0042B20D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5C35F5D1B8D541B0042B20D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -35,7 +38,6 @@
 		D5C35F601B8D541B0042B20D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D5C35F661B8D541B0042B20D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D5C35F681B8D541B0042B20D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		D5C35F6B1B8D541B0042B20D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D5C35F711B8D541C0042B20D /* CustomTableViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomTableViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5C35F761B8D541C0042B20D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5C35F771B8D541C0042B20D /* CustomTableViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewTests.m; sourceTree = "<group>"; };
@@ -90,9 +92,10 @@
 				D5C35F851B8D6FD70042B20D /* CustomTableViewCell.m */,
 				D5C35F811B8D575C0042B20D /* CustomTableViewController.h */,
 				D5C35F821B8D575C0042B20D /* CustomTableViewController.m */,
+				7B53AE131B97D936002F3450 /* recipes.plist */,
 				D5C35F651B8D541B0042B20D /* Main.storyboard */,
 				D5C35F681B8D541B0042B20D /* Images.xcassets */,
-				D5C35F6A1B8D541B0042B20D /* LaunchScreen.xib */,
+				7B53AE151B98058C002F3450 /* Launch Screen.xib */,
 				D5C35F5B1B8D541B0042B20D /* Supporting Files */,
 			);
 			path = CustomTableView;
@@ -205,7 +208,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5C35F671B8D541B0042B20D /* Main.storyboard in Resources */,
-				D5C35F6C1B8D541B0042B20D /* LaunchScreen.xib in Resources */,
+				7B53AE161B98058C002F3450 /* Launch Screen.xib in Resources */,
+				7B53AE141B97D936002F3450 /* recipes.plist in Resources */,
 				D5C35F691B8D541B0042B20D /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,14 +260,6 @@
 				D5C35F661B8D541B0042B20D /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		D5C35F6A1B8D541B0042B20D /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D5C35F6B1B8D541B0042B20D /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -353,6 +349,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = CustomTableView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -363,6 +360,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = CustomTableView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -422,6 +420,7 @@
 				D5C35F7D1B8D541C0042B20D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D5C35F7E1B8D541C0042B20D /* Build configuration list for PBXNativeTarget "CustomTableViewTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +429,7 @@
 				D5C35F801B8D541C0042B20D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
