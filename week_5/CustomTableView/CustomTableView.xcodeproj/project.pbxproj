@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		7B53AE141B97D936002F3450 /* recipes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7B53AE131B97D936002F3450 /* recipes.plist */; };
 		7B53AE161B98058C002F3450 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B53AE151B98058C002F3450 /* Launch Screen.xib */; };
+		7B53AE191B9B7BD6002F3450 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B53AE181B9B7BD6002F3450 /* DetailViewController.m */; };
+		7B53AE1C1B9B9101002F3450 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B53AE1B1B9B9101002F3450 /* AboutViewController.m */; };
+		7B53AE1F1B9B9470002F3450 /* about.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7B53AE1D1B9B9470002F3450 /* about.jpg */; };
+		7B53AE201B9B9470002F3450 /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = 7B53AE1E1B9B9470002F3450 /* about.html */; };
 		D5C35F5E1B8D541B0042B20D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C35F5D1B8D541B0042B20D /* main.m */; };
 		D5C35F611B8D541B0042B20D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C35F601B8D541B0042B20D /* AppDelegate.m */; };
 		D5C35F671B8D541B0042B20D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5C35F651B8D541B0042B20D /* Main.storyboard */; };
@@ -31,6 +35,12 @@
 /* Begin PBXFileReference section */
 		7B53AE131B97D936002F3450 /* recipes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = recipes.plist; sourceTree = "<group>"; };
 		7B53AE151B98058C002F3450 /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
+		7B53AE171B9B7BD6002F3450 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		7B53AE181B9B7BD6002F3450 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		7B53AE1A1B9B9101002F3450 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		7B53AE1B1B9B9101002F3450 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		7B53AE1D1B9B9470002F3450 /* about.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = about.jpg; sourceTree = "<group>"; };
+		7B53AE1E1B9B9470002F3450 /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about.html; sourceTree = "<group>"; };
 		D5C35F581B8D541B0042B20D /* CustomTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5C35F5C1B8D541B0042B20D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5C35F5D1B8D541B0042B20D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -93,6 +103,10 @@
 				D5C35F811B8D575C0042B20D /* CustomTableViewController.h */,
 				D5C35F821B8D575C0042B20D /* CustomTableViewController.m */,
 				7B53AE131B97D936002F3450 /* recipes.plist */,
+				7B53AE171B9B7BD6002F3450 /* DetailViewController.h */,
+				7B53AE181B9B7BD6002F3450 /* DetailViewController.m */,
+				7B53AE1A1B9B9101002F3450 /* AboutViewController.h */,
+				7B53AE1B1B9B9101002F3450 /* AboutViewController.m */,
 				D5C35F651B8D541B0042B20D /* Main.storyboard */,
 				D5C35F681B8D541B0042B20D /* Images.xcassets */,
 				7B53AE151B98058C002F3450 /* Launch Screen.xib */,
@@ -104,6 +118,8 @@
 		D5C35F5B1B8D541B0042B20D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7B53AE1D1B9B9470002F3450 /* about.jpg */,
+				7B53AE1E1B9B9470002F3450 /* about.html */,
 				D5C35F5C1B8D541B0042B20D /* Info.plist */,
 				D5C35F5D1B8D541B0042B20D /* main.m */,
 			);
@@ -207,6 +223,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B53AE201B9B9470002F3450 /* about.html in Resources */,
+				7B53AE1F1B9B9470002F3450 /* about.jpg in Resources */,
 				D5C35F671B8D541B0042B20D /* Main.storyboard in Resources */,
 				7B53AE161B98058C002F3450 /* Launch Screen.xib in Resources */,
 				7B53AE141B97D936002F3450 /* recipes.plist in Resources */,
@@ -228,6 +246,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B53AE1C1B9B9101002F3450 /* AboutViewController.m in Sources */,
+				7B53AE191B9B7BD6002F3450 /* DetailViewController.m in Sources */,
 				D5C35F611B8D541B0042B20D /* AppDelegate.m in Sources */,
 				D5C35F831B8D575C0042B20D /* CustomTableViewController.m in Sources */,
 				D5C35F861B8D6FD70042B20D /* CustomTableViewCell.m in Sources */,

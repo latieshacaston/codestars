@@ -8,6 +8,7 @@
 
 #import "CustomTableViewController.h"
 #import "CustomTableViewCell.h"
+#import "DetailViewController.h"
 
 @implementation CustomTableViewController
 
@@ -84,6 +85,23 @@ CustomTableViewCell *cell = (CustomTableViewCell *)[tableView dequeueReusableCel
 
 
 }
+
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+
+
+    if ([segue.identifier isEqualToString:@"showRecipeDetail"]) {
+    
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        DetailViewController *destViewController = segue.destinationViewController;
+        destViewController.recipeName = [recipeNames objectAtIndex:indexPath.row]; 
+
+
+
+    }
+
+}
+
 
 
 //
