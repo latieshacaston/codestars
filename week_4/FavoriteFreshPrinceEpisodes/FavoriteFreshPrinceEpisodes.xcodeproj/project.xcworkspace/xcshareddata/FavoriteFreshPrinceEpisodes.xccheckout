@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>32889328-9B12-40E2-82AE-E4AA0BA30EDD</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>FavoriteFreshPrinceEpisodes</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>B95C452BE9075B1D90E1B2217A774DF799BF7E33</key>
 		<string>https://github.com/latieshacaston/codestars.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>week_4/FavoriteFreshPrinceEpisodes/FavoriteFreshPrinceEpisodes.xcodeproj/project.xcworkspace</string>
+	<string>week_4/FavoriteFreshPrinceEpisodes/FavoriteFreshPrinceEpisodes.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>B95C452BE9075B1D90E1B2217A774DF799BF7E33</key>

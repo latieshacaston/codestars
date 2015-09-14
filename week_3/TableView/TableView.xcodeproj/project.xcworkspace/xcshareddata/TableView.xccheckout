@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>77E1F232-E284-48D6-A897-F5260AAEBBA0</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>TableView</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>B95C452BE9075B1D90E1B2217A774DF799BF7E33</key>
 		<string>https://github.com/latieshacaston/codestars.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>week_3/TableView/TableView.xcodeproj/project.xcworkspace</string>
+	<string>week_3/TableView/TableView.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>B95C452BE9075B1D90E1B2217A774DF799BF7E33</key>
