@@ -1,0 +1,469 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7BD3F8CA1BAD2E9600088C54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BD3F8C91BAD2E9600088C54 /* main.m */; };
+		7BD3F8CD1BAD2E9600088C54 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BD3F8CC1BAD2E9600088C54 /* AppDelegate.m */; };
+		7BD3F8D31BAD2E9600088C54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BD3F8D11BAD2E9600088C54 /* Main.storyboard */; };
+		7BD3F8D51BAD2E9600088C54 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BD3F8D41BAD2E9600088C54 /* Images.xcassets */; };
+		7BD3F8D81BAD2E9600088C54 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BD3F8D61BAD2E9600088C54 /* LaunchScreen.xib */; };
+		7BD3F8E41BAD2E9600088C54 /* FreshPrinceAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BD3F8E31BAD2E9600088C54 /* FreshPrinceAppTests.m */; };
+		7BD3F8EF1BAD308B00088C54 /* HomeScreenTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BD3F8EE1BAD308B00088C54 /* HomeScreenTableViewController.m */; };
+		7BD3F8F21BAD3B3600088C54 /* HomePageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BD3F8F11BAD3B3600088C54 /* HomePageTableViewCell.m */; };
+		7BD3F8F51BAD500A00088C54 /* QuizTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BD3F8F41BAD500A00088C54 /* QuizTableViewController.m */; };
+		7BD3F8F81BAD53C600088C54 /* MemeGeneratorCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BD3F8F71BAD53C600088C54 /* MemeGeneratorCollectionViewController.m */; };
+		7BD3F8FB1BAD550100088C54 /* MemeGeneratorCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BD3F8FA1BAD550100088C54 /* MemeGeneratorCollectionViewCell.m */; };
+		7BD3F8FE1BAD61C100088C54 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BD3F8FD1BAD61C100088C54 /* WebViewController.m */; };
+		7BD3F9001BAD624B00088C54 /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = 7BD3F8FF1BAD624B00088C54 /* about.html */; };
+		7BD3F9021BAD65E400088C54 /* bio.html in Resources */ = {isa = PBXBuildFile; fileRef = 7BD3F9011BAD65E400088C54 /* bio.html */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7BD3F8DE1BAD2E9600088C54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7BD3F8BC1BAD2E9600088C54 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BD3F8C31BAD2E9600088C54;
+			remoteInfo = FreshPrinceApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7BD3F8C41BAD2E9600088C54 /* FreshPrinceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreshPrinceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BD3F8C81BAD2E9600088C54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BD3F8C91BAD2E9600088C54 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7BD3F8CB1BAD2E9600088C54 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7BD3F8CC1BAD2E9600088C54 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7BD3F8D21BAD2E9600088C54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7BD3F8D41BAD2E9600088C54 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7BD3F8D71BAD2E9600088C54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		7BD3F8DD1BAD2E9600088C54 /* FreshPrinceAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreshPrinceAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BD3F8E21BAD2E9600088C54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BD3F8E31BAD2E9600088C54 /* FreshPrinceAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FreshPrinceAppTests.m; sourceTree = "<group>"; };
+		7BD3F8ED1BAD308B00088C54 /* HomeScreenTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeScreenTableViewController.h; sourceTree = "<group>"; };
+		7BD3F8EE1BAD308B00088C54 /* HomeScreenTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeScreenTableViewController.m; sourceTree = "<group>"; };
+		7BD3F8F01BAD3B3600088C54 /* HomePageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageTableViewCell.h; sourceTree = "<group>"; };
+		7BD3F8F11BAD3B3600088C54 /* HomePageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageTableViewCell.m; sourceTree = "<group>"; };
+		7BD3F8F31BAD500A00088C54 /* QuizTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuizTableViewController.h; sourceTree = "<group>"; };
+		7BD3F8F41BAD500A00088C54 /* QuizTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuizTableViewController.m; sourceTree = "<group>"; };
+		7BD3F8F61BAD53C600088C54 /* MemeGeneratorCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemeGeneratorCollectionViewController.h; sourceTree = "<group>"; };
+		7BD3F8F71BAD53C600088C54 /* MemeGeneratorCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemeGeneratorCollectionViewController.m; sourceTree = "<group>"; };
+		7BD3F8F91BAD550100088C54 /* MemeGeneratorCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemeGeneratorCollectionViewCell.h; sourceTree = "<group>"; };
+		7BD3F8FA1BAD550100088C54 /* MemeGeneratorCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemeGeneratorCollectionViewCell.m; sourceTree = "<group>"; };
+		7BD3F8FC1BAD61C100088C54 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		7BD3F8FD1BAD61C100088C54 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		7BD3F8FF1BAD624B00088C54 /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about.html; sourceTree = "<group>"; };
+		7BD3F9011BAD65E400088C54 /* bio.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = bio.html; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7BD3F8C11BAD2E9600088C54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BD3F8DA1BAD2E9600088C54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7BD3F8BB1BAD2E9600088C54 = {
+			isa = PBXGroup;
+			children = (
+				7BD3F8C61BAD2E9600088C54 /* FreshPrinceApp */,
+				7BD3F8E01BAD2E9600088C54 /* FreshPrinceAppTests */,
+				7BD3F8C51BAD2E9600088C54 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7BD3F8C51BAD2E9600088C54 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7BD3F8C41BAD2E9600088C54 /* FreshPrinceApp.app */,
+				7BD3F8DD1BAD2E9600088C54 /* FreshPrinceAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7BD3F8C61BAD2E9600088C54 /* FreshPrinceApp */ = {
+			isa = PBXGroup;
+			children = (
+				7BD3F8CB1BAD2E9600088C54 /* AppDelegate.h */,
+				7BD3F8CC1BAD2E9600088C54 /* AppDelegate.m */,
+				7BD3F8ED1BAD308B00088C54 /* HomeScreenTableViewController.h */,
+				7BD3F8EE1BAD308B00088C54 /* HomeScreenTableViewController.m */,
+				7BD3F8F01BAD3B3600088C54 /* HomePageTableViewCell.h */,
+				7BD3F8F11BAD3B3600088C54 /* HomePageTableViewCell.m */,
+				7BD3F8F31BAD500A00088C54 /* QuizTableViewController.h */,
+				7BD3F8F41BAD500A00088C54 /* QuizTableViewController.m */,
+				7BD3F8F61BAD53C600088C54 /* MemeGeneratorCollectionViewController.h */,
+				7BD3F8F71BAD53C600088C54 /* MemeGeneratorCollectionViewController.m */,
+				7BD3F8D11BAD2E9600088C54 /* Main.storyboard */,
+				7BD3F8FC1BAD61C100088C54 /* WebViewController.h */,
+				7BD3F8FD1BAD61C100088C54 /* WebViewController.m */,
+				7BD3F8F91BAD550100088C54 /* MemeGeneratorCollectionViewCell.h */,
+				7BD3F8FA1BAD550100088C54 /* MemeGeneratorCollectionViewCell.m */,
+				7BD3F8D41BAD2E9600088C54 /* Images.xcassets */,
+				7BD3F8D61BAD2E9600088C54 /* LaunchScreen.xib */,
+				7BD3F8C71BAD2E9600088C54 /* Supporting Files */,
+			);
+			path = FreshPrinceApp;
+			sourceTree = "<group>";
+		};
+		7BD3F8C71BAD2E9600088C54 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7BD3F8FF1BAD624B00088C54 /* about.html */,
+				7BD3F9011BAD65E400088C54 /* bio.html */,
+				7BD3F8C81BAD2E9600088C54 /* Info.plist */,
+				7BD3F8C91BAD2E9600088C54 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7BD3F8E01BAD2E9600088C54 /* FreshPrinceAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				7BD3F8E31BAD2E9600088C54 /* FreshPrinceAppTests.m */,
+				7BD3F8E11BAD2E9600088C54 /* Supporting Files */,
+			);
+			path = FreshPrinceAppTests;
+			sourceTree = "<group>";
+		};
+		7BD3F8E11BAD2E9600088C54 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7BD3F8E21BAD2E9600088C54 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7BD3F8C31BAD2E9600088C54 /* FreshPrinceApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BD3F8E71BAD2E9600088C54 /* Build configuration list for PBXNativeTarget "FreshPrinceApp" */;
+			buildPhases = (
+				7BD3F8C01BAD2E9600088C54 /* Sources */,
+				7BD3F8C11BAD2E9600088C54 /* Frameworks */,
+				7BD3F8C21BAD2E9600088C54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FreshPrinceApp;
+			productName = FreshPrinceApp;
+			productReference = 7BD3F8C41BAD2E9600088C54 /* FreshPrinceApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7BD3F8DC1BAD2E9600088C54 /* FreshPrinceAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BD3F8EA1BAD2E9600088C54 /* Build configuration list for PBXNativeTarget "FreshPrinceAppTests" */;
+			buildPhases = (
+				7BD3F8D91BAD2E9600088C54 /* Sources */,
+				7BD3F8DA1BAD2E9600088C54 /* Frameworks */,
+				7BD3F8DB1BAD2E9600088C54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7BD3F8DF1BAD2E9600088C54 /* PBXTargetDependency */,
+			);
+			name = FreshPrinceAppTests;
+			productName = FreshPrinceAppTests;
+			productReference = 7BD3F8DD1BAD2E9600088C54 /* FreshPrinceAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7BD3F8BC1BAD2E9600088C54 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "LaTiesha Caston";
+				TargetAttributes = {
+					7BD3F8C31BAD2E9600088C54 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					7BD3F8DC1BAD2E9600088C54 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 7BD3F8C31BAD2E9600088C54;
+					};
+				};
+			};
+			buildConfigurationList = 7BD3F8BF1BAD2E9600088C54 /* Build configuration list for PBXProject "FreshPrinceApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7BD3F8BB1BAD2E9600088C54;
+			productRefGroup = 7BD3F8C51BAD2E9600088C54 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7BD3F8C31BAD2E9600088C54 /* FreshPrinceApp */,
+				7BD3F8DC1BAD2E9600088C54 /* FreshPrinceAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7BD3F8C21BAD2E9600088C54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BD3F9001BAD624B00088C54 /* about.html in Resources */,
+				7BD3F8D31BAD2E9600088C54 /* Main.storyboard in Resources */,
+				7BD3F9021BAD65E400088C54 /* bio.html in Resources */,
+				7BD3F8D81BAD2E9600088C54 /* LaunchScreen.xib in Resources */,
+				7BD3F8D51BAD2E9600088C54 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BD3F8DB1BAD2E9600088C54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7BD3F8C01BAD2E9600088C54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BD3F8EF1BAD308B00088C54 /* HomeScreenTableViewController.m in Sources */,
+				7BD3F8CD1BAD2E9600088C54 /* AppDelegate.m in Sources */,
+				7BD3F8CA1BAD2E9600088C54 /* main.m in Sources */,
+				7BD3F8FE1BAD61C100088C54 /* WebViewController.m in Sources */,
+				7BD3F8F21BAD3B3600088C54 /* HomePageTableViewCell.m in Sources */,
+				7BD3F8F81BAD53C600088C54 /* MemeGeneratorCollectionViewController.m in Sources */,
+				7BD3F8F51BAD500A00088C54 /* QuizTableViewController.m in Sources */,
+				7BD3F8FB1BAD550100088C54 /* MemeGeneratorCollectionViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BD3F8D91BAD2E9600088C54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BD3F8E41BAD2E9600088C54 /* FreshPrinceAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7BD3F8DF1BAD2E9600088C54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7BD3F8C31BAD2E9600088C54 /* FreshPrinceApp */;
+			targetProxy = 7BD3F8DE1BAD2E9600088C54 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7BD3F8D11BAD2E9600088C54 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BD3F8D21BAD2E9600088C54 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7BD3F8D61BAD2E9600088C54 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BD3F8D71BAD2E9600088C54 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7BD3F8E51BAD2E9600088C54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7BD3F8E61BAD2E9600088C54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7BD3F8E81BAD2E9600088C54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FreshPrinceApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7BD3F8E91BAD2E9600088C54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FreshPrinceApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7BD3F8EB1BAD2E9600088C54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FreshPrinceAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FreshPrinceApp.app/FreshPrinceApp";
+			};
+			name = Debug;
+		};
+		7BD3F8EC1BAD2E9600088C54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FreshPrinceAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FreshPrinceApp.app/FreshPrinceApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7BD3F8BF1BAD2E9600088C54 /* Build configuration list for PBXProject "FreshPrinceApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BD3F8E51BAD2E9600088C54 /* Debug */,
+				7BD3F8E61BAD2E9600088C54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BD3F8E71BAD2E9600088C54 /* Build configuration list for PBXNativeTarget "FreshPrinceApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BD3F8E81BAD2E9600088C54 /* Debug */,
+				7BD3F8E91BAD2E9600088C54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7BD3F8EA1BAD2E9600088C54 /* Build configuration list for PBXNativeTarget "FreshPrinceAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BD3F8EB1BAD2E9600088C54 /* Debug */,
+				7BD3F8EC1BAD2E9600088C54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7BD3F8BC1BAD2E9600088C54 /* Project object */;
+}
