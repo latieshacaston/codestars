@@ -1,58 +1,62 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="iAb-RU-sP0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="iAb-RU-sP0">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--Home Screen Table View Controller-->
-        <scene sceneID="bNg-Ep-l5U">
+        <!--Home View Controller-->
+        <scene sceneID="VoP-QS-zUq">
             <objects>
-                <tableViewController id="j5K-kr-Mkk" customClass="HomeScreenTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="224" sectionHeaderHeight="22" sectionFooterHeight="22" id="hzw-x1-XQ9">
+                <viewController id="rFL-2N-Kxm" customClass="HomeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fJo-u3-AOd"/>
+                        <viewControllerLayoutGuide type="bottom" id="JSK-6c-jgi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7mO-eC-0In">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="homeScreenCell" rowHeight="224" id="dhb-7X-hAl" customClass="HomePageTableViewCell">
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dhb-7X-hAl" id="cmG-WQ-5wM">
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VHn-KQ-GpH">
-                                            <rect key="frame" x="0.0" y="-6" width="320" height="229"/>
-                                        </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Vt-36-6wv">
-                                            <rect key="frame" x="17" y="58" width="287" height="102"/>
-                                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="24"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                </tableViewCellContentView>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to Bel-Air" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbs-vZ-se7">
+                                <rect key="frame" x="16" y="128" width="289" height="296"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="39"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AnF-Vf-oTY">
+                                <rect key="frame" x="20" y="389" width="280" height="30"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
+                                <state key="normal" title="Play the Fresh Prince Quote Quiz"/>
                                 <connections>
-                                    <outlet property="homeScreenTextLabel" destination="9Vt-36-6wv" id="mR9-ML-eg2"/>
-                                    <segue destination="5pF-7T-1N0" kind="push" identifier="segueToQuiz" id="aHg-PB-b6b"/>
+                                    <action selector="quizButtonPressed:" destination="rFL-2N-Kxm" eventType="touchUpInside" id="nZh-6a-YQ6"/>
                                 </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="j5K-kr-Mkk" id="SNx-25-gPG"/>
-                            <outlet property="delegate" destination="j5K-kr-Mkk" id="NPq-pX-ks9"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="7IK-oc-fgj"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mhj-RB-W0D">
+                                <rect key="frame" x="20" y="441" width="280" height="30"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
+                                <state key="normal" title="Make a fresh meme"/>
+                                <connections>
+                                    <action selector="memeButtonPressed:" destination="rFL-2N-Kxm" eventType="touchUpInside" id="fJZ-CV-YFJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jc7-TI-bI9"/>
                     <connections>
-                        <segue destination="bFb-SZ-hQ8" kind="push" identifier="segueToMemeGenerator" id="2hN-L8-rRt"/>
+                        <segue destination="5pF-7T-1N0" kind="push" identifier="segueToQuiz" id="Q3B-h3-z9N"/>
+                        <segue destination="bFb-SZ-hQ8" kind="push" identifier="segueToGenerator" id="HiF-P4-a1u"/>
                     </connections>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sgb-ik-Cad" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="frm-Oi-JqG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2665" y="335"/>
+            <point key="canvasLocation" x="2594" y="335"/>
         </scene>
-        <!--View Controller-->
+        <!--Quiz Table View Controller-->
         <scene sceneID="jk2-wd-QDY">
             <objects>
-                <viewController id="5pF-7T-1N0" sceneMemberID="viewController">
+                <viewController id="5pF-7T-1N0" customClass="QuizTableViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ftu-wT-cue"/>
                         <viewControllerLayoutGuide type="bottom" id="inl-TD-PhK"/>
@@ -62,45 +66,78 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Finish this line:" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EMP-jV-hbx">
-                                <rect key="frame" x="11" y="72" width="298" height="36"/>
+                                <rect key="frame" x="23" y="72" width="268" height="36"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LEi-7k-Ksm">
-                                <rect key="frame" x="11" y="368" width="299" height="30"/>
-                                <state key="normal" title="Answer 1">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qqy-GJ-Un2">
-                                <rect key="frame" x="11" y="406" width="299" height="30"/>
-                                <state key="normal" title="Answer 2">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0TN-7E-fIE">
-                                <rect key="frame" x="11" y="449" width="299" height="30"/>
-                                <state key="normal" title="Answer 3">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AO5-Ud-1hR">
-                                <rect key="frame" x="11" y="489" width="299" height="30"/>
-                                <state key="normal" title="Answer 4">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Let's go get some BBQ and get   ____________" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N0j-jN-CaJ">
-                                <rect key="frame" x="6" y="64" width="298" height="296"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Let's go get some BBQ and get   ____________" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N0j-jN-CaJ">
+                                <rect key="frame" x="20" y="64" width="271" height="296"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="N0j-jN-CaJ" secondAttribute="height" multiplier="271:296" id="ay9-EM-dbj"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="39"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LEi-7k-Ksm">
+                                <rect key="frame" x="11" y="352" width="299" height="30"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
+                                <state key="normal" title="Answer 1">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="answer1Pressed:" destination="5pF-7T-1N0" eventType="touchUpInside" id="mTW-5j-9Zy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qqy-GJ-Un2">
+                                <rect key="frame" x="11" y="390" width="299" height="30"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
+                                <state key="normal" title="Answer 2">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="answer2Pressed:" destination="5pF-7T-1N0" eventType="touchUpInside" id="koj-va-ArG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0TN-7E-fIE">
+                                <rect key="frame" x="11" y="433" width="299" height="30"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
+                                <state key="normal" title="Answer 3">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="answer3Pressed:" destination="5pF-7T-1N0" eventType="touchUpInside" id="Jp3-ab-LBC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AO5-Ud-1hR">
+                                <rect key="frame" x="11" y="473" width="299" height="30"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
+                                <state key="normal" title="Answer 4">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="answer4Pressed:" destination="5pF-7T-1N0" eventType="touchUpInside" id="haN-mo-4YD"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LEi-7k-Ksm" firstAttribute="centerX" secondItem="i9e-cM-hc7" secondAttribute="centerX" id="0Oe-85-c1v"/>
+                            <constraint firstItem="AO5-Ud-1hR" firstAttribute="leading" secondItem="LEi-7k-Ksm" secondAttribute="leading" id="7ki-s6-nrh"/>
+                            <constraint firstItem="0TN-7E-fIE" firstAttribute="centerX" secondItem="i9e-cM-hc7" secondAttribute="centerX" id="Hqr-X5-qNH"/>
+                            <constraint firstItem="qqy-GJ-Un2" firstAttribute="centerX" secondItem="i9e-cM-hc7" secondAttribute="centerX" id="aRl-xi-eMk"/>
+                            <constraint firstItem="AO5-Ud-1hR" firstAttribute="centerX" secondItem="i9e-cM-hc7" secondAttribute="centerX" id="wrT-Q7-TTZ"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="tms-Td-9Ej"/>
+                    <connections>
+                        <outlet property="answer1" destination="LEi-7k-Ksm" id="meJ-fv-xLe"/>
+                        <outlet property="answer2" destination="qqy-GJ-Un2" id="cbn-sW-ROb"/>
+                        <outlet property="answer3" destination="0TN-7E-fIE" id="Oyg-qU-AyG"/>
+                        <outlet property="answer4" destination="AO5-Ud-1hR" id="K1x-Ln-Jtt"/>
+                        <outlet property="quizQuestion" destination="N0j-jN-CaJ" id="J6M-dG-Zfs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9J0-jD-Dem" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -121,7 +158,7 @@
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MemeGeneratorCell" id="R6e-mH-oQ8" customClass="MemeGeneratorCollectionViewCell">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <rect key="frame" x="0.0" y="64" width="78" height="76"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="78" height="76"/>
@@ -166,7 +203,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="j5K-kr-Mkk" kind="relationship" relationship="rootViewController" id="raF-Z5-KPJ"/>
+                        <segue destination="rFL-2N-Kxm" kind="relationship" relationship="rootViewController" id="aBe-VW-3OF"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="858-en-c86" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -289,9 +326,4 @@
             <point key="canvasLocation" x="2244" y="2062"/>
         </scene>
     </scenes>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
-    </simulatedMetricsContainer>
 </document>

@@ -14,8 +14,111 @@
 
 @implementation QuizTableViewController
 
+
+NSString *correctAnswer;
+
+
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
+    int r = arc4random_uniform(4);
+    
+    switch (r) {
+    
+        default: break;
+            
+            case 0:
+            
+            self.quizQuestion.text = @"This is question 1 and button 2 is the right answer";
+            
+             [self.answer1 setTitle: @"Button1" forState: UIControlStateNormal ];
+             [self.answer2 setTitle: @"Button2" forState: UIControlStateNormal ];
+             [self.answer3 setTitle: @"Button3" forState: UIControlStateNormal ];
+             [self.answer4 setTitle: @"Button4" forState: UIControlStateNormal ];
+            
+            
+            correctAnswer = @"2";
+            
+            
+            
+            break;
+            
+        case 1:
+            
+            self.quizQuestion.text = @"This is question 2 and button 4 is the right answer";
+            
+            [self.answer1 setTitle: @"Button1" forState: UIControlStateNormal ];
+            [self.answer2 setTitle: @"Button2" forState: UIControlStateNormal ];
+            [self.answer3 setTitle: @"Button3" forState: UIControlStateNormal ];
+            [self.answer4 setTitle: @"Button4" forState: UIControlStateNormal ];
+            
+            
+            correctAnswer = @"4";
+            
+            
+            
+            break;
+            
+        case 2:
+            
+            self.quizQuestion.text = @"This is question 3 and button 1 is the right answer";
+            
+            [self.answer1 setTitle: @"Button1" forState: UIControlStateNormal ];
+            [self.answer2 setTitle: @"Button2" forState: UIControlStateNormal ];
+            [self.answer3 setTitle: @"Button3" forState: UIControlStateNormal ];
+            [self.answer4 setTitle: @"Button4" forState: UIControlStateNormal ];
+            
+            
+            correctAnswer = @"1";
+            
+            
+            
+            
+            break;
+            
+        case 3:
+            
+            self.quizQuestion.text = @"This is question 4 and button 3 is the right answer";
+            
+            [self.answer1 setTitle: @"Button1" forState: UIControlStateNormal ];
+            [self.answer2 setTitle: @"Button2" forState: UIControlStateNormal ];
+            [self.answer3 setTitle: @"Button3" forState: UIControlStateNormal ];
+            [self.answer4 setTitle: @"Button4" forState: UIControlStateNormal ];
+            
+            
+            correctAnswer = @"3";
+            
+            
+            
+            
+            break;
+            
+        case 4:
+            self.quizQuestion.text = @"This is question 5 and button 1 is the right answer";
+            
+            [self.answer1 setTitle: @"Button1" forState: UIControlStateNormal ];
+            [self.answer2 setTitle: @"Button2" forState: UIControlStateNormal ];
+            [self.answer3 setTitle: @"Button3" forState: UIControlStateNormal ];
+            [self.answer4 setTitle: @"Button4" forState: UIControlStateNormal ];
+            
+            
+            correctAnswer = @"1";
+            
+            
+            
+            
+            
+            break;
+            
+            
+    
+    
+    }
+    
+    
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -32,16 +135,116 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return 1;
 }
+
+
+
+
+- (IBAction)answer1Pressed:(id)sender {
+
+
+if ([correctAnswer isEqualToString: @"1"])
+{
+
+//bring up the modal segue
+    NSLog(@"You Are Correct!");
+
+
+
+}
+else {
+    
+    NSLog(@"You Are Wrong!");
+    
+}
+
+
+
+}
+
+
+- (IBAction)answer2Pressed:(id)sender {
+
+    
+    if ([correctAnswer isEqualToString: @"2"])
+    {
+        
+        //bring up the modal segue
+        NSLog(@"You Are Correct!");
+        
+        
+        
+    }
+
+    else {
+    
+     NSLog(@"You Are Wrong!");
+    
+    }
+
+
+}
+
+- (IBAction)answer3Pressed:(id)sender {
+
+
+    if ([correctAnswer isEqualToString: @"3"])
+    {
+        
+        //bring up the modal segue
+        NSLog(@"You Are Correct!");
+        
+        
+        
+    }
+    else {
+        
+        NSLog(@"You Are Wrong!");
+        
+    }
+
+
+
+
+
+
+}
+
+
+- (IBAction)answer4Pressed:(id)sender {
+
+
+    if ([correctAnswer isEqualToString: @"4"])
+    {
+        
+        //bring up the modal segue
+        NSLog(@"You Are Correct!");
+        
+        
+        
+    }
+
+    else {
+        
+        NSLog(@"You Are Wrong!");
+        
+    }
+
+
+
+}
+
+
+
+
+
 
 /*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {

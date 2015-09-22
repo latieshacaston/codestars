@@ -452,6 +452,7 @@
 				7B53AE4F1B9B9894002F3450 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7B53AE501B9B9894002F3450 /* Build configuration list for PBXNativeTarget "WeLoveWesterosTests" */ = {
 			isa = XCConfigurationList;
@@ -460,6 +461,7 @@
 				7B53AE521B9B9894002F3450 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
