@@ -3,7 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Home View Controller-->
@@ -53,10 +53,10 @@
             </objects>
             <point key="canvasLocation" x="2594" y="335"/>
         </scene>
-        <!--Quiz Table View Controller-->
+        <!--Quiz View Controller-->
         <scene sceneID="jk2-wd-QDY">
             <objects>
-                <viewController id="5pF-7T-1N0" customClass="QuizTableViewController" sceneMemberID="viewController">
+                <viewController id="5pF-7T-1N0" customClass="QuizViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ftu-wT-cue"/>
                         <viewControllerLayoutGuide type="bottom" id="inl-TD-PhK"/>
@@ -71,16 +71,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Let's go get some BBQ and get   ____________" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N0j-jN-CaJ">
-                                <rect key="frame" x="20" y="64" width="271" height="296"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="N0j-jN-CaJ" secondAttribute="height" multiplier="271:296" id="ay9-EM-dbj"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="39"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LEi-7k-Ksm">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LEi-7k-Ksm">
                                 <rect key="frame" x="11" y="352" width="299" height="30"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
                                 <state key="normal" title="Answer 1">
@@ -90,27 +81,7 @@
                                     <action selector="answer1Pressed:" destination="5pF-7T-1N0" eventType="touchUpInside" id="mTW-5j-9Zy"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qqy-GJ-Un2">
-                                <rect key="frame" x="11" y="390" width="299" height="30"/>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
-                                <state key="normal" title="Answer 2">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="answer2Pressed:" destination="5pF-7T-1N0" eventType="touchUpInside" id="koj-va-ArG"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0TN-7E-fIE">
-                                <rect key="frame" x="11" y="433" width="299" height="30"/>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
-                                <state key="normal" title="Answer 3">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="answer3Pressed:" destination="5pF-7T-1N0" eventType="touchUpInside" id="Jp3-ab-LBC"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AO5-Ud-1hR">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AO5-Ud-1hR">
                                 <rect key="frame" x="11" y="473" width="299" height="30"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
                                 <state key="normal" title="Answer 4">
@@ -120,14 +91,37 @@
                                     <action selector="answer4Pressed:" destination="5pF-7T-1N0" eventType="touchUpInside" id="haN-mo-4YD"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Let's go get some BBQ and get   ____________" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N0j-jN-CaJ">
+                                <rect key="frame" x="20" y="64" width="271" height="296"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="39"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0TN-7E-fIE">
+                                <rect key="frame" x="11" y="435" width="299" height="30"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
+                                <state key="normal" title="Answer 3">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="answer3Pressed:" destination="5pF-7T-1N0" eventType="touchUpInside" id="Jp3-ab-LBC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qqy-GJ-Un2">
+                                <rect key="frame" x="11" y="390" width="299" height="30"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
+                                <state key="normal" title="Answer 2">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="answer2Pressed:" destination="5pF-7T-1N0" eventType="touchUpInside" id="koj-va-ArG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="LEi-7k-Ksm" firstAttribute="centerX" secondItem="i9e-cM-hc7" secondAttribute="centerX" id="0Oe-85-c1v"/>
-                            <constraint firstItem="AO5-Ud-1hR" firstAttribute="leading" secondItem="LEi-7k-Ksm" secondAttribute="leading" id="7ki-s6-nrh"/>
-                            <constraint firstItem="0TN-7E-fIE" firstAttribute="centerX" secondItem="i9e-cM-hc7" secondAttribute="centerX" id="Hqr-X5-qNH"/>
-                            <constraint firstItem="qqy-GJ-Un2" firstAttribute="centerX" secondItem="i9e-cM-hc7" secondAttribute="centerX" id="aRl-xi-eMk"/>
-                            <constraint firstItem="AO5-Ud-1hR" firstAttribute="centerX" secondItem="i9e-cM-hc7" secondAttribute="centerX" id="wrT-Q7-TTZ"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="N0j-jN-CaJ" secondAttribute="leading" id="DEz-eL-YqN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="N0j-jN-CaJ" secondAttribute="trailing" constant="9" id="hbS-Ju-OF5"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="tms-Td-9Ej"/>
@@ -137,11 +131,87 @@
                         <outlet property="answer3" destination="0TN-7E-fIE" id="Oyg-qU-AyG"/>
                         <outlet property="answer4" destination="AO5-Ud-1hR" id="K1x-Ln-Jtt"/>
                         <outlet property="quizQuestion" destination="N0j-jN-CaJ" id="J6M-dG-Zfs"/>
+                        <segue destination="8r4-ua-JZP" kind="modal" identifier="rightAnswer" id="gtX-kn-fEQ"/>
+                        <segue destination="JmU-Nd-Jev" kind="modal" identifier="wrongAnswer" id="l1h-dW-DCU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9J0-jD-Dem" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3092" y="335"/>
+        </scene>
+        <!--Quiz View Controller-->
+        <scene sceneID="474-jd-99d">
+            <objects>
+                <viewController id="8r4-ua-JZP" customClass="QuizViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Uhk-Xo-GU3"/>
+                        <viewControllerLayoutGuide type="bottom" id="CFD-jo-ndI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9GR-mV-rt3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You're right!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bsV-Wp-kAG">
+                                <rect key="frame" x="25" y="50" width="271" height="296"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="39"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kAr-cd-TZB">
+                                <rect key="frame" x="11" y="336" width="299" height="34"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
+                                <state key="normal" title="Next Question">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="answer1Pressed:" destination="5pF-7T-1N0" eventType="touchUpInside" id="ehD-pI-B4u"/>
+                                    <action selector="nextQuestionPressed:" destination="8r4-ua-JZP" eventType="touchUpInside" id="9a1-UJ-648"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xcr-pe-4y9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3493" y="340"/>
+        </scene>
+        <!--Quiz View Controller-->
+        <scene sceneID="hgn-ar-UhV">
+            <objects>
+                <viewController id="JmU-Nd-Jev" customClass="QuizViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2eu-9G-aee"/>
+                        <viewControllerLayoutGuide type="bottom" id="GrU-zv-asw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="COp-Fh-d2i">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nope!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MBv-yn-Pge">
+                                <rect key="frame" x="25" y="90" width="271" height="296"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="39"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JoR-8a-s50">
+                                <rect key="frame" x="11" y="376" width="299" height="34"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
+                                <state key="normal" title="Next Question">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="answer1Pressed:" destination="5pF-7T-1N0" eventType="touchUpInside" id="6hw-DM-MjQ"/>
+                                    <action selector="nextQuestionPressed:" destination="JmU-Nd-Jev" eventType="touchUpInside" id="NSK-6L-EZ0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dHo-M9-OBH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3092" y="1085"/>
         </scene>
         <!--Meme Generator Collection View Controller-->
         <scene sceneID="a3S-VR-oYR">

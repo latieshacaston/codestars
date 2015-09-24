@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+   quotes.plist
+   FreshPrinceApp
+
+   Created by LaTiesha Caston on 9/24/15.
+   Copyright (c) 2015 LaTiesha Caston. All rights reserved.
+-->
+<plist version="1.0">
+   
+   <array>
+       <dict>
+           
+           <key>quizQuestion</key>  <string>Let's go get some BBQ and _____</string>
+           <key>answer1</key>  <string>Drink orange soda</string>
+           <key>answer2</key>  <string>Get Busy</string>
+           <key>answer3</key>  <string>Laugh at vegetarians</string>
+           <key>answer4</key>  <string>Dance the night away</string>
+           <key>correctAnswer</key>  <string>2</string>
+         
+       </dict>
+       
+       <dict>
+           
+           <key>quizQuestion</key>  <string>Girl hurry up and write your _____ down before I dont want it no more</string>
+           <key>answer1</key>  <string>Birthday</string>
+           <key>answer2</key>  <string>Manners</string>
+           <key>answer3</key>  <string>Privilege</string>
+           <key>answer4</key>  <string>Flatulence</string>
+           <key>correctAnswer</key>  <string>4</string>
+           
+       </dict>
+       
+       <dict>
+           
+           <key>quizQuestion</key>  <string>Mind ya _____, just mind ya _____!</string>
+           <key>answer1</key>  <string>Bidness</string>
+           <key>answer2</key>  <string>Manners</string>
+           <key>answer3</key>  <string>Privilege</string>
+           <key>answer4</key>  <string>Flatulence</string>
+           <key>correctAnswer</key>  <string>1</string>
+           
+       </dict>
+       
+       <dict>
+           
+           <key>quizQuestion</key>  <string>Jean Claude Van Dam I’m _____</string>
+           <key>answer1</key>  <string>Gorgeous</string>
+           <key>answer2</key>  <string>Quite Handsome</string>
+           <key>answer3</key>  <string>Fine</string>
+           <key>answer4</key>  <string>Pretentious</string>
+           <key>correctAnswer</key>  <string>3</string>
+           
+       </dict>
+       
+       <dict>
+           
+           <key>quizQuestion</key>  <string>Mama ____________!!!</string>
+           <key>answer1</key>  <string>WHYYYYYYYY</string>
+           <key>answer2</key>  <string>AYEE LMAOOO</string>
+           <key>answer3</key>  <string>NOOOOOOO</string>
+           <key>answer4</key>  <string>YASSSSSS</string>
+           <key>correctAnswer</key>  <string>3</string>
+           
+       </dict>
+   
+   
+   </array>
+   
+</plist>
