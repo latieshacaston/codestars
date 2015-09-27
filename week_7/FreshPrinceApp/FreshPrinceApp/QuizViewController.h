@@ -8,35 +8,43 @@
 
 #import <UIKit/UIKit.h>
 
-@class Quiz;
+
+int questionSelected;
+BOOL answer1Correct;
+BOOL answer2Correct;
+BOOL answer3Correct;
+BOOL answer4Correct;
+int scoreNumber;
+BOOL gameInProgress;
+
+
 
 @interface QuizViewController : UIViewController
 
 
-@property (nonatomic, assign) NSInteger quizIndex;
-@property (nonatomic, strong) Quiz *quiz;
+@property (weak, nonatomic) IBOutlet UILabel *questionLabel;
+
+@property (weak, nonatomic) IBOutlet UIButton *answer1Button;
+
+@property (weak, nonatomic) IBOutlet UIButton *answer2Button;
+
+@property (weak, nonatomic) IBOutlet UIButton *answer3Button;
+
+@property (weak, nonatomic) IBOutlet UIButton *answer4Button;
+
+@property (weak, nonatomic) IBOutlet UILabel *score;
 
 
 
-@property (weak, nonatomic) IBOutlet UILabel *quizQuestion;
-
-
-@property (weak, nonatomic) IBOutlet UIButton *answer1;
-
-@property (weak, nonatomic) IBOutlet UIButton *answer2;
-
-@property (weak, nonatomic) IBOutlet UIButton *answer3;
-
-@property (weak, nonatomic) IBOutlet UIButton *answer4;
-
-// connect this later 
-@property (weak, nonatomic) IBOutlet UILabel * statusLabel;
-
+@property (weak, nonatomic) IBOutlet UIImageView *result;
 
 // add this towards the end: https://developers.google.com/youtube/v3/guides/ios_youtube_helper
 
 @property (weak, nonatomic) IBOutlet UIWebView *answerVideo;
 
+@property (weak, nonatomic) IBOutlet UIButton *nextQuestion;
+
+@property (weak, nonatomic) IBOutlet UIButton *done;
 
 
 
@@ -55,6 +63,16 @@
 
 
 - (IBAction)nextQuestionPressed:(id)sender;
+
+- (IBAction)donePressed:(id)sender; 
+
+
+- (void) showNextQuestion; 
+
+-(void) loadQuestions;
+
+- (void) rightAnswer;
+- (void) wrongAnswer;
 
 
 

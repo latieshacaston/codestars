@@ -9,8 +9,9 @@
 /* Begin PBXBuildFile section */
 		7B75FCA31BB106B30019A97D /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B75FCA21BB106B30019A97D /* HomeViewController.m */; settings = {ASSET_TAGS = (); }; };
 		7B75FCA61BB11AE50019A97D /* QuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B75FCA51BB11AE50019A97D /* QuizViewController.m */; settings = {ASSET_TAGS = (); }; };
-		7B75FCA91BB38A1C0019A97D /* Quiz.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B75FCA81BB38A1C0019A97D /* Quiz.m */; settings = {ASSET_TAGS = (); }; };
 		7B75FCAB1BB3B7590019A97D /* quotes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7B75FCAA1BB3B7590019A97D /* quotes.plist */; settings = {ASSET_TAGS = (); }; };
+		7B75FCB11BB801A60019A97D /* wrong_answer.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B75FCAF1BB801A60019A97D /* wrong_answer.png */; settings = {ASSET_TAGS = (); }; };
+		7B75FCB21BB801A60019A97D /* right_answer.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B75FCB01BB801A60019A97D /* right_answer.png */; settings = {ASSET_TAGS = (); }; };
 		7BD3F8CA1BAD2E9600088C54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BD3F8C91BAD2E9600088C54 /* main.m */; };
 		7BD3F8CD1BAD2E9600088C54 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BD3F8CC1BAD2E9600088C54 /* AppDelegate.m */; };
 		7BD3F8D31BAD2E9600088C54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BD3F8D11BAD2E9600088C54 /* Main.storyboard */; };
@@ -39,9 +40,9 @@
 		7B75FCA21BB106B30019A97D /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		7B75FCA41BB11AE50019A97D /* QuizViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuizViewController.h; sourceTree = "<group>"; };
 		7B75FCA51BB11AE50019A97D /* QuizViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuizViewController.m; sourceTree = "<group>"; };
-		7B75FCA71BB38A1C0019A97D /* Quiz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quiz.h; sourceTree = "<group>"; };
-		7B75FCA81BB38A1C0019A97D /* Quiz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Quiz.m; sourceTree = "<group>"; };
 		7B75FCAA1BB3B7590019A97D /* quotes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = quotes.plist; sourceTree = "<group>"; };
+		7B75FCAF1BB801A60019A97D /* wrong_answer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wrong_answer.png; sourceTree = "<group>"; };
+		7B75FCB01BB801A60019A97D /* right_answer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right_answer.png; sourceTree = "<group>"; };
 		7BD3F8C41BAD2E9600088C54 /* FreshPrinceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreshPrinceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BD3F8C81BAD2E9600088C54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7BD3F8C91BAD2E9600088C54 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -110,8 +111,6 @@
 				7B75FCA51BB11AE50019A97D /* QuizViewController.m */,
 				7BD3F8F61BAD53C600088C54 /* MemeGeneratorCollectionViewController.h */,
 				7BD3F8F71BAD53C600088C54 /* MemeGeneratorCollectionViewController.m */,
-				7B75FCA71BB38A1C0019A97D /* Quiz.h */,
-				7B75FCA81BB38A1C0019A97D /* Quiz.m */,
 				7BD3F8D11BAD2E9600088C54 /* Main.storyboard */,
 				7BD3F8FC1BAD61C100088C54 /* WebViewController.h */,
 				7BD3F8FD1BAD61C100088C54 /* WebViewController.m */,
@@ -128,6 +127,8 @@
 			isa = PBXGroup;
 			children = (
 				7BD3F8FF1BAD624B00088C54 /* about.html */,
+				7B75FCAF1BB801A60019A97D /* wrong_answer.png */,
+				7B75FCB01BB801A60019A97D /* right_answer.png */,
 				7BD3F9011BAD65E400088C54 /* bio.html */,
 				7BD3F8C81BAD2E9600088C54 /* Info.plist */,
 				7BD3F8C91BAD2E9600088C54 /* main.m */,
@@ -233,10 +234,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B75FCB21BB801A60019A97D /* right_answer.png in Resources */,
 				7BD3F9001BAD624B00088C54 /* about.html in Resources */,
 				7BD3F8D31BAD2E9600088C54 /* Main.storyboard in Resources */,
 				7BD3F9021BAD65E400088C54 /* bio.html in Resources */,
 				7BD3F8D81BAD2E9600088C54 /* LaunchScreen.xib in Resources */,
+				7B75FCB11BB801A60019A97D /* wrong_answer.png in Resources */,
 				7BD3F8D51BAD2E9600088C54 /* Images.xcassets in Resources */,
 				7B75FCAB1BB3B7590019A97D /* quotes.plist in Resources */,
 			);
@@ -258,7 +261,6 @@
 			files = (
 				7BD3F8CD1BAD2E9600088C54 /* AppDelegate.m in Sources */,
 				7BD3F8CA1BAD2E9600088C54 /* main.m in Sources */,
-				7B75FCA91BB38A1C0019A97D /* Quiz.m in Sources */,
 				7BD3F8FE1BAD61C100088C54 /* WebViewController.m in Sources */,
 				7BD3F8F81BAD53C600088C54 /* MemeGeneratorCollectionViewController.m in Sources */,
 				7B75FCA31BB106B30019A97D /* HomeViewController.m in Sources */,

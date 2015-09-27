@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Home View Controller-->
@@ -72,65 +71,89 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LEi-7k-Ksm">
-                                <rect key="frame" x="11" y="352" width="299" height="30"/>
+                                <rect key="frame" x="11" y="259" width="299" height="30"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
                                 <state key="normal" title="Answer 1">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="answer1Pressed:" destination="5pF-7T-1N0" eventType="touchUpInside" id="mTW-5j-9Zy"/>
+                                    <action selector="answer1Pressed:" destination="5pF-7T-1N0" eventType="touchUpInside" id="vvL-4B-d6i"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AO5-Ud-1hR">
-                                <rect key="frame" x="11" y="473" width="299" height="30"/>
+                                <rect key="frame" x="11" y="380" width="299" height="30"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
                                 <state key="normal" title="Answer 4">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="answer4Pressed:" destination="5pF-7T-1N0" eventType="touchUpInside" id="haN-mo-4YD"/>
+                                    <action selector="answer4Pressed:" destination="5pF-7T-1N0" eventType="touchUpInside" id="frE-bj-sSb"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Let's go get some BBQ and get   ____________" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N0j-jN-CaJ">
-                                <rect key="frame" x="20" y="64" width="271" height="296"/>
-                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="39"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0TN-7E-fIE">
-                                <rect key="frame" x="11" y="435" width="299" height="30"/>
+                                <rect key="frame" x="11" y="342" width="299" height="30"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
                                 <state key="normal" title="Answer 3">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="answer3Pressed:" destination="5pF-7T-1N0" eventType="touchUpInside" id="Jp3-ab-LBC"/>
+                                    <action selector="answer3Pressed:" destination="5pF-7T-1N0" eventType="touchUpInside" id="vod-Eq-9Fd"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qqy-GJ-Un2">
-                                <rect key="frame" x="11" y="390" width="299" height="30"/>
+                                <rect key="frame" x="11" y="297" width="299" height="30"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
                                 <state key="normal" title="Answer 2">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="answer2Pressed:" destination="5pF-7T-1N0" eventType="touchUpInside" id="koj-va-ArG"/>
+                                    <action selector="answer2Pressed:" destination="5pF-7T-1N0" eventType="touchUpInside" id="YZX-xU-FVO"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Let's go get some BBQ and get   ____________" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N0j-jN-CaJ">
+                                <rect key="frame" x="20" y="72" width="271" height="214"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="31"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WUV-kX-Uon">
+                                <rect key="frame" x="70" y="485" width="176" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xNA-oZ-DuX">
+                                <rect key="frame" x="11" y="485" width="45" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x0v-E8-kX6">
+                                <rect key="frame" x="0.0" y="64" width="320" height="360"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eSl-Ua-e0x">
+                                <rect key="frame" x="11" y="443" width="299" height="34"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
+                                <state key="normal" title="Next Question">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextQuestionPressed:" destination="8r4-ua-JZP" eventType="touchUpInside" id="NrL-ak-a7x"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="leadingMargin" secondItem="N0j-jN-CaJ" secondAttribute="leading" id="DEz-eL-YqN"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="N0j-jN-CaJ" secondAttribute="trailing" constant="9" id="hbS-Ju-OF5"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="tms-Td-9Ej"/>
                     <connections>
-                        <outlet property="answer1" destination="LEi-7k-Ksm" id="meJ-fv-xLe"/>
-                        <outlet property="answer2" destination="qqy-GJ-Un2" id="cbn-sW-ROb"/>
-                        <outlet property="answer3" destination="0TN-7E-fIE" id="Oyg-qU-AyG"/>
-                        <outlet property="answer4" destination="AO5-Ud-1hR" id="K1x-Ln-Jtt"/>
-                        <outlet property="quizQuestion" destination="N0j-jN-CaJ" id="J6M-dG-Zfs"/>
+                        <outlet property="answer1Button" destination="LEi-7k-Ksm" id="QK2-g5-SUQ"/>
+                        <outlet property="answer2Button" destination="qqy-GJ-Un2" id="RaV-1g-EBq"/>
+                        <outlet property="answer3Button" destination="0TN-7E-fIE" id="vbQ-U8-I1v"/>
+                        <outlet property="answer4Button" destination="AO5-Ud-1hR" id="IJb-VP-Gcf"/>
+                        <outlet property="nextQuestion" destination="eSl-Ua-e0x" id="Esh-Ct-9fe"/>
+                        <outlet property="questionLabel" destination="N0j-jN-CaJ" id="EcM-KF-wi9"/>
+                        <outlet property="result" destination="x0v-E8-kX6" id="Wab-GM-LCp"/>
+                        <outlet property="score" destination="WUV-kX-Uon" id="mfP-C4-BuI"/>
                         <segue destination="8r4-ua-JZP" kind="modal" identifier="rightAnswer" id="gtX-kn-fEQ"/>
                         <segue destination="JmU-Nd-Jev" kind="modal" identifier="wrongAnswer" id="l1h-dW-DCU"/>
                     </connections>
@@ -164,15 +187,26 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="answer1Pressed:" destination="5pF-7T-1N0" eventType="touchUpInside" id="ehD-pI-B4u"/>
                                     <action selector="nextQuestionPressed:" destination="8r4-ua-JZP" eventType="touchUpInside" id="9a1-UJ-648"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pgn-3D-ImT">
+                                <rect key="frame" x="142" y="407" width="37" height="30"/>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="donePressed:" destination="8r4-ua-JZP" eventType="touchUpInside" id="hKS-ER-qyX"/>
+                                    <segue destination="RRC-Do-hpw" kind="unwind" unwindAction="unwindToHomeViewController:" id="dO9-22-zWO"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="done" destination="Pgn-3D-ImT" id="yH5-wO-bl5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xcr-pe-4y9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="RRC-Do-hpw" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3493" y="340"/>
         </scene>
@@ -201,7 +235,6 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="answer1Pressed:" destination="5pF-7T-1N0" eventType="touchUpInside" id="6hw-DM-MjQ"/>
                                     <action selector="nextQuestionPressed:" destination="JmU-Nd-Jev" eventType="touchUpInside" id="NSK-6L-EZ0"/>
                                 </connections>
                             </button>
