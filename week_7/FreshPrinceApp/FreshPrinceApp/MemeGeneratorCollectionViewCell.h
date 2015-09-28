@@ -10,4 +10,9 @@
 
 @interface MemeGeneratorCollectionViewCell : UICollectionViewCell
 
+
+@property (weak, nonatomic) IBOutlet UIImageView *memeImageView;
+
+
+
 @end

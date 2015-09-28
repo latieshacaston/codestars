@@ -7,6 +7,7 @@
 //
 
 #import "HomeViewController.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface HomeViewController ()
 
@@ -16,6 +17,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
+   self.quizButton.layer.cornerRadius = 5;
+    self.quizButton.clipsToBounds = YES;
+    
+    
+    self.memeButton.layer.cornerRadius = 5;
+    self.memeButton.clipsToBounds = YES;
+    
+    
     // Do any additional setup after loading the view.
 }
 

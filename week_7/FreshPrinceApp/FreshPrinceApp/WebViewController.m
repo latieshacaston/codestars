@@ -18,9 +18,13 @@
     [super viewDidLoad];
     
     
-    NSURL *url = [NSURL fileURLWithPath:[[NSBundle
-    mainBundle]pathForResource:@"about.html" ofType:nil]];
-    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+//    NSURL *url = [NSURL fileURLWithPath:[[NSBundle
+//    mainBundle]pathForResource:@"about.html" ofType:nil]];
+//    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+//    [self.wikiWebView loadRequest:request];
+    
+    NSURL *url=[NSURL URLWithString:@"https://en.m.wikipedia.org/wiki/The_Fresh_Prince_of_Bel-Air"];
+    NSURLRequest *request=[NSURLRequest requestWithURL:url];
     [self.wikiWebView loadRequest:request];
     
     

@@ -9,16 +9,39 @@
 #import "MemeGeneratorCollectionViewController.h"
 #import "MemeGeneratorCollectionViewCell.h"
 
+#import "MemeCreatorViewController.h"
+
 @interface MemeGeneratorCollectionViewController ()
 
 @end
 
-@implementation MemeGeneratorCollectionViewController
+@implementation MemeGeneratorCollectionViewController {
+
+    NSArray *memeImages;
+    
+
+
+}
 
 static NSString * const reuseIdentifier = @"MemeGeneratorCell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    //searchBar
+
+    
+    
+    
+    //Initialize image arrray
+    
+    memeImages = @[@"001.png", @"002.png", @"003.png", @"004.png",
+                   @"005.png", @"006.png", @"007.png", @"008.png",
+                   @"009.png", @"010.png", @"011.png", @"012.png",
+                   @"013.png", @"014.png", @"015.png"];
+    
+    
+    
     
     // Uncomment the following line to preserve selection between presentations
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -34,15 +57,22 @@ static NSString * const reuseIdentifier = @"MemeGeneratorCell";
     // Dispose of any resources that can be recreated.
 }
 
-/*
+
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if ([segue.identifier isEqualToString:@"segueToCreateMeme"]) {
+        NSArray *indexPaths = [self.collectionView indexPathsForSelectedItems];
+        UINavigationController *destViewController = segue.destinationViewController;
+        MemeCreatorViewController *memeGeneratorViewController = (MemeCreatorViewController *) [destViewController.childViewControllers firstObject];
+        NSIndexPath *indexPath = [indexPaths objectAtIndex:0];
+        memeGeneratorViewController.memeImageName = [memeImages
+                                                objectAtIndex:indexPath.row];
+        [self.collectionView deselectItemAtIndexPath:indexPath animated:NO];
+    }
 }
-*/
+
 
 #pragma mark <UICollectionViewDataSource>
 
@@ -52,14 +82,19 @@ static NSString * const reuseIdentifier = @"MemeGeneratorCell";
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    
 
-    return 1;
+    return memeImages.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+    
+    MemeGeneratorCollectionViewCell *cell = (MemeGeneratorCollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
     
     // Configure the cell
+    cell.memeImageView.image = [UIImage imageNamed:[memeImages objectAtIndex:indexPath.row]];
+    
+    
     
     return cell;
 }
@@ -94,5 +129,8 @@ static NSString * const reuseIdentifier = @"MemeGeneratorCell";
 	
 }
 */
+
+
+
 
 @end

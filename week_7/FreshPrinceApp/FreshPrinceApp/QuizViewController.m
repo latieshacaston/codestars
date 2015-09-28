@@ -10,6 +10,7 @@
 
 
 
+
 @implementation QuizViewController
 
 
@@ -21,7 +22,26 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-
+    // rounded corners for the buttons
+    
+    self.answer1Button.layer.cornerRadius = 5;
+    self.answer1Button.clipsToBounds = YES;
+    
+    self.answer2Button.layer.cornerRadius = 5;
+    self.answer2Button.clipsToBounds = YES;
+    
+    self.answer3Button.layer.cornerRadius = 5;
+    self.answer3Button.clipsToBounds = YES;
+    
+    self.answer4Button.layer.cornerRadius = 5;
+    self.answer4Button.clipsToBounds = YES;
+    
+    self.nextQuestion.layer.cornerRadius = 5;
+    self.nextQuestion.clipsToBounds = YES;
+    
+    self.done.layer.cornerRadius = 5;
+    self.done.clipsToBounds = YES;
+    
     
     
     if (gameInProgress == NO) {

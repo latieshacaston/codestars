@@ -9,6 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface HomeViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIButton *quizButton;
+
+@property (weak, nonatomic) IBOutlet UIButton *memeButton;
+
+
 - (IBAction)quizButtonPressed:(id)sender;
 
 - (IBAction)memeButtonPressed:(id)sender;
