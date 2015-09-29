@@ -53,7 +53,7 @@
     }
     
     self.result.hidden = YES;
-    self.nextQuestion.hidden = YES;
+ //   self.nextQuestion.hidden = YES;
  
     self.score.text = [NSString stringWithFormat:@"%i", scoreNumber];
 
