@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7B9002691BC18A8100DCD35D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B9002681BC18A8100DCD35D /* main.m */; };
+		7B90026C1BC18A8100DCD35D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B90026B1BC18A8100DCD35D /* AppDelegate.m */; };
+		7B90026F1BC18A8100DCD35D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B90026E1BC18A8100DCD35D /* ViewController.m */; };
+		7B9002721BC18A8100DCD35D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B9002701BC18A8100DCD35D /* Main.storyboard */; };
+		7B9002741BC18A8100DCD35D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B9002731BC18A8100DCD35D /* Assets.xcassets */; };
+		7B9002771BC18A8100DCD35D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B9002751BC18A8100DCD35D /* LaunchScreen.storyboard */; };
+		7B9002821BC18A8100DCD35D /* TieshaFavoriteAlbumsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B9002811BC18A8100DCD35D /* TieshaFavoriteAlbumsTests.m */; };
+		7B90028D1BC18A8100DCD35D /* TieshaFavoriteAlbumsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B90028C1BC18A8100DCD35D /* TieshaFavoriteAlbumsUITests.m */; };
+		7B90029C1BC1950A00DCD35D /* AlbumCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B90029B1BC1950A00DCD35D /* AlbumCollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		7B90029F1BC19BC700DCD35D /* AlbumCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B90029E1BC19BC700DCD35D /* AlbumCollectionViewController.m */; settings = {ASSET_TAGS = (); }; };
+		7B9002A21BC1C82C00DCD35D /* AlbumDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B9002A11BC1C82C00DCD35D /* AlbumDetailViewController.m */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7B90027E1BC18A8100DCD35D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B90025C1BC18A8100DCD35D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B9002631BC18A8100DCD35D;
+			remoteInfo = TieshaFavoriteAlbums;
+		};
+		7B9002891BC18A8100DCD35D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B90025C1BC18A8100DCD35D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B9002631BC18A8100DCD35D;
+			remoteInfo = TieshaFavoriteAlbums;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7B9002641BC18A8100DCD35D /* TieshaFavoriteAlbums.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TieshaFavoriteAlbums.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B9002681BC18A8100DCD35D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7B90026A1BC18A8100DCD35D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7B90026B1BC18A8100DCD35D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7B90026D1BC18A8100DCD35D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7B90026E1BC18A8100DCD35D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7B9002711BC18A8100DCD35D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7B9002731BC18A8100DCD35D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7B9002761BC18A8100DCD35D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7B9002781BC18A8100DCD35D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B90027D1BC18A8100DCD35D /* TieshaFavoriteAlbumsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TieshaFavoriteAlbumsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B9002811BC18A8100DCD35D /* TieshaFavoriteAlbumsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TieshaFavoriteAlbumsTests.m; sourceTree = "<group>"; };
+		7B9002831BC18A8100DCD35D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B9002881BC18A8100DCD35D /* TieshaFavoriteAlbumsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TieshaFavoriteAlbumsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B90028C1BC18A8100DCD35D /* TieshaFavoriteAlbumsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TieshaFavoriteAlbumsUITests.m; sourceTree = "<group>"; };
+		7B90028E1BC18A8100DCD35D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B90029A1BC1950A00DCD35D /* AlbumCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumCollectionViewCell.h; sourceTree = "<group>"; };
+		7B90029B1BC1950A00DCD35D /* AlbumCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumCollectionViewCell.m; sourceTree = "<group>"; };
+		7B90029D1BC19BC700DCD35D /* AlbumCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumCollectionViewController.h; sourceTree = "<group>"; };
+		7B90029E1BC19BC700DCD35D /* AlbumCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumCollectionViewController.m; sourceTree = "<group>"; };
+		7B9002A01BC1C82C00DCD35D /* AlbumDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumDetailViewController.h; sourceTree = "<group>"; };
+		7B9002A11BC1C82C00DCD35D /* AlbumDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumDetailViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7B9002611BC18A8100DCD35D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B90027A1BC18A8100DCD35D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B9002851BC18A8100DCD35D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7B90025B1BC18A8100DCD35D = {
+			isa = PBXGroup;
+			children = (
+				7B9002661BC18A8100DCD35D /* TieshaFavoriteAlbums */,
+				7B9002801BC18A8100DCD35D /* TieshaFavoriteAlbumsTests */,
+				7B90028B1BC18A8100DCD35D /* TieshaFavoriteAlbumsUITests */,
+				7B9002651BC18A8100DCD35D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7B9002651BC18A8100DCD35D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7B9002641BC18A8100DCD35D /* TieshaFavoriteAlbums.app */,
+				7B90027D1BC18A8100DCD35D /* TieshaFavoriteAlbumsTests.xctest */,
+				7B9002881BC18A8100DCD35D /* TieshaFavoriteAlbumsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7B9002661BC18A8100DCD35D /* TieshaFavoriteAlbums */ = {
+			isa = PBXGroup;
+			children = (
+				7B90026A1BC18A8100DCD35D /* AppDelegate.h */,
+				7B90026B1BC18A8100DCD35D /* AppDelegate.m */,
+				7B90026D1BC18A8100DCD35D /* ViewController.h */,
+				7B90026E1BC18A8100DCD35D /* ViewController.m */,
+				7B90029A1BC1950A00DCD35D /* AlbumCollectionViewCell.h */,
+				7B90029B1BC1950A00DCD35D /* AlbumCollectionViewCell.m */,
+				7B90029D1BC19BC700DCD35D /* AlbumCollectionViewController.h */,
+				7B90029E1BC19BC700DCD35D /* AlbumCollectionViewController.m */,
+				7B9002A01BC1C82C00DCD35D /* AlbumDetailViewController.h */,
+				7B9002A11BC1C82C00DCD35D /* AlbumDetailViewController.m */,
+				7B9002701BC18A8100DCD35D /* Main.storyboard */,
+				7B9002731BC18A8100DCD35D /* Assets.xcassets */,
+				7B9002751BC18A8100DCD35D /* LaunchScreen.storyboard */,
+				7B9002781BC18A8100DCD35D /* Info.plist */,
+				7B9002671BC18A8100DCD35D /* Supporting Files */,
+			);
+			path = TieshaFavoriteAlbums;
+			sourceTree = "<group>";
+		};
+		7B9002671BC18A8100DCD35D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7B9002681BC18A8100DCD35D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7B9002801BC18A8100DCD35D /* TieshaFavoriteAlbumsTests */ = {
+			isa = PBXGroup;
+			children = (
+				7B9002811BC18A8100DCD35D /* TieshaFavoriteAlbumsTests.m */,
+				7B9002831BC18A8100DCD35D /* Info.plist */,
+			);
+			path = TieshaFavoriteAlbumsTests;
+			sourceTree = "<group>";
+		};
+		7B90028B1BC18A8100DCD35D /* TieshaFavoriteAlbumsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7B90028C1BC18A8100DCD35D /* TieshaFavoriteAlbumsUITests.m */,
+				7B90028E1BC18A8100DCD35D /* Info.plist */,
+			);
+			path = TieshaFavoriteAlbumsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7B9002631BC18A8100DCD35D /* TieshaFavoriteAlbums */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B9002911BC18A8100DCD35D /* Build configuration list for PBXNativeTarget "TieshaFavoriteAlbums" */;
+			buildPhases = (
+				7B9002601BC18A8100DCD35D /* Sources */,
+				7B9002611BC18A8100DCD35D /* Frameworks */,
+				7B9002621BC18A8100DCD35D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TieshaFavoriteAlbums;
+			productName = TieshaFavoriteAlbums;
+			productReference = 7B9002641BC18A8100DCD35D /* TieshaFavoriteAlbums.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7B90027C1BC18A8100DCD35D /* TieshaFavoriteAlbumsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B9002941BC18A8100DCD35D /* Build configuration list for PBXNativeTarget "TieshaFavoriteAlbumsTests" */;
+			buildPhases = (
+				7B9002791BC18A8100DCD35D /* Sources */,
+				7B90027A1BC18A8100DCD35D /* Frameworks */,
+				7B90027B1BC18A8100DCD35D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7B90027F1BC18A8100DCD35D /* PBXTargetDependency */,
+			);
+			name = TieshaFavoriteAlbumsTests;
+			productName = TieshaFavoriteAlbumsTests;
+			productReference = 7B90027D1BC18A8100DCD35D /* TieshaFavoriteAlbumsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7B9002871BC18A8100DCD35D /* TieshaFavoriteAlbumsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B9002971BC18A8100DCD35D /* Build configuration list for PBXNativeTarget "TieshaFavoriteAlbumsUITests" */;
+			buildPhases = (
+				7B9002841BC18A8100DCD35D /* Sources */,
+				7B9002851BC18A8100DCD35D /* Frameworks */,
+				7B9002861BC18A8100DCD35D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7B90028A1BC18A8100DCD35D /* PBXTargetDependency */,
+			);
+			name = TieshaFavoriteAlbumsUITests;
+			productName = TieshaFavoriteAlbumsUITests;
+			productReference = 7B9002881BC18A8100DCD35D /* TieshaFavoriteAlbumsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7B90025C1BC18A8100DCD35D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "LaTiesha Caston";
+				TargetAttributes = {
+					7B9002631BC18A8100DCD35D = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					7B90027C1BC18A8100DCD35D = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 7B9002631BC18A8100DCD35D;
+					};
+					7B9002871BC18A8100DCD35D = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 7B9002631BC18A8100DCD35D;
+					};
+				};
+			};
+			buildConfigurationList = 7B90025F1BC18A8100DCD35D /* Build configuration list for PBXProject "TieshaFavoriteAlbums" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7B90025B1BC18A8100DCD35D;
+			productRefGroup = 7B9002651BC18A8100DCD35D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7B9002631BC18A8100DCD35D /* TieshaFavoriteAlbums */,
+				7B90027C1BC18A8100DCD35D /* TieshaFavoriteAlbumsTests */,
+				7B9002871BC18A8100DCD35D /* TieshaFavoriteAlbumsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7B9002621BC18A8100DCD35D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B9002771BC18A8100DCD35D /* LaunchScreen.storyboard in Resources */,
+				7B9002741BC18A8100DCD35D /* Assets.xcassets in Resources */,
+				7B9002721BC18A8100DCD35D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B90027B1BC18A8100DCD35D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B9002861BC18A8100DCD35D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7B9002601BC18A8100DCD35D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B90029C1BC1950A00DCD35D /* AlbumCollectionViewCell.m in Sources */,
+				7B90029F1BC19BC700DCD35D /* AlbumCollectionViewController.m in Sources */,
+				7B90026F1BC18A8100DCD35D /* ViewController.m in Sources */,
+				7B90026C1BC18A8100DCD35D /* AppDelegate.m in Sources */,
+				7B9002691BC18A8100DCD35D /* main.m in Sources */,
+				7B9002A21BC1C82C00DCD35D /* AlbumDetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B9002791BC18A8100DCD35D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B9002821BC18A8100DCD35D /* TieshaFavoriteAlbumsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B9002841BC18A8100DCD35D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B90028D1BC18A8100DCD35D /* TieshaFavoriteAlbumsUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7B90027F1BC18A8100DCD35D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7B9002631BC18A8100DCD35D /* TieshaFavoriteAlbums */;
+			targetProxy = 7B90027E1BC18A8100DCD35D /* PBXContainerItemProxy */;
+		};
+		7B90028A1BC18A8100DCD35D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7B9002631BC18A8100DCD35D /* TieshaFavoriteAlbums */;
+			targetProxy = 7B9002891BC18A8100DCD35D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7B9002701BC18A8100DCD35D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B9002711BC18A8100DCD35D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7B9002751BC18A8100DCD35D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B9002761BC18A8100DCD35D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7B90028F1BC18A8100DCD35D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7B9002901BC18A8100DCD35D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7B9002921BC18A8100DCD35D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TieshaFavoriteAlbums/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.latieshacaston.TieshaFavoriteAlbums;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7B9002931BC18A8100DCD35D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TieshaFavoriteAlbums/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.latieshacaston.TieshaFavoriteAlbums;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7B9002951BC18A8100DCD35D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TieshaFavoriteAlbumsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.latieshacaston.TieshaFavoriteAlbumsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TieshaFavoriteAlbums.app/TieshaFavoriteAlbums";
+			};
+			name = Debug;
+		};
+		7B9002961BC18A8100DCD35D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TieshaFavoriteAlbumsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.latieshacaston.TieshaFavoriteAlbumsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TieshaFavoriteAlbums.app/TieshaFavoriteAlbums";
+			};
+			name = Release;
+		};
+		7B9002981BC18A8100DCD35D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TieshaFavoriteAlbumsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.latieshacaston.TieshaFavoriteAlbumsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TieshaFavoriteAlbums;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		7B9002991BC18A8100DCD35D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TieshaFavoriteAlbumsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.latieshacaston.TieshaFavoriteAlbumsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TieshaFavoriteAlbums;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7B90025F1BC18A8100DCD35D /* Build configuration list for PBXProject "TieshaFavoriteAlbums" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B90028F1BC18A8100DCD35D /* Debug */,
+				7B9002901BC18A8100DCD35D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B9002911BC18A8100DCD35D /* Build configuration list for PBXNativeTarget "TieshaFavoriteAlbums" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B9002921BC18A8100DCD35D /* Debug */,
+				7B9002931BC18A8100DCD35D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7B9002941BC18A8100DCD35D /* Build configuration list for PBXNativeTarget "TieshaFavoriteAlbumsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B9002951BC18A8100DCD35D /* Debug */,
+				7B9002961BC18A8100DCD35D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7B9002971BC18A8100DCD35D /* Build configuration list for PBXNativeTarget "TieshaFavoriteAlbumsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B9002981BC18A8100DCD35D /* Debug */,
+				7B9002991BC18A8100DCD35D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7B90025C1BC18A8100DCD35D /* Project object */;
+}

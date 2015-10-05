@@ -1,0 +1,560 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7B9001D91BC08B2B00DCD35D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B9001D81BC08B2B00DCD35D /* main.m */; };
+		7B9001DC1BC08B2B00DCD35D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B9001DB1BC08B2B00DCD35D /* AppDelegate.m */; };
+		7B9001DF1BC08B2B00DCD35D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B9001DE1BC08B2B00DCD35D /* ViewController.m */; };
+		7B9001E21BC08B2B00DCD35D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B9001E01BC08B2B00DCD35D /* Main.storyboard */; };
+		7B9001E51BC08B2B00DCD35D /* RecipeStore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7B9001E31BC08B2B00DCD35D /* RecipeStore.xcdatamodeld */; };
+		7B9001E71BC08B2C00DCD35D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B9001E61BC08B2C00DCD35D /* Assets.xcassets */; };
+		7B9001EA1BC08B2C00DCD35D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B9001E81BC08B2C00DCD35D /* LaunchScreen.storyboard */; };
+		7B9001F51BC08B2C00DCD35D /* RecipeStoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B9001F41BC08B2C00DCD35D /* RecipeStoreTests.m */; };
+		7B9002001BC08B2C00DCD35D /* RecipeStoreUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B9001FF1BC08B2C00DCD35D /* RecipeStoreUITests.m */; };
+		7B90020F1BC091BB00DCD35D /* AddRecipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B90020E1BC091BB00DCD35D /* AddRecipeViewController.m */; settings = {ASSET_TAGS = (); }; };
+		7B9002121BC0947A00DCD35D /* RecipeStoreTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B9002111BC0947A00DCD35D /* RecipeStoreTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		7B9002171BC0963100DCD35D /* Recipe+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B9002141BC0963100DCD35D /* Recipe+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
+		7B9002181BC0963100DCD35D /* Recipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B9002161BC0963100DCD35D /* Recipe.m */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7B9001F11BC08B2C00DCD35D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B9001CC1BC08B2B00DCD35D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B9001D31BC08B2B00DCD35D;
+			remoteInfo = RecipeStore;
+		};
+		7B9001FC1BC08B2C00DCD35D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B9001CC1BC08B2B00DCD35D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B9001D31BC08B2B00DCD35D;
+			remoteInfo = RecipeStore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7B9001D41BC08B2B00DCD35D /* RecipeStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipeStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B9001D81BC08B2B00DCD35D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7B9001DA1BC08B2B00DCD35D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7B9001DB1BC08B2B00DCD35D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7B9001DD1BC08B2B00DCD35D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7B9001DE1BC08B2B00DCD35D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7B9001E11BC08B2B00DCD35D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7B9001E41BC08B2B00DCD35D /* RecipeStore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RecipeStore.xcdatamodel; sourceTree = "<group>"; };
+		7B9001E61BC08B2C00DCD35D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7B9001E91BC08B2C00DCD35D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7B9001EB1BC08B2C00DCD35D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B9001F01BC08B2C00DCD35D /* RecipeStoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecipeStoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B9001F41BC08B2C00DCD35D /* RecipeStoreTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecipeStoreTests.m; sourceTree = "<group>"; };
+		7B9001F61BC08B2C00DCD35D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B9001FB1BC08B2C00DCD35D /* RecipeStoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecipeStoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B9001FF1BC08B2C00DCD35D /* RecipeStoreUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecipeStoreUITests.m; sourceTree = "<group>"; };
+		7B9002011BC08B2C00DCD35D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B90020D1BC091BB00DCD35D /* AddRecipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddRecipeViewController.h; sourceTree = "<group>"; };
+		7B90020E1BC091BB00DCD35D /* AddRecipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddRecipeViewController.m; sourceTree = "<group>"; };
+		7B9002101BC0947A00DCD35D /* RecipeStoreTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeStoreTableViewController.h; sourceTree = "<group>"; };
+		7B9002111BC0947A00DCD35D /* RecipeStoreTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeStoreTableViewController.m; sourceTree = "<group>"; };
+		7B9002131BC0963100DCD35D /* Recipe+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Recipe+CoreDataProperties.h"; sourceTree = "<group>"; };
+		7B9002141BC0963100DCD35D /* Recipe+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Recipe+CoreDataProperties.m"; sourceTree = "<group>"; };
+		7B9002151BC0963100DCD35D /* Recipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Recipe.h; sourceTree = "<group>"; };
+		7B9002161BC0963100DCD35D /* Recipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Recipe.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7B9001D11BC08B2B00DCD35D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B9001ED1BC08B2C00DCD35D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B9001F81BC08B2C00DCD35D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7B9001CB1BC08B2B00DCD35D = {
+			isa = PBXGroup;
+			children = (
+				7B9002131BC0963100DCD35D /* Recipe+CoreDataProperties.h */,
+				7B9002141BC0963100DCD35D /* Recipe+CoreDataProperties.m */,
+				7B9002151BC0963100DCD35D /* Recipe.h */,
+				7B9002161BC0963100DCD35D /* Recipe.m */,
+				7B9001D61BC08B2B00DCD35D /* RecipeStore */,
+				7B9001F31BC08B2C00DCD35D /* RecipeStoreTests */,
+				7B9001FE1BC08B2C00DCD35D /* RecipeStoreUITests */,
+				7B9001D51BC08B2B00DCD35D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7B9001D51BC08B2B00DCD35D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7B9001D41BC08B2B00DCD35D /* RecipeStore.app */,
+				7B9001F01BC08B2C00DCD35D /* RecipeStoreTests.xctest */,
+				7B9001FB1BC08B2C00DCD35D /* RecipeStoreUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7B9001D61BC08B2B00DCD35D /* RecipeStore */ = {
+			isa = PBXGroup;
+			children = (
+				7B9001DA1BC08B2B00DCD35D /* AppDelegate.h */,
+				7B9001DB1BC08B2B00DCD35D /* AppDelegate.m */,
+				7B9001DD1BC08B2B00DCD35D /* ViewController.h */,
+				7B9001DE1BC08B2B00DCD35D /* ViewController.m */,
+				7B90020D1BC091BB00DCD35D /* AddRecipeViewController.h */,
+				7B90020E1BC091BB00DCD35D /* AddRecipeViewController.m */,
+				7B9002101BC0947A00DCD35D /* RecipeStoreTableViewController.h */,
+				7B9002111BC0947A00DCD35D /* RecipeStoreTableViewController.m */,
+				7B9001E01BC08B2B00DCD35D /* Main.storyboard */,
+				7B9001E61BC08B2C00DCD35D /* Assets.xcassets */,
+				7B9001E81BC08B2C00DCD35D /* LaunchScreen.storyboard */,
+				7B9001EB1BC08B2C00DCD35D /* Info.plist */,
+				7B9001E31BC08B2B00DCD35D /* RecipeStore.xcdatamodeld */,
+				7B9001D71BC08B2B00DCD35D /* Supporting Files */,
+			);
+			path = RecipeStore;
+			sourceTree = "<group>";
+		};
+		7B9001D71BC08B2B00DCD35D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7B9001D81BC08B2B00DCD35D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7B9001F31BC08B2C00DCD35D /* RecipeStoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				7B9001F41BC08B2C00DCD35D /* RecipeStoreTests.m */,
+				7B9001F61BC08B2C00DCD35D /* Info.plist */,
+			);
+			path = RecipeStoreTests;
+			sourceTree = "<group>";
+		};
+		7B9001FE1BC08B2C00DCD35D /* RecipeStoreUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7B9001FF1BC08B2C00DCD35D /* RecipeStoreUITests.m */,
+				7B9002011BC08B2C00DCD35D /* Info.plist */,
+			);
+			path = RecipeStoreUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7B9001D31BC08B2B00DCD35D /* RecipeStore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B9002041BC08B2C00DCD35D /* Build configuration list for PBXNativeTarget "RecipeStore" */;
+			buildPhases = (
+				7B9001D01BC08B2B00DCD35D /* Sources */,
+				7B9001D11BC08B2B00DCD35D /* Frameworks */,
+				7B9001D21BC08B2B00DCD35D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RecipeStore;
+			productName = RecipeStore;
+			productReference = 7B9001D41BC08B2B00DCD35D /* RecipeStore.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7B9001EF1BC08B2C00DCD35D /* RecipeStoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B9002071BC08B2C00DCD35D /* Build configuration list for PBXNativeTarget "RecipeStoreTests" */;
+			buildPhases = (
+				7B9001EC1BC08B2C00DCD35D /* Sources */,
+				7B9001ED1BC08B2C00DCD35D /* Frameworks */,
+				7B9001EE1BC08B2C00DCD35D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7B9001F21BC08B2C00DCD35D /* PBXTargetDependency */,
+			);
+			name = RecipeStoreTests;
+			productName = RecipeStoreTests;
+			productReference = 7B9001F01BC08B2C00DCD35D /* RecipeStoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7B9001FA1BC08B2C00DCD35D /* RecipeStoreUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B90020A1BC08B2C00DCD35D /* Build configuration list for PBXNativeTarget "RecipeStoreUITests" */;
+			buildPhases = (
+				7B9001F71BC08B2C00DCD35D /* Sources */,
+				7B9001F81BC08B2C00DCD35D /* Frameworks */,
+				7B9001F91BC08B2C00DCD35D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7B9001FD1BC08B2C00DCD35D /* PBXTargetDependency */,
+			);
+			name = RecipeStoreUITests;
+			productName = RecipeStoreUITests;
+			productReference = 7B9001FB1BC08B2C00DCD35D /* RecipeStoreUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7B9001CC1BC08B2B00DCD35D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "LaTiesha Caston";
+				TargetAttributes = {
+					7B9001D31BC08B2B00DCD35D = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					7B9001EF1BC08B2C00DCD35D = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 7B9001D31BC08B2B00DCD35D;
+					};
+					7B9001FA1BC08B2C00DCD35D = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 7B9001D31BC08B2B00DCD35D;
+					};
+				};
+			};
+			buildConfigurationList = 7B9001CF1BC08B2B00DCD35D /* Build configuration list for PBXProject "RecipeStore" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7B9001CB1BC08B2B00DCD35D;
+			productRefGroup = 7B9001D51BC08B2B00DCD35D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7B9001D31BC08B2B00DCD35D /* RecipeStore */,
+				7B9001EF1BC08B2C00DCD35D /* RecipeStoreTests */,
+				7B9001FA1BC08B2C00DCD35D /* RecipeStoreUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7B9001D21BC08B2B00DCD35D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B9001EA1BC08B2C00DCD35D /* LaunchScreen.storyboard in Resources */,
+				7B9001E71BC08B2C00DCD35D /* Assets.xcassets in Resources */,
+				7B9001E21BC08B2B00DCD35D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B9001EE1BC08B2C00DCD35D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B9001F91BC08B2C00DCD35D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7B9001D01BC08B2B00DCD35D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B9002171BC0963100DCD35D /* Recipe+CoreDataProperties.m in Sources */,
+				7B9001DF1BC08B2B00DCD35D /* ViewController.m in Sources */,
+				7B9001E51BC08B2B00DCD35D /* RecipeStore.xcdatamodeld in Sources */,
+				7B9002181BC0963100DCD35D /* Recipe.m in Sources */,
+				7B9002121BC0947A00DCD35D /* RecipeStoreTableViewController.m in Sources */,
+				7B9001DC1BC08B2B00DCD35D /* AppDelegate.m in Sources */,
+				7B9001D91BC08B2B00DCD35D /* main.m in Sources */,
+				7B90020F1BC091BB00DCD35D /* AddRecipeViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B9001EC1BC08B2C00DCD35D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B9001F51BC08B2C00DCD35D /* RecipeStoreTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B9001F71BC08B2C00DCD35D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B9002001BC08B2C00DCD35D /* RecipeStoreUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7B9001F21BC08B2C00DCD35D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7B9001D31BC08B2B00DCD35D /* RecipeStore */;
+			targetProxy = 7B9001F11BC08B2C00DCD35D /* PBXContainerItemProxy */;
+		};
+		7B9001FD1BC08B2C00DCD35D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7B9001D31BC08B2B00DCD35D /* RecipeStore */;
+			targetProxy = 7B9001FC1BC08B2C00DCD35D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7B9001E01BC08B2B00DCD35D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B9001E11BC08B2B00DCD35D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7B9001E81BC08B2C00DCD35D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B9001E91BC08B2C00DCD35D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7B9002021BC08B2C00DCD35D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7B9002031BC08B2C00DCD35D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7B9002051BC08B2C00DCD35D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RecipeStore/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.latieshacaston.RecipeStore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7B9002061BC08B2C00DCD35D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RecipeStore/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.latieshacaston.RecipeStore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7B9002081BC08B2C00DCD35D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RecipeStoreTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.latieshacaston.RecipeStoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RecipeStore.app/RecipeStore";
+			};
+			name = Debug;
+		};
+		7B9002091BC08B2C00DCD35D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RecipeStoreTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.latieshacaston.RecipeStoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RecipeStore.app/RecipeStore";
+			};
+			name = Release;
+		};
+		7B90020B1BC08B2C00DCD35D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RecipeStoreUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.latieshacaston.RecipeStoreUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RecipeStore;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		7B90020C1BC08B2C00DCD35D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RecipeStoreUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.latieshacaston.RecipeStoreUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RecipeStore;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7B9001CF1BC08B2B00DCD35D /* Build configuration list for PBXProject "RecipeStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B9002021BC08B2C00DCD35D /* Debug */,
+				7B9002031BC08B2C00DCD35D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B9002041BC08B2C00DCD35D /* Build configuration list for PBXNativeTarget "RecipeStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B9002051BC08B2C00DCD35D /* Debug */,
+				7B9002061BC08B2C00DCD35D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7B9002071BC08B2C00DCD35D /* Build configuration list for PBXNativeTarget "RecipeStoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B9002081BC08B2C00DCD35D /* Debug */,
+				7B9002091BC08B2C00DCD35D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7B90020A1BC08B2C00DCD35D /* Build configuration list for PBXNativeTarget "RecipeStoreUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B90020B1BC08B2C00DCD35D /* Debug */,
+				7B90020C1BC08B2C00DCD35D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7B9001E31BC08B2B00DCD35D /* RecipeStore.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7B9001E41BC08B2B00DCD35D /* RecipeStore.xcdatamodel */,
+			);
+			currentVersion = 7B9001E41BC08B2B00DCD35D /* RecipeStore.xcdatamodel */;
+			path = RecipeStore.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7B9001CC1BC08B2B00DCD35D /* Project object */;
+}
