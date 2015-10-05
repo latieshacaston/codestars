@@ -9,6 +9,7 @@
 #import "RecipeStoreTableViewController.h"
 #import "AppDelegate.h"
 #import "Recipe.h"
+#import "AddRecipeViewController.h"
 
 @interface RecipeStoreTableViewController ()
 
@@ -59,6 +60,38 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
+
+
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+
+    return YES;
+
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+
+//Delete the row from the data source
+    
+    AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    NSManagedObjectContext *managedObjectContext = [appDelegate managedObjectContext];
+    
+    
+    if (managedObjectContext != nil) {
+    
+    
+        Recipe *recipeToDelete = (Recipe *)[fetchResultsController objectAtIndexPath:indexPath];
+        [managedObjectContext deleteObject:recipeToDelete];
+        
+        NSError *error;
+        
+        if (![managedObjectContext save:&error]) {
+            NSLog(@"Can't delete the record! %@ %@", error, [error localizedDescription]);
+        }
+    
+    }
+
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -129,6 +162,24 @@
 }
 
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+    
+    if ([[segue identifier] isEqualToString:@"UpdateRecipe"]) {
+    
+        Recipe *selectedRecipe = [recipes objectAtIndex:[[self.tableView indexPathForSelectedRow]row]];
+        
+        UINavigationController *destViewController = segue.destinationViewController;
+        AddRecipeViewController *recipeViewController = (AddRecipeViewController *)destViewController.topViewController;
+        recipeViewController.selectedRecipe = selectedRecipe; 
+    
+    
+    }
+    
+    
+    
+}
 
 
 
@@ -220,14 +271,8 @@
 }
 */
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+
+
 
 @end
