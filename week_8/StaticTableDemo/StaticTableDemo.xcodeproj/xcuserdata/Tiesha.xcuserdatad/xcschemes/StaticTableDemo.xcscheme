@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7B9001D31BC08B2B00DCD35D"
-               BuildableName = "RecipeStore.app"
-               BlueprintName = "RecipeStore"
-               ReferencedContainer = "container:RecipeStore.xcodeproj">
+               BlueprintIdentifier = "7B9002AB1BC4A8AE00DCD35D"
+               BuildableName = "StaticTableDemo.app"
+               BlueprintName = "StaticTableDemo"
+               ReferencedContainer = "container:StaticTableDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,30 +32,30 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7B9001EF1BC08B2C00DCD35D"
-               BuildableName = "RecipeStoreTests.xctest"
-               BlueprintName = "RecipeStoreTests"
-               ReferencedContainer = "container:RecipeStore.xcodeproj">
+               BlueprintIdentifier = "7B9002C41BC4A8AE00DCD35D"
+               BuildableName = "StaticTableDemoTests.xctest"
+               BlueprintName = "StaticTableDemoTests"
+               ReferencedContainer = "container:StaticTableDemo.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7B9001FA1BC08B2C00DCD35D"
-               BuildableName = "RecipeStoreUITests.xctest"
-               BlueprintName = "RecipeStoreUITests"
-               ReferencedContainer = "container:RecipeStore.xcodeproj">
+               BlueprintIdentifier = "7B9002CF1BC4A8AF00DCD35D"
+               BuildableName = "StaticTableDemoUITests.xctest"
+               BlueprintName = "StaticTableDemoUITests"
+               ReferencedContainer = "container:StaticTableDemo.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7B9001D31BC08B2B00DCD35D"
-            BuildableName = "RecipeStore.app"
-            BlueprintName = "RecipeStore"
-            ReferencedContainer = "container:RecipeStore.xcodeproj">
+            BlueprintIdentifier = "7B9002AB1BC4A8AE00DCD35D"
+            BuildableName = "StaticTableDemo.app"
+            BlueprintName = "StaticTableDemo"
+            ReferencedContainer = "container:StaticTableDemo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -75,18 +75,12 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7B9001D31BC08B2B00DCD35D"
-            BuildableName = "RecipeStore.app"
-            BlueprintName = "RecipeStore"
-            ReferencedContainer = "container:RecipeStore.xcodeproj">
+            BlueprintIdentifier = "7B9002AB1BC4A8AE00DCD35D"
+            BuildableName = "StaticTableDemo.app"
+            BlueprintName = "StaticTableDemo"
+            ReferencedContainer = "container:StaticTableDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <CommandLineArguments>
-         <CommandLineArgument
-            argument = "-com.apple.CoreData.SQLDebug 1"
-            isEnabled = "YES">
-         </CommandLineArgument>
-      </CommandLineArguments>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -100,10 +94,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7B9001D31BC08B2B00DCD35D"
-            BuildableName = "RecipeStore.app"
-            BlueprintName = "RecipeStore"
-            ReferencedContainer = "container:RecipeStore.xcodeproj">
+            BlueprintIdentifier = "7B9002AB1BC4A8AE00DCD35D"
+            BuildableName = "StaticTableDemo.app"
+            BlueprintName = "StaticTableDemo"
+            ReferencedContainer = "container:StaticTableDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
