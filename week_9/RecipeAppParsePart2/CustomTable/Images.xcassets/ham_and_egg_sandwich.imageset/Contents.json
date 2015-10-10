@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "idiom" : "universal",
+      "scale" : "1x",
+      "filename" : "ham_and_egg_sandwich.jpg"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x",
+      "filename" : "ham_and_egg_sandwich@2x.jpg"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x",
+      "filename" : "ham_and_egg_sandwich@3x.jpg"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}
