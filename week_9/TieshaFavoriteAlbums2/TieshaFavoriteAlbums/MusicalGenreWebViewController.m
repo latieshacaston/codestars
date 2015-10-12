@@ -31,15 +31,7 @@
     NSLog (@"They passed %@, The request is %@", self.URLString, newRequest);
     
     
-    
-    NSURL *greatestArtistURL = [NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:@"greatestArtist.html" ofType:nil]];
-    
-    NSURLRequest *greatestArtistRequest = [NSURLRequest requestWithURL:greatestArtistURL];
-    [self.bestArtistWebView loadRequest:greatestArtistRequest];
-    
-    NSLog (@"%@", greatestArtistURL); 
-    
-    
+  
     
 
 }

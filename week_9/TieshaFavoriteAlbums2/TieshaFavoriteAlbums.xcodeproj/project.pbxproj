@@ -21,8 +21,9 @@
 		7BB625881BCA1A3D00CA12C6 /* MusicalGenreTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BB625871BCA1A3D00CA12C6 /* MusicalGenreTableViewController.m */; settings = {ASSET_TAGS = (); }; };
 		7BB6258B1BCA1DD600CA12C6 /* MusicalGenreTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BB6258A1BCA1DD600CA12C6 /* MusicalGenreTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		7BB6258E1BCA2B0C00CA12C6 /* MusicalGenreWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BB6258D1BCA2B0C00CA12C6 /* MusicalGenreWebViewController.m */; settings = {ASSET_TAGS = (); }; };
-		7BB625901BCB388E00CA12C6 /* greatestArtist.html in Resources */ = {isa = PBXBuildFile; fileRef = 7BB6258F1BCB388E00CA12C6 /* greatestArtist.html */; settings = {ASSET_TAGS = (); }; };
 		7BB625921BCB400800CA12C6 /* Stevie_Wonder_Header.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BB625911BCB400800CA12C6 /* Stevie_Wonder_Header.png */; settings = {ASSET_TAGS = (); }; };
+		7BB625941BCB541400CA12C6 /* greatestArtist.html in Resources */ = {isa = PBXBuildFile; fileRef = 7BB625931BCB541400CA12C6 /* greatestArtist.html */; settings = {ASSET_TAGS = (); }; };
+		7BB625971BCC0AF200CA12C6 /* GreatistArtistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BB625961BCC0AF200CA12C6 /* GreatistArtistViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,8 +72,10 @@
 		7BB6258A1BCA1DD600CA12C6 /* MusicalGenreTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicalGenreTableViewCell.m; sourceTree = "<group>"; };
 		7BB6258C1BCA2B0C00CA12C6 /* MusicalGenreWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicalGenreWebViewController.h; sourceTree = "<group>"; };
 		7BB6258D1BCA2B0C00CA12C6 /* MusicalGenreWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicalGenreWebViewController.m; sourceTree = "<group>"; };
-		7BB6258F1BCB388E00CA12C6 /* greatestArtist.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = greatestArtist.html; path = ../../../week_7/FreshPrinceApp/FreshPrinceApp/greatestArtist.html; sourceTree = "<group>"; };
 		7BB625911BCB400800CA12C6 /* Stevie_Wonder_Header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Stevie_Wonder_Header.png; sourceTree = "<group>"; };
+		7BB625931BCB541400CA12C6 /* greatestArtist.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = greatestArtist.html; sourceTree = "<group>"; };
+		7BB625951BCC0AF200CA12C6 /* GreatistArtistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreatistArtistViewController.h; sourceTree = "<group>"; };
+		7BB625961BCC0AF200CA12C6 /* GreatistArtistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GreatistArtistViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +142,8 @@
 				7BB6258A1BCA1DD600CA12C6 /* MusicalGenreTableViewCell.m */,
 				7BB6258C1BCA2B0C00CA12C6 /* MusicalGenreWebViewController.h */,
 				7BB6258D1BCA2B0C00CA12C6 /* MusicalGenreWebViewController.m */,
+				7BB625951BCC0AF200CA12C6 /* GreatistArtistViewController.h */,
+				7BB625961BCC0AF200CA12C6 /* GreatistArtistViewController.m */,
 				7B9002701BC18A8100DCD35D /* Main.storyboard */,
 				7B9002731BC18A8100DCD35D /* Assets.xcassets */,
 				7B9002751BC18A8100DCD35D /* LaunchScreen.storyboard */,
@@ -152,7 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				7BB625911BCB400800CA12C6 /* Stevie_Wonder_Header.png */,
-				7BB6258F1BCB388E00CA12C6 /* greatestArtist.html */,
+				7BB625931BCB541400CA12C6 /* greatestArtist.html */,
 				7B9002681BC18A8100DCD35D /* main.m */,
 			);
 			name = "Supporting Files";
@@ -281,7 +286,7 @@
 			files = (
 				7B9002771BC18A8100DCD35D /* LaunchScreen.storyboard in Resources */,
 				7BB625921BCB400800CA12C6 /* Stevie_Wonder_Header.png in Resources */,
-				7BB625901BCB388E00CA12C6 /* greatestArtist.html in Resources */,
+				7BB625941BCB541400CA12C6 /* greatestArtist.html in Resources */,
 				7B9002741BC18A8100DCD35D /* Assets.xcassets in Resources */,
 				7B9002721BC18A8100DCD35D /* Main.storyboard in Resources */,
 			);
@@ -316,6 +321,7 @@
 				7B9002691BC18A8100DCD35D /* main.m in Sources */,
 				7BB625881BCA1A3D00CA12C6 /* MusicalGenreTableViewController.m in Sources */,
 				7B9002A21BC1C82C00DCD35D /* AlbumDetailViewController.m in Sources */,
+				7BB625971BCC0AF200CA12C6 /* GreatistArtistViewController.m in Sources */,
 				7BB6258E1BCA2B0C00CA12C6 /* MusicalGenreWebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -13,7 +13,6 @@
 
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 
-@property (weak, nonatomic) IBOutlet UIWebView *bestArtistWebView;
 
 @property (weak, nonatomic) NSURL *webViewURL;
 @property (weak, nonatomic) NSURLRequest *webViewRequest;

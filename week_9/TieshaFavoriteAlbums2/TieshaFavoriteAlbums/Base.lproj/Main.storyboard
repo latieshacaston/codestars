@@ -99,16 +99,16 @@
             </objects>
             <point key="canvasLocation" x="1797" y="1267"/>
         </scene>
-        <!--Musical Genre Web View Controller-->
+        <!--Greatist Artist View Controller-->
         <scene sceneID="kNB-5R-zjd">
             <objects>
-                <viewController id="4qY-Kb-S2l" customClass="MusicalGenreWebViewController" sceneMemberID="viewController">
+                <viewController id="4qY-Kb-S2l" customClass="GreatistArtistViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="r1V-Iz-Hkl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" id="iHp-6P-38h">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <webView contentMode="scaleToFill" id="LrN-9t-LPK">
+                                <rect key="frame" x="0.0" y="63" width="320" height="505"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -119,7 +119,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="dXz-0B-5oK"/>
                     <connections>
-                        <outlet property="bestArtistWebView" destination="iHp-6P-38h" id="rWU-ZF-6o6"/>
+                        <outlet property="stevieWonderWebView" destination="LrN-9t-LPK" id="371-oO-WqU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bVD-gg-BCF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -348,14 +348,14 @@
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-15"/>
                     </tabBarItem>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="BTt-u4-mTl">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="BTt-u4-mTl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="4qY-Kb-S2l" kind="modal" identifier="showGreatestArtist" id="WpV-Dh-Ix0"/>
+                        <segue destination="4qY-Kb-S2l" kind="relationship" relationship="rootViewController" id="but-8c-b5A"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="itc-oa-7wX" userLabel="First Responder" sceneMemberID="firstResponder"/>
