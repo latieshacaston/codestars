@@ -24,6 +24,7 @@
 		7BB625921BCB400800CA12C6 /* Stevie_Wonder_Header.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BB625911BCB400800CA12C6 /* Stevie_Wonder_Header.png */; settings = {ASSET_TAGS = (); }; };
 		7BB625941BCB541400CA12C6 /* greatestArtist.html in Resources */ = {isa = PBXBuildFile; fileRef = 7BB625931BCB541400CA12C6 /* greatestArtist.html */; settings = {ASSET_TAGS = (); }; };
 		7BB625971BCC0AF200CA12C6 /* GreatistArtistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BB625961BCC0AF200CA12C6 /* GreatistArtistViewController.m */; settings = {ASSET_TAGS = (); }; };
+		7BB6259A1BCC9AAC00CA12C6 /* GreatestArtistPreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BB625991BCC9AAC00CA12C6 /* GreatestArtistPreViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,8 @@
 		7BB625931BCB541400CA12C6 /* greatestArtist.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = greatestArtist.html; sourceTree = "<group>"; };
 		7BB625951BCC0AF200CA12C6 /* GreatistArtistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreatistArtistViewController.h; sourceTree = "<group>"; };
 		7BB625961BCC0AF200CA12C6 /* GreatistArtistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GreatistArtistViewController.m; sourceTree = "<group>"; };
+		7BB625981BCC9AAC00CA12C6 /* GreatestArtistPreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreatestArtistPreViewController.h; sourceTree = "<group>"; };
+		7BB625991BCC9AAC00CA12C6 /* GreatestArtistPreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GreatestArtistPreViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +147,8 @@
 				7BB6258D1BCA2B0C00CA12C6 /* MusicalGenreWebViewController.m */,
 				7BB625951BCC0AF200CA12C6 /* GreatistArtistViewController.h */,
 				7BB625961BCC0AF200CA12C6 /* GreatistArtistViewController.m */,
+				7BB625981BCC9AAC00CA12C6 /* GreatestArtistPreViewController.h */,
+				7BB625991BCC9AAC00CA12C6 /* GreatestArtistPreViewController.m */,
 				7B9002701BC18A8100DCD35D /* Main.storyboard */,
 				7B9002731BC18A8100DCD35D /* Assets.xcassets */,
 				7B9002751BC18A8100DCD35D /* LaunchScreen.storyboard */,
@@ -318,6 +323,7 @@
 				7B90029F1BC19BC700DCD35D /* AlbumCollectionViewController.m in Sources */,
 				7B90026F1BC18A8100DCD35D /* ViewController.m in Sources */,
 				7B90026C1BC18A8100DCD35D /* AppDelegate.m in Sources */,
+				7BB6259A1BCC9AAC00CA12C6 /* GreatestArtistPreViewController.m in Sources */,
 				7B9002691BC18A8100DCD35D /* main.m in Sources */,
 				7BB625881BCA1A3D00CA12C6 /* MusicalGenreTableViewController.m in Sources */,
 				7B9002A21BC1C82C00DCD35D /* AlbumDetailViewController.m in Sources */,

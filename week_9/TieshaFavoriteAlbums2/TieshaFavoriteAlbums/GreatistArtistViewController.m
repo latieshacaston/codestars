@@ -20,20 +20,20 @@
     
     
     
+    
+    NSURL *urel=[NSURL URLWithString:@"https://en.wikipedia.org/wiki/Stevie_Wonder"];
+    NSURLRequest *request=[NSURLRequest requestWithURL:urel];
+    [self.stevieWonderWebView loadRequest:request];
+    
+//
+//        NSURL *greatestArtistURL = [NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:@"greatestArtist" ofType:@"html"]];
 //    
-//    NSURL *urel=[NSURL URLWithString:@"https://en.m.wikipedia.org/wiki/The_Fresh_Prince_of_Bel-Air"];
-//    NSURLRequest *request=[NSURLRequest requestWithURL:urel];
-//    [self.stevieWonderWebView loadRequest:request];
+//        NSURLRequest *greatestArtistRequest = [NSURLRequest requestWithURL:greatestArtistURL];
+//    
+//        [self.stevieWonderWebView loadRequest:greatestArtistRequest];
+//    
+//        NSLog (@"%@", greatestArtistURL);
     
-    
-        NSURL *greatestArtistURL = [NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:@"greatestArtist" ofType:@"html"]];
-    
-        NSURLRequest *greatestArtistRequest = [NSURLRequest requestWithURL:greatestArtistURL];
-    
-        [self.stevieWonderWebView loadRequest:greatestArtistRequest];
-    
-        NSLog (@"%@", greatestArtistURL);
-        
     
     
     

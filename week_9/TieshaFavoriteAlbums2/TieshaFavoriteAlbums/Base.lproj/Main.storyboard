@@ -108,7 +108,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" id="LrN-9t-LPK">
-                                <rect key="frame" x="0.0" y="63" width="320" height="505"/>
+                                <rect key="frame" x="0.0" y="44" width="320" height="524"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -124,7 +124,54 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bVD-gg-BCF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1778" y="1929"/>
+            <point key="canvasLocation" x="2164" y="1923"/>
+        </scene>
+        <!--Greatest Artist Pre View Controller-->
+        <scene sceneID="iA4-bM-R0S">
+            <objects>
+                <viewController id="Lre-3Y-OkR" customClass="GreatestArtistPreViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SDl-MH-S3u">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Stevie_Wonder_Header.png" id="NKB-Il-E5N">
+                                <rect key="frame" x="0.0" y="32" width="320" height="287"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="sYN-Qu-Iig">
+                                <rect key="frame" x="77" y="466" width="166" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Stevie's Wiki Page"/>
+                                <connections>
+                                    <segue destination="4qY-Kb-S2l" kind="modal" id="mdL-78-Jtw"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZFL-YZ-ZU9">
+                                <rect key="frame" x="7" y="262" width="306" height="264"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <string key="text">Stevie Wonder has been a recording artist since my grandmother was 12. I was first introduced to him by my grandfather, who used to make mixtapes for me when I was a kid. Wonder has a beautiful voice and an amazing talent, playing the piano, the harmonica, bongos, the organ, and more. His music is classical and transcends time.
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="72M-zT-Qlb"/>
+                    <connections>
+                        <outlet property="steviesWikiButton" destination="sYN-Qu-Iig" id="rwX-ek-yOc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Trz-1C-GDt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1686" y="1923"/>
         </scene>
         <!--Musical Genre Web View Controller-->
         <scene sceneID="sVS-sV-cZn">
@@ -355,7 +402,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="4qY-Kb-S2l" kind="relationship" relationship="rootViewController" id="but-8c-b5A"/>
+                        <segue destination="Lre-3Y-OkR" kind="relationship" relationship="rootViewController" id="hFd-vk-eFv"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="itc-oa-7wX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -365,6 +412,7 @@
     </scenes>
     <resources>
         <image name="Done Button" width="15" height="16"/>
+        <image name="Stevie_Wonder_Header.png" width="640" height="640"/>
         <image name="White Square" width="276" height="224"/>
     </resources>
     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
