@@ -97,7 +97,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tA1-oz-71m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1797" y="1267"/>
+            <point key="canvasLocation" x="1797" y="1219"/>
         </scene>
         <!--Greatist Artist View Controller-->
         <scene sceneID="kNB-5R-zjd">
@@ -206,7 +206,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YjE-zg-xb7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2268" y="1275"/>
+            <point key="canvasLocation" x="2276" y="1219"/>
         </scene>
         <!--Album Detail View Controller-->
         <scene sceneID="cNM-i8-Kgf">
