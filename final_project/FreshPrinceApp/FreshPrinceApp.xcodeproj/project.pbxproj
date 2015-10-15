@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2C8C0D991BB9A02A009E119E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2C8C0D981BB9A02A009E119E /* Info.plist */; settings = {ASSET_TAGS = (); }; };
-		2C8C0D9B1BB9A0B7009E119E /* will_dancing.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2C8C0D9A1BB9A0B7009E119E /* will_dancing.gif */; settings = {ASSET_TAGS = (); }; };
 		7B6ADFB01BB8934500051A44 /* MemeCreatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B6ADFAF1BB8934500051A44 /* MemeCreatorViewController.m */; settings = {ASSET_TAGS = (); }; };
 		7B6ADFBA1BB8D6FD00051A44 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B6ADFB91BB8D6FD00051A44 /* Images.xcassets */; settings = {ASSET_TAGS = (); }; };
 		7B6ADFBE1BB8DCDF00051A44 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B6ADFBD1BB8DCDF00051A44 /* Launch Screen.storyboard */; settings = {ASSET_TAGS = (); }; };
@@ -16,12 +15,21 @@
 		7B6ADFC31BB8DD7400051A44 /* right_answer.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B6ADFC01BB8DD7400051A44 /* right_answer.png */; settings = {ASSET_TAGS = (); }; };
 		7B6ADFC41BB8DD7400051A44 /* wrong_answer.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B6ADFC11BB8DD7400051A44 /* wrong_answer.png */; settings = {ASSET_TAGS = (); }; };
 		7B6ADFC61BB8DDC600051A44 /* welcome.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B6ADFC51BB8DDC600051A44 /* welcome.png */; settings = {ASSET_TAGS = (); }; };
-		7B6ADFC81BB8E9B300051A44 /* will_dancing.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7B6ADFC71BB8E9B300051A44 /* will_dancing.gif */; settings = {ASSET_TAGS = (); }; };
 		7B6ADFD61BB8F1F100051A44 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B6ADFD51BB8F1F100051A44 /* Default-568h@2x.png */; settings = {ASSET_TAGS = (); }; };
 		7B6ADFD81BB8F55800051A44 /* Launch_Image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B6ADFD71BB8F55800051A44 /* Launch_Image@2x.png */; settings = {ASSET_TAGS = (); }; };
 		7B6ADFDA1BB8F57600051A44 /* Launch_Image.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B6ADFD91BB8F57600051A44 /* Launch_Image.png */; settings = {ASSET_TAGS = (); }; };
 		7B75FCA31BB106B30019A97D /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B75FCA21BB106B30019A97D /* HomeViewController.m */; settings = {ASSET_TAGS = (); }; };
 		7B75FCA61BB11AE50019A97D /* QuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B75FCA51BB11AE50019A97D /* QuizViewController.m */; settings = {ASSET_TAGS = (); }; };
+		7BB625A31BCCBEA600CA12C6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BB625A21BCCBEA600CA12C6 /* QuartzCore.framework */; };
+		7BB625AB1BCCBF8700CA12C6 /* Bear.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BB625A41BCCBF8700CA12C6 /* Bear.png */; settings = {ASSET_TAGS = (); }; };
+		7BB625AC1BCCBF8700CA12C6 /* Zebra.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BB625A51BCCBF8700CA12C6 /* Zebra.png */; settings = {ASSET_TAGS = (); }; };
+		7BB625AD1BCCBF8700CA12C6 /* Birds.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BB625A61BCCBF8700CA12C6 /* Birds.png */; settings = {ASSET_TAGS = (); }; };
+		7BB625AE1BCCBF8700CA12C6 /* Giraffe.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BB625A71BCCBF8700CA12C6 /* Giraffe.png */; settings = {ASSET_TAGS = (); }; };
+		7BB625AF1BCCBF8700CA12C6 /* Tiger.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BB625A81BCCBF8700CA12C6 /* Tiger.png */; settings = {ASSET_TAGS = (); }; };
+		7BB625B01BCCBF8700CA12C6 /* Chimp.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BB625A91BCCBF8700CA12C6 /* Chimp.png */; settings = {ASSET_TAGS = (); }; };
+		7BB625B11BCCBF8700CA12C6 /* Goat.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BB625AA1BCCBF8700CA12C6 /* Goat.png */; settings = {ASSET_TAGS = (); }; };
+		7BB6261F1BCF4D9100CA12C6 /* Landing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BB6261E1BCF4D9100CA12C6 /* Landing.storyboard */; settings = {ASSET_TAGS = (); }; };
+		7BB626231BCF510900CA12C6 /* LandingScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BB626221BCF510900CA12C6 /* LandingScrollViewController.m */; settings = {ASSET_TAGS = (); }; };
 		7BD3F8CA1BAD2E9600088C54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BD3F8C91BAD2E9600088C54 /* main.m */; };
 		7BD3F8CD1BAD2E9600088C54 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BD3F8CC1BAD2E9600088C54 /* AppDelegate.m */; };
 		7BD3F8D31BAD2E9600088C54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BD3F8D11BAD2E9600088C54 /* Main.storyboard */; };
@@ -45,7 +53,6 @@
 
 /* Begin PBXFileReference section */
 		2C8C0D981BB9A02A009E119E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2C8C0D9A1BB9A0B7009E119E /* will_dancing.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = will_dancing.gif; path = ../../../../Desktop/will_dancing.gif; sourceTree = "<group>"; };
 		7B6ADFAE1BB8934500051A44 /* MemeCreatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemeCreatorViewController.h; sourceTree = "<group>"; };
 		7B6ADFAF1BB8934500051A44 /* MemeCreatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemeCreatorViewController.m; sourceTree = "<group>"; };
 		7B6ADFB91BB8D6FD00051A44 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -54,7 +61,6 @@
 		7B6ADFC01BB8DD7400051A44 /* right_answer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = right_answer.png; path = FP_App_Imags/right_answer.png; sourceTree = SOURCE_ROOT; };
 		7B6ADFC11BB8DD7400051A44 /* wrong_answer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wrong_answer.png; path = FP_App_Imags/wrong_answer.png; sourceTree = SOURCE_ROOT; };
 		7B6ADFC51BB8DDC600051A44 /* welcome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = welcome.png; path = FP_App_Imags/welcome.png; sourceTree = SOURCE_ROOT; };
-		7B6ADFC71BB8E9B300051A44 /* will_dancing.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = will_dancing.gif; path = ../../../../Desktop/will_dancing.gif; sourceTree = "<group>"; };
 		7B6ADFD51BB8F1F100051A44 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		7B6ADFD71BB8F55800051A44 /* Launch_Image@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Launch_Image@2x.png"; path = "FP_App_Imags/Launch_Image@2x.png"; sourceTree = SOURCE_ROOT; };
 		7B6ADFD91BB8F57600051A44 /* Launch_Image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Launch_Image.png; path = FP_App_Imags/Launch_Image.png; sourceTree = SOURCE_ROOT; };
@@ -62,6 +68,17 @@
 		7B75FCA21BB106B30019A97D /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		7B75FCA41BB11AE50019A97D /* QuizViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuizViewController.h; sourceTree = "<group>"; };
 		7B75FCA51BB11AE50019A97D /* QuizViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuizViewController.m; sourceTree = "<group>"; };
+		7BB625A21BCCBEA600CA12C6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		7BB625A41BCCBF8700CA12C6 /* Bear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Bear.png; path = ../../../../Downloads/Carousel/Animals/Bear.png; sourceTree = "<group>"; };
+		7BB625A51BCCBF8700CA12C6 /* Zebra.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Zebra.png; path = ../../../../Downloads/Carousel/Animals/Zebra.png; sourceTree = "<group>"; };
+		7BB625A61BCCBF8700CA12C6 /* Birds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Birds.png; path = ../../../../Downloads/Carousel/Animals/Birds.png; sourceTree = "<group>"; };
+		7BB625A71BCCBF8700CA12C6 /* Giraffe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Giraffe.png; path = ../../../../Downloads/Carousel/Animals/Giraffe.png; sourceTree = "<group>"; };
+		7BB625A81BCCBF8700CA12C6 /* Tiger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Tiger.png; path = ../../../../Downloads/Carousel/Animals/Tiger.png; sourceTree = "<group>"; };
+		7BB625A91BCCBF8700CA12C6 /* Chimp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Chimp.png; path = ../../../../Downloads/Carousel/Animals/Chimp.png; sourceTree = "<group>"; };
+		7BB625AA1BCCBF8700CA12C6 /* Goat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Goat.png; path = ../../../../Downloads/Carousel/Animals/Goat.png; sourceTree = "<group>"; };
+		7BB6261E1BCF4D9100CA12C6 /* Landing.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Landing.storyboard; sourceTree = "<group>"; };
+		7BB626211BCF510900CA12C6 /* LandingScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandingScrollViewController.h; sourceTree = "<group>"; };
+		7BB626221BCF510900CA12C6 /* LandingScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LandingScrollViewController.m; sourceTree = "<group>"; };
 		7BD3F8C41BAD2E9600088C54 /* FreshPrinceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreshPrinceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BD3F8C91BAD2E9600088C54 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7BD3F8CB1BAD2E9600088C54 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -85,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BB625A31BCCBEA600CA12C6 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,9 +116,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7BB626201BCF50DD00CA12C6 /* Original App */ = {
+			isa = PBXGroup;
+			children = (
+				7B6ADFAE1BB8934500051A44 /* MemeCreatorViewController.h */,
+				7B6ADFAF1BB8934500051A44 /* MemeCreatorViewController.m */,
+				7BD3F8FC1BAD61C100088C54 /* WebViewController.h */,
+				7BD3F8FD1BAD61C100088C54 /* WebViewController.m */,
+				7BD3F8F91BAD550100088C54 /* MemeGeneratorCollectionViewCell.h */,
+				7BD3F8FA1BAD550100088C54 /* MemeGeneratorCollectionViewCell.m */,
+				7B75FCA11BB106B30019A97D /* HomeViewController.h */,
+				7B75FCA21BB106B30019A97D /* HomeViewController.m */,
+				7BD3F8CB1BAD2E9600088C54 /* AppDelegate.h */,
+				7BD3F8CC1BAD2E9600088C54 /* AppDelegate.m */,
+				7B75FCA41BB11AE50019A97D /* QuizViewController.h */,
+				7B75FCA51BB11AE50019A97D /* QuizViewController.m */,
+				7BD3F8F61BAD53C600088C54 /* MemeGeneratorCollectionViewController.h */,
+				7BD3F8F71BAD53C600088C54 /* MemeGeneratorCollectionViewController.m */,
+				7BD3F8D11BAD2E9600088C54 /* Main.storyboard */,
+			);
+			name = "Original App";
+			sourceTree = "<group>";
+		};
 		7BD3F8BB1BAD2E9600088C54 = {
 			isa = PBXGroup;
 			children = (
+				7BB625A21BCCBEA600CA12C6 /* QuartzCore.framework */,
 				7BD3F8C61BAD2E9600088C54 /* FreshPrinceApp */,
 				7BD3F8E01BAD2E9600088C54 /* FreshPrinceAppTests */,
 				7BD3F8C51BAD2E9600088C54 /* Products */,
@@ -119,21 +160,10 @@
 		7BD3F8C61BAD2E9600088C54 /* FreshPrinceApp */ = {
 			isa = PBXGroup;
 			children = (
-				7B75FCA11BB106B30019A97D /* HomeViewController.h */,
-				7B75FCA21BB106B30019A97D /* HomeViewController.m */,
-				7BD3F8CB1BAD2E9600088C54 /* AppDelegate.h */,
-				7BD3F8CC1BAD2E9600088C54 /* AppDelegate.m */,
-				7B75FCA41BB11AE50019A97D /* QuizViewController.h */,
-				7B75FCA51BB11AE50019A97D /* QuizViewController.m */,
-				7BD3F8F61BAD53C600088C54 /* MemeGeneratorCollectionViewController.h */,
-				7BD3F8F71BAD53C600088C54 /* MemeGeneratorCollectionViewController.m */,
-				7BD3F8D11BAD2E9600088C54 /* Main.storyboard */,
-				7B6ADFAE1BB8934500051A44 /* MemeCreatorViewController.h */,
-				7B6ADFAF1BB8934500051A44 /* MemeCreatorViewController.m */,
-				7BD3F8FC1BAD61C100088C54 /* WebViewController.h */,
-				7BD3F8FD1BAD61C100088C54 /* WebViewController.m */,
-				7BD3F8F91BAD550100088C54 /* MemeGeneratorCollectionViewCell.h */,
-				7BD3F8FA1BAD550100088C54 /* MemeGeneratorCollectionViewCell.m */,
+				7BB626201BCF50DD00CA12C6 /* Original App */,
+				7BB6261E1BCF4D9100CA12C6 /* Landing.storyboard */,
+				7BB626211BCF510900CA12C6 /* LandingScrollViewController.h */,
+				7BB626221BCF510900CA12C6 /* LandingScrollViewController.m */,
 				7B6ADFBD1BB8DCDF00051A44 /* Launch Screen.storyboard */,
 				7B6ADFD51BB8F1F100051A44 /* Default-568h@2x.png */,
 				7B6ADFB91BB8D6FD00051A44 /* Images.xcassets */,
@@ -145,11 +175,16 @@
 		7BD3F8C71BAD2E9600088C54 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7BB625A41BCCBF8700CA12C6 /* Bear.png */,
+				7BB625A51BCCBF8700CA12C6 /* Zebra.png */,
+				7BB625A61BCCBF8700CA12C6 /* Birds.png */,
+				7BB625A71BCCBF8700CA12C6 /* Giraffe.png */,
+				7BB625A81BCCBF8700CA12C6 /* Tiger.png */,
+				7BB625A91BCCBF8700CA12C6 /* Chimp.png */,
+				7BB625AA1BCCBF8700CA12C6 /* Goat.png */,
 				7B6ADFD71BB8F55800051A44 /* Launch_Image@2x.png */,
 				7B6ADFD91BB8F57600051A44 /* Launch_Image.png */,
-				2C8C0D9A1BB9A0B7009E119E /* will_dancing.gif */,
 				7B6ADFC51BB8DDC600051A44 /* welcome.png */,
-				7B6ADFC71BB8E9B300051A44 /* will_dancing.gif */,
 				7B6ADFBF1BB8DD7400051A44 /* background.png */,
 				2C8C0D981BB9A02A009E119E /* Info.plist */,
 				7B6ADFC01BB8DD7400051A44 /* right_answer.png */,
@@ -259,21 +294,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BB625AE1BCCBF8700CA12C6 /* Giraffe.png in Resources */,
+				7BB625AD1BCCBF8700CA12C6 /* Birds.png in Resources */,
+				7BB625B11BCCBF8700CA12C6 /* Goat.png in Resources */,
+				7BB6261F1BCF4D9100CA12C6 /* Landing.storyboard in Resources */,
 				7B6ADFD81BB8F55800051A44 /* Launch_Image@2x.png in Resources */,
 				7BD3F9001BAD624B00088C54 /* about.html in Resources */,
 				7B6ADFC61BB8DDC600051A44 /* welcome.png in Resources */,
 				7B6ADFC21BB8DD7400051A44 /* background.png in Resources */,
-				7B6ADFC81BB8E9B300051A44 /* will_dancing.gif in Resources */,
 				7BD3F8D31BAD2E9600088C54 /* Main.storyboard in Resources */,
+				7BB625AC1BCCBF8700CA12C6 /* Zebra.png in Resources */,
 				7BD3F9021BAD65E400088C54 /* bio.html in Resources */,
 				7B6ADFBA1BB8D6FD00051A44 /* Images.xcassets in Resources */,
 				7B6ADFDA1BB8F57600051A44 /* Launch_Image.png in Resources */,
 				7B6ADFD61BB8F1F100051A44 /* Default-568h@2x.png in Resources */,
-				2C8C0D9B1BB9A0B7009E119E /* will_dancing.gif in Resources */,
 				7B6ADFC31BB8DD7400051A44 /* right_answer.png in Resources */,
 				7B6ADFC41BB8DD7400051A44 /* wrong_answer.png in Resources */,
+				7BB625AB1BCCBF8700CA12C6 /* Bear.png in Resources */,
+				7BB625AF1BCCBF8700CA12C6 /* Tiger.png in Resources */,
 				7B6ADFBE1BB8DCDF00051A44 /* Launch Screen.storyboard in Resources */,
 				2C8C0D991BB9A02A009E119E /* Info.plist in Resources */,
+				7BB625B01BCCBF8700CA12C6 /* Chimp.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +336,7 @@
 				7B6ADFB01BB8934500051A44 /* MemeCreatorViewController.m in Sources */,
 				7BD3F8CA1BAD2E9600088C54 /* main.m in Sources */,
 				7BD3F8FE1BAD61C100088C54 /* WebViewController.m in Sources */,
+				7BB626231BCF510900CA12C6 /* LandingScrollViewController.m in Sources */,
 				7BD3F8F81BAD53C600088C54 /* MemeGeneratorCollectionViewController.m in Sources */,
 				7B75FCA31BB106B30019A97D /* HomeViewController.m in Sources */,
 				7BD3F8FB1BAD550100088C54 /* MemeGeneratorCollectionViewCell.m in Sources */,

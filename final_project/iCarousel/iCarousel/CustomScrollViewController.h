@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CustomScrollViewController : UIViewController
+@interface CustomScrollViewController : UIViewController <UIScrollViewDelegate>
+
+
+@property (nonatomic, strong) IBOutlet UIScrollView *scrollView; 
+
+
+
+
+
+
+
 
 @end

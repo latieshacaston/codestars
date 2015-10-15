@@ -15,6 +15,15 @@
 		7BB626401BCF521D00CA12C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BB6263E1BCF521D00CA12C6 /* LaunchScreen.storyboard */; };
 		7BB6264B1BCF521D00CA12C6 /* FreshPrinceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BB6264A1BCF521D00CA12C6 /* FreshPrinceTests.m */; };
 		7BB626561BCF521D00CA12C6 /* FreshPrinceUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BB626551BCF521D00CA12C6 /* FreshPrinceUITests.m */; };
+		7BB626651BCF523100CA12C6 /* LandingScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BB626641BCF523100CA12C6 /* LandingScrollViewController.m */; settings = {ASSET_TAGS = (); }; };
+		7BB626691BCF6DFC00CA12C6 /* Fresh_Tunes_Card.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BB626661BCF6DFC00CA12C6 /* Fresh_Tunes_Card.png */; settings = {ASSET_TAGS = (); }; };
+		7BB6266A1BCF6DFC00CA12C6 /* Meme_Maker_Card.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BB626671BCF6DFC00CA12C6 /* Meme_Maker_Card.png */; settings = {ASSET_TAGS = (); }; };
+		7BB6266B1BCF6DFC00CA12C6 /* Quote_Quiz_Card.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BB626681BCF6DFC00CA12C6 /* Quote_Quiz_Card.png */; settings = {ASSET_TAGS = (); }; };
+		7BB6266E1BCF706A00CA12C6 /* ScrollViewContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BB6266D1BCF706A00CA12C6 /* ScrollViewContainer.m */; settings = {ASSET_TAGS = (); }; };
+		7BB626721BCF749000CA12C6 /* QuoteQuiz.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BB626711BCF749000CA12C6 /* QuoteQuiz.storyboard */; settings = {ASSET_TAGS = (); }; };
+		7BB626741BCF74CE00CA12C6 /* QuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BB626731BCF74CE00CA12C6 /* QuizViewController.m */; settings = {ASSET_TAGS = (); }; };
+		7BB626771BCF75E500CA12C6 /* MemeGenerator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BB626761BCF75E500CA12C6 /* MemeGenerator.storyboard */; settings = {ASSET_TAGS = (); }; };
+		7BB626791BCF760400CA12C6 /* FreshTunes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BB626781BCF760400CA12C6 /* FreshTunes.storyboard */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +60,18 @@
 		7BB626511BCF521D00CA12C6 /* FreshPrinceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreshPrinceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BB626551BCF521D00CA12C6 /* FreshPrinceUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FreshPrinceUITests.m; sourceTree = "<group>"; };
 		7BB626571BCF521D00CA12C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BB626631BCF523100CA12C6 /* LandingScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandingScrollViewController.h; sourceTree = "<group>"; };
+		7BB626641BCF523100CA12C6 /* LandingScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LandingScrollViewController.m; sourceTree = "<group>"; };
+		7BB626661BCF6DFC00CA12C6 /* Fresh_Tunes_Card.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fresh_Tunes_Card.png; sourceTree = "<group>"; };
+		7BB626671BCF6DFC00CA12C6 /* Meme_Maker_Card.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Meme_Maker_Card.png; sourceTree = "<group>"; };
+		7BB626681BCF6DFC00CA12C6 /* Quote_Quiz_Card.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Quote_Quiz_Card.png; sourceTree = "<group>"; };
+		7BB6266C1BCF706A00CA12C6 /* ScrollViewContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewContainer.h; sourceTree = "<group>"; };
+		7BB6266D1BCF706A00CA12C6 /* ScrollViewContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewContainer.m; sourceTree = "<group>"; };
+		7BB626711BCF749000CA12C6 /* QuoteQuiz.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = QuoteQuiz.storyboard; path = ../QuoteQuiz.storyboard; sourceTree = "<group>"; };
+		7BB626731BCF74CE00CA12C6 /* QuizViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuizViewController.m; sourceTree = "<group>"; };
+		7BB626751BCF74D600CA12C6 /* QuizViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuizViewController.h; sourceTree = "<group>"; };
+		7BB626761BCF75E500CA12C6 /* MemeGenerator.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MemeGenerator.storyboard; sourceTree = "<group>"; };
+		7BB626781BCF760400CA12C6 /* FreshTunes.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FreshTunes.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +126,16 @@
 				7BB626341BCF521D00CA12C6 /* AppDelegate.m */,
 				7BB626361BCF521D00CA12C6 /* ViewController.h */,
 				7BB626371BCF521D00CA12C6 /* ViewController.m */,
+				7BB626631BCF523100CA12C6 /* LandingScrollViewController.h */,
+				7BB626641BCF523100CA12C6 /* LandingScrollViewController.m */,
+				7BB626751BCF74D600CA12C6 /* QuizViewController.h */,
+				7BB626731BCF74CE00CA12C6 /* QuizViewController.m */,
+				7BB626711BCF749000CA12C6 /* QuoteQuiz.storyboard */,
+				7BB626761BCF75E500CA12C6 /* MemeGenerator.storyboard */,
+				7BB626781BCF760400CA12C6 /* FreshTunes.storyboard */,
 				7BB626391BCF521D00CA12C6 /* Main.storyboard */,
+				7BB6266C1BCF706A00CA12C6 /* ScrollViewContainer.h */,
+				7BB6266D1BCF706A00CA12C6 /* ScrollViewContainer.m */,
 				7BB6263C1BCF521D00CA12C6 /* Assets.xcassets */,
 				7BB6263E1BCF521D00CA12C6 /* LaunchScreen.storyboard */,
 				7BB626411BCF521D00CA12C6 /* Info.plist */,
@@ -117,6 +147,9 @@
 		7BB626301BCF521D00CA12C6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7BB626661BCF6DFC00CA12C6 /* Fresh_Tunes_Card.png */,
+				7BB626671BCF6DFC00CA12C6 /* Meme_Maker_Card.png */,
+				7BB626681BCF6DFC00CA12C6 /* Quote_Quiz_Card.png */,
 				7BB626311BCF521D00CA12C6 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -243,8 +276,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BB626721BCF749000CA12C6 /* QuoteQuiz.storyboard in Resources */,
 				7BB626401BCF521D00CA12C6 /* LaunchScreen.storyboard in Resources */,
+				7BB626771BCF75E500CA12C6 /* MemeGenerator.storyboard in Resources */,
 				7BB6263D1BCF521D00CA12C6 /* Assets.xcassets in Resources */,
+				7BB6266A1BCF6DFC00CA12C6 /* Meme_Maker_Card.png in Resources */,
+				7BB626791BCF760400CA12C6 /* FreshTunes.storyboard in Resources */,
+				7BB6266B1BCF6DFC00CA12C6 /* Quote_Quiz_Card.png in Resources */,
+				7BB626691BCF6DFC00CA12C6 /* Fresh_Tunes_Card.png in Resources */,
 				7BB6263B1BCF521D00CA12C6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,8 +310,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BB626381BCF521D00CA12C6 /* ViewController.m in Sources */,
+				7BB6266E1BCF706A00CA12C6 /* ScrollViewContainer.m in Sources */,
 				7BB626351BCF521D00CA12C6 /* AppDelegate.m in Sources */,
 				7BB626321BCF521D00CA12C6 /* main.m in Sources */,
+				7BB626651BCF523100CA12C6 /* LandingScrollViewController.m in Sources */,
+				7BB626741BCF74CE00CA12C6 /* QuizViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

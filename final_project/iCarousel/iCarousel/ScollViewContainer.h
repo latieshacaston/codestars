@@ -10,4 +10,6 @@
 
 @interface ScollViewContainer : UIView
 
+@property (nonatomic, strong) IBOutlet UIScrollView *scrollView;
+
 @end

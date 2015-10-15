@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LandingScrollViewController : UIViewController
+@interface LandingScrollViewController : UIViewController <UIScrollViewDelegate>
+
+
+@property (nonatomic, strong) IBOutlet UIScrollView *scrollView;
+@property (nonatomic, strong) IBOutlet UIPageControl *pageControl;
+
 
 @end

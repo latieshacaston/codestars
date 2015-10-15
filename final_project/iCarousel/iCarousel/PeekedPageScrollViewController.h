@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PeekedPageScrollViewController : UIViewController
+@interface PeekedPageScrollViewController : UIViewController <UIScrollViewDelegate>
+
+
+
+@property (nonatomic, strong) IBOutlet UIScrollView *scrollView;
+@property (nonatomic, strong) IBOutlet UIPageControl *pageControl;
+
 
 @end
