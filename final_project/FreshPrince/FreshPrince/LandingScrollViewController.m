@@ -50,9 +50,9 @@
     
     // Set up the image you want to scroll & zoom and add it to the scroll view
     self.pageImages = [NSArray arrayWithObjects:
+                       [UIImage imageNamed:@"Quote_Quiz_Card.png"],
                        [UIImage imageNamed:@"Fresh_Tunes_Card.png"],
                        [UIImage imageNamed:@"Meme_Maker_Card.png"],
-                       [UIImage imageNamed:@"Quote_Quiz_Card.png"],
                        nil];
     
     NSInteger pageCount = self.pageImages.count;

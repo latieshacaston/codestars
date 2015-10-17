@@ -349,6 +349,26 @@
 
 
 
+// VIDEO PLAYER
+
+-(IBAction)playMovie:(id)sender
+{
+    AVPlayerViewController *playerViewController = [[AVPlayerViewController alloc] init;
+    playerViewController.player = [AVPlayer playerWithURL:[[NSBundle mainBundle]
+                                                           URLForResource:@"Besan"
+                                                           withExtension:@"mp4"]];
+    [playerViewController.player play];
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

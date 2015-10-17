@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C6F11B61BD29A1200E5FA0D /* right_answer.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C6F11B41BD29A1200E5FA0D /* right_answer.png */; settings = {ASSET_TAGS = (); }; };
+		2C6F11B71BD29A1200E5FA0D /* wrong_answer.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C6F11B51BD29A1200E5FA0D /* wrong_answer.png */; settings = {ASSET_TAGS = (); }; };
+		2C6F11B91BD29A3100E5FA0D /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C6F11B81BD29A3100E5FA0D /* background.png */; settings = {ASSET_TAGS = (); }; };
+		2C6F11BE1BD2A6D700E5FA0D /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C6F11BD1BD2A6D700E5FA0D /* MediaPlayer.framework */; };
+		2C6F11BF1BD2A8AA00E5FA0D /* FP_Damn.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C6F11BC1BD2A55500E5FA0D /* FP_Damn.mp4 */; settings = {ASSET_TAGS = (); }; };
+		2C6F11C11BD2A8F600E5FA0D /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C6F11C01BD2A8F600E5FA0D /* AVKit.framework */; };
+		2C6F11C31BD2ABBA00E5FA0D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C6F11C21BD2ABBA00E5FA0D /* QuartzCore.framework */; };
 		7BB626321BCF521D00CA12C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BB626311BCF521D00CA12C6 /* main.m */; };
 		7BB626351BCF521D00CA12C6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BB626341BCF521D00CA12C6 /* AppDelegate.m */; };
 		7BB626381BCF521D00CA12C6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BB626371BCF521D00CA12C6 /* ViewController.m */; };
@@ -44,6 +51,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C6F11B41BD29A1200E5FA0D /* right_answer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right_answer.png; sourceTree = "<group>"; };
+		2C6F11B51BD29A1200E5FA0D /* wrong_answer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wrong_answer.png; sourceTree = "<group>"; };
+		2C6F11B81BD29A3100E5FA0D /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		2C6F11BC1BD2A55500E5FA0D /* FP_Damn.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = FP_Damn.mp4; sourceTree = "<group>"; };
+		2C6F11BD1BD2A6D700E5FA0D /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		2C6F11C01BD2A8F600E5FA0D /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		2C6F11C21BD2ABBA00E5FA0D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		7BB6262D1BCF521D00CA12C6 /* FreshPrince.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreshPrince.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BB626311BCF521D00CA12C6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7BB626331BCF521D00CA12C6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -79,6 +93,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C6F11C31BD2ABBA00E5FA0D /* QuartzCore.framework in Frameworks */,
+				2C6F11C11BD2A8F600E5FA0D /* AVKit.framework in Frameworks */,
+				2C6F11BE1BD2A6D700E5FA0D /* MediaPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +119,9 @@
 		7BB626241BCF521D00CA12C6 = {
 			isa = PBXGroup;
 			children = (
+				2C6F11C21BD2ABBA00E5FA0D /* QuartzCore.framework */,
+				2C6F11C01BD2A8F600E5FA0D /* AVKit.framework */,
+				2C6F11BD1BD2A6D700E5FA0D /* MediaPlayer.framework */,
 				7BB6262F1BCF521D00CA12C6 /* FreshPrince */,
 				7BB626491BCF521D00CA12C6 /* FreshPrinceTests */,
 				7BB626541BCF521D00CA12C6 /* FreshPrinceUITests */,
@@ -147,7 +167,11 @@
 		7BB626301BCF521D00CA12C6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2C6F11B41BD29A1200E5FA0D /* right_answer.png */,
+				2C6F11B51BD29A1200E5FA0D /* wrong_answer.png */,
+				2C6F11BC1BD2A55500E5FA0D /* FP_Damn.mp4 */,
 				7BB626661BCF6DFC00CA12C6 /* Fresh_Tunes_Card.png */,
+				2C6F11B81BD29A3100E5FA0D /* background.png */,
 				7BB626671BCF6DFC00CA12C6 /* Meme_Maker_Card.png */,
 				7BB626681BCF6DFC00CA12C6 /* Quote_Quiz_Card.png */,
 				7BB626311BCF521D00CA12C6 /* main.m */,
@@ -277,13 +301,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BB626721BCF749000CA12C6 /* QuoteQuiz.storyboard in Resources */,
+				2C6F11B91BD29A3100E5FA0D /* background.png in Resources */,
 				7BB626401BCF521D00CA12C6 /* LaunchScreen.storyboard in Resources */,
+				2C6F11B61BD29A1200E5FA0D /* right_answer.png in Resources */,
 				7BB626771BCF75E500CA12C6 /* MemeGenerator.storyboard in Resources */,
 				7BB6263D1BCF521D00CA12C6 /* Assets.xcassets in Resources */,
 				7BB6266A1BCF6DFC00CA12C6 /* Meme_Maker_Card.png in Resources */,
 				7BB626791BCF760400CA12C6 /* FreshTunes.storyboard in Resources */,
 				7BB6266B1BCF6DFC00CA12C6 /* Quote_Quiz_Card.png in Resources */,
+				2C6F11B71BD29A1200E5FA0D /* wrong_answer.png in Resources */,
 				7BB626691BCF6DFC00CA12C6 /* Fresh_Tunes_Card.png in Resources */,
+				2C6F11BF1BD2A8AA00E5FA0D /* FP_Damn.mp4 in Resources */,
 				7BB6263B1BCF521D00CA12C6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -538,6 +566,7 @@
 				7BB6265C1BCF521D00CA12C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7BB6265D1BCF521D00CA12C6 /* Build configuration list for PBXNativeTarget "FreshPrinceTests" */ = {
 			isa = XCConfigurationList;
@@ -546,6 +575,7 @@
 				7BB6265F1BCF521D00CA12C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7BB626601BCF521D00CA12C6 /* Build configuration list for PBXNativeTarget "FreshPrinceUITests" */ = {
 			isa = XCConfigurationList;
@@ -554,6 +584,7 @@
 				7BB626621BCF521D00CA12C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

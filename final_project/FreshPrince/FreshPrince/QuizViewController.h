@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MediaPlayer/MediaPlayer.h>
+
 
 
 int questionSelected;
@@ -73,6 +75,11 @@ BOOL gameInProgress;
 
 - (void) rightAnswer;
 - (void) wrongAnswer;
+
+
+// Video Player
+
+-(IBAction)playMovie:(id)sender;
 
 
 
