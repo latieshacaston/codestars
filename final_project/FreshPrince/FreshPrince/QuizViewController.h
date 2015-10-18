@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <MediaPlayer/MediaPlayer.h>
+#import <AVFoundation/AVFoundation.h>
+
+#import <AVKit/AVKit.h>
 
 
 
@@ -49,6 +52,8 @@ BOOL gameInProgress;
 @property (weak, nonatomic) IBOutlet UIButton *done;
 
 
+@property (weak, nonatomic) IBOutlet UIButton *playVideo;
+
 
 // want to make wrong or right answer pull up a modal that they then press to go on
 
@@ -66,7 +71,11 @@ BOOL gameInProgress;
 
 - (IBAction)nextQuestionPressed:(id)sender;
 
-- (IBAction)donePressed:(id)sender; 
+- (IBAction)donePressed:(id)sender;
+
+
+
+
 
 
 - (void) showNextQuestion; 
@@ -77,9 +86,6 @@ BOOL gameInProgress;
 - (void) wrongAnswer;
 
 
-// Video Player
-
--(IBAction)playMovie:(id)sender;
 
 
 

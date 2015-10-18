@@ -164,14 +164,6 @@
             </objects>
             <point key="canvasLocation" x="2122" y="317"/>
         </scene>
-        <!--AV Player View Controller-->
-        <scene sceneID="C8b-zJ-gW9">
-            <objects>
-                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="9Jb-Uk-I3l" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kdY-2I-yFV" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2490" y="317"/>
-        </scene>
         <!--Quiz View Controller-->
         <scene sceneID="QcL-F4-xgv">
             <objects>

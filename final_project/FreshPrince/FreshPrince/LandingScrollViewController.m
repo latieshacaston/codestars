@@ -85,8 +85,8 @@
     
     else if (self.pageControl.currentPage == 1) {
         
-        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-        UIViewController *memeGenerator = (UIViewController *)[storyboard instantiateViewControllerWithIdentifier:@"memeGenerator"];
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MemeGenerator" bundle:nil];
+        UICollectionViewController *memeGenerator = (UICollectionViewController *)[storyboard instantiateViewControllerWithIdentifier:@"memeGenerator"];
         // [self presentModalViewController:youDeedIt animated:YES];
         
         [self presentViewController:memeGenerator animated:YES completion:nil]; }

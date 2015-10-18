@@ -7,13 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C64B59D1BD30E270007D8F6 /* FPDamn.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C6F11BC1BD2A55500E5FA0D /* FPDamn.mp4 */; settings = {ASSET_TAGS = (); }; };
+		2C64B59E1BD30E280007D8F6 /* FPDamn.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C6F11BC1BD2A55500E5FA0D /* FPDamn.mp4 */; settings = {ASSET_TAGS = (); }; };
 		2C6F11B61BD29A1200E5FA0D /* right_answer.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C6F11B41BD29A1200E5FA0D /* right_answer.png */; settings = {ASSET_TAGS = (); }; };
 		2C6F11B71BD29A1200E5FA0D /* wrong_answer.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C6F11B51BD29A1200E5FA0D /* wrong_answer.png */; settings = {ASSET_TAGS = (); }; };
 		2C6F11B91BD29A3100E5FA0D /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C6F11B81BD29A3100E5FA0D /* background.png */; settings = {ASSET_TAGS = (); }; };
 		2C6F11BE1BD2A6D700E5FA0D /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C6F11BD1BD2A6D700E5FA0D /* MediaPlayer.framework */; };
-		2C6F11BF1BD2A8AA00E5FA0D /* FP_Damn.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C6F11BC1BD2A55500E5FA0D /* FP_Damn.mp4 */; settings = {ASSET_TAGS = (); }; };
+		2C6F11BF1BD2A8AA00E5FA0D /* FPDamn.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2C6F11BC1BD2A55500E5FA0D /* FPDamn.mp4 */; settings = {ASSET_TAGS = (); }; };
 		2C6F11C11BD2A8F600E5FA0D /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C6F11C01BD2A8F600E5FA0D /* AVKit.framework */; };
 		2C6F11C31BD2ABBA00E5FA0D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C6F11C21BD2ABBA00E5FA0D /* QuartzCore.framework */; };
+		2C6F11C51BD2B1F300E5FA0D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C6F11C41BD2B1F300E5FA0D /* AVFoundation.framework */; };
+		2C6F11CD1BD2D0BF00E5FA0D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C6F11CC1BD2D0BF00E5FA0D /* CoreGraphics.framework */; };
+		2C9489931BD346610096F022 /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = 2C9489921BD346610096F022 /* Assets */; settings = {ASSET_TAGS = (); }; };
+		2C9489991BD35F880096F022 /* MemeGeneratorCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9489981BD35F880096F022 /* MemeGeneratorCollectionViewController.m */; settings = {ASSET_TAGS = (); }; };
+		2C9489A21BD35FF00096F022 /* MemeCreatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C94899F1BD35FF00096F022 /* MemeCreatorViewController.m */; settings = {ASSET_TAGS = (); }; };
+		2C9489A31BD35FF00096F022 /* MemeGeneratorCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9489A11BD35FF00096F022 /* MemeGeneratorCollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		7BB626321BCF521D00CA12C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BB626311BCF521D00CA12C6 /* main.m */; };
 		7BB626351BCF521D00CA12C6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BB626341BCF521D00CA12C6 /* AppDelegate.m */; };
 		7BB626381BCF521D00CA12C6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BB626371BCF521D00CA12C6 /* ViewController.m */; };
@@ -54,10 +62,20 @@
 		2C6F11B41BD29A1200E5FA0D /* right_answer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right_answer.png; sourceTree = "<group>"; };
 		2C6F11B51BD29A1200E5FA0D /* wrong_answer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wrong_answer.png; sourceTree = "<group>"; };
 		2C6F11B81BD29A3100E5FA0D /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
-		2C6F11BC1BD2A55500E5FA0D /* FP_Damn.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = FP_Damn.mp4; sourceTree = "<group>"; };
+		2C6F11BC1BD2A55500E5FA0D /* FPDamn.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = FPDamn.mp4; sourceTree = "<group>"; };
 		2C6F11BD1BD2A6D700E5FA0D /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		2C6F11C01BD2A8F600E5FA0D /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		2C6F11C21BD2ABBA00E5FA0D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		2C6F11C41BD2B1F300E5FA0D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		2C6F11CC1BD2D0BF00E5FA0D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2C9489921BD346610096F022 /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = "<group>"; };
+		2C9489971BD35F880096F022 /* MemeGeneratorCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemeGeneratorCollectionViewController.h; sourceTree = "<group>"; };
+		2C9489981BD35F880096F022 /* MemeGeneratorCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemeGeneratorCollectionViewController.m; sourceTree = "<group>"; };
+		2C94899E1BD35FF00096F022 /* MemeCreatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemeCreatorViewController.h; sourceTree = "<group>"; };
+		2C94899F1BD35FF00096F022 /* MemeCreatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemeCreatorViewController.m; sourceTree = "<group>"; };
+		2C9489A01BD35FF00096F022 /* MemeGeneratorCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemeGeneratorCollectionViewCell.h; sourceTree = "<group>"; };
+		2C9489A11BD35FF00096F022 /* MemeGeneratorCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemeGeneratorCollectionViewCell.m; sourceTree = "<group>"; };
+		2C9489A41BD373350096F022 /* Impact.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Impact.ttf; sourceTree = "<group>"; };
 		7BB6262D1BCF521D00CA12C6 /* FreshPrince.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreshPrince.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BB626311BCF521D00CA12C6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7BB626331BCF521D00CA12C6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -93,6 +111,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C6F11CD1BD2D0BF00E5FA0D /* CoreGraphics.framework in Frameworks */,
+				2C6F11C51BD2B1F300E5FA0D /* AVFoundation.framework in Frameworks */,
 				2C6F11C31BD2ABBA00E5FA0D /* QuartzCore.framework in Frameworks */,
 				2C6F11C11BD2A8F600E5FA0D /* AVKit.framework in Frameworks */,
 				2C6F11BE1BD2A6D700E5FA0D /* MediaPlayer.framework in Frameworks */,
@@ -116,9 +136,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C94899A1BD35F920096F022 /* Delegate & View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7BB6266C1BCF706A00CA12C6 /* ScrollViewContainer.h */,
+				7BB6266D1BCF706A00CA12C6 /* ScrollViewContainer.m */,
+				7BB626331BCF521D00CA12C6 /* AppDelegate.h */,
+				7BB626341BCF521D00CA12C6 /* AppDelegate.m */,
+				7BB626361BCF521D00CA12C6 /* ViewController.h */,
+				7BB626371BCF521D00CA12C6 /* ViewController.m */,
+			);
+			name = "Delegate & View Controller";
+			sourceTree = "<group>";
+		};
+		2C94899B1BD35FA30096F022 /* Landing Scroll VIew */ = {
+			isa = PBXGroup;
+			children = (
+				7BB626631BCF523100CA12C6 /* LandingScrollViewController.h */,
+				7BB626641BCF523100CA12C6 /* LandingScrollViewController.m */,
+				7BB626391BCF521D00CA12C6 /* Main.storyboard */,
+			);
+			name = "Landing Scroll VIew";
+			sourceTree = "<group>";
+		};
+		2C94899C1BD35FAF0096F022 /* Quiz */ = {
+			isa = PBXGroup;
+			children = (
+				7BB626751BCF74D600CA12C6 /* QuizViewController.h */,
+				7BB626731BCF74CE00CA12C6 /* QuizViewController.m */,
+				7BB626711BCF749000CA12C6 /* QuoteQuiz.storyboard */,
+			);
+			name = Quiz;
+			sourceTree = "<group>";
+		};
+		2C94899D1BD35FBF0096F022 /* Meme Generator */ = {
+			isa = PBXGroup;
+			children = (
+				2C94899E1BD35FF00096F022 /* MemeCreatorViewController.h */,
+				2C94899F1BD35FF00096F022 /* MemeCreatorViewController.m */,
+				2C9489A01BD35FF00096F022 /* MemeGeneratorCollectionViewCell.h */,
+				2C9489A11BD35FF00096F022 /* MemeGeneratorCollectionViewCell.m */,
+				2C9489971BD35F880096F022 /* MemeGeneratorCollectionViewController.h */,
+				2C9489981BD35F880096F022 /* MemeGeneratorCollectionViewController.m */,
+				7BB626761BCF75E500CA12C6 /* MemeGenerator.storyboard */,
+			);
+			name = "Meme Generator";
+			sourceTree = "<group>";
+		};
 		7BB626241BCF521D00CA12C6 = {
 			isa = PBXGroup;
 			children = (
+				2C6F11CC1BD2D0BF00E5FA0D /* CoreGraphics.framework */,
+				2C6F11C41BD2B1F300E5FA0D /* AVFoundation.framework */,
 				2C6F11C21BD2ABBA00E5FA0D /* QuartzCore.framework */,
 				2C6F11C01BD2A8F600E5FA0D /* AVKit.framework */,
 				2C6F11BD1BD2A6D700E5FA0D /* MediaPlayer.framework */,
@@ -142,23 +211,15 @@
 		7BB6262F1BCF521D00CA12C6 /* FreshPrince */ = {
 			isa = PBXGroup;
 			children = (
-				7BB626331BCF521D00CA12C6 /* AppDelegate.h */,
-				7BB626341BCF521D00CA12C6 /* AppDelegate.m */,
-				7BB626361BCF521D00CA12C6 /* ViewController.h */,
-				7BB626371BCF521D00CA12C6 /* ViewController.m */,
-				7BB626631BCF523100CA12C6 /* LandingScrollViewController.h */,
-				7BB626641BCF523100CA12C6 /* LandingScrollViewController.m */,
-				7BB626751BCF74D600CA12C6 /* QuizViewController.h */,
-				7BB626731BCF74CE00CA12C6 /* QuizViewController.m */,
-				7BB626711BCF749000CA12C6 /* QuoteQuiz.storyboard */,
-				7BB626761BCF75E500CA12C6 /* MemeGenerator.storyboard */,
+				2C94899A1BD35F920096F022 /* Delegate & View Controller */,
+				2C94899B1BD35FA30096F022 /* Landing Scroll VIew */,
+				2C94899D1BD35FBF0096F022 /* Meme Generator */,
+				2C94899C1BD35FAF0096F022 /* Quiz */,
 				7BB626781BCF760400CA12C6 /* FreshTunes.storyboard */,
-				7BB626391BCF521D00CA12C6 /* Main.storyboard */,
-				7BB6266C1BCF706A00CA12C6 /* ScrollViewContainer.h */,
-				7BB6266D1BCF706A00CA12C6 /* ScrollViewContainer.m */,
 				7BB6263C1BCF521D00CA12C6 /* Assets.xcassets */,
 				7BB6263E1BCF521D00CA12C6 /* LaunchScreen.storyboard */,
 				7BB626411BCF521D00CA12C6 /* Info.plist */,
+				2C9489921BD346610096F022 /* Assets */,
 				7BB626301BCF521D00CA12C6 /* Supporting Files */,
 			);
 			path = FreshPrince;
@@ -167,9 +228,10 @@
 		7BB626301BCF521D00CA12C6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2C9489A41BD373350096F022 /* Impact.ttf */,
 				2C6F11B41BD29A1200E5FA0D /* right_answer.png */,
 				2C6F11B51BD29A1200E5FA0D /* wrong_answer.png */,
-				2C6F11BC1BD2A55500E5FA0D /* FP_Damn.mp4 */,
+				2C6F11BC1BD2A55500E5FA0D /* FPDamn.mp4 */,
 				7BB626661BCF6DFC00CA12C6 /* Fresh_Tunes_Card.png */,
 				2C6F11B81BD29A3100E5FA0D /* background.png */,
 				7BB626671BCF6DFC00CA12C6 /* Meme_Maker_Card.png */,
@@ -311,8 +373,9 @@
 				7BB6266B1BCF6DFC00CA12C6 /* Quote_Quiz_Card.png in Resources */,
 				2C6F11B71BD29A1200E5FA0D /* wrong_answer.png in Resources */,
 				7BB626691BCF6DFC00CA12C6 /* Fresh_Tunes_Card.png in Resources */,
-				2C6F11BF1BD2A8AA00E5FA0D /* FP_Damn.mp4 in Resources */,
+				2C6F11BF1BD2A8AA00E5FA0D /* FPDamn.mp4 in Resources */,
 				7BB6263B1BCF521D00CA12C6 /* Main.storyboard in Resources */,
+				2C9489931BD346610096F022 /* Assets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +383,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C64B59D1BD30E270007D8F6 /* FPDamn.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,6 +391,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C64B59E1BD30E280007D8F6 /* FPDamn.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,10 +402,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C9489991BD35F880096F022 /* MemeGeneratorCollectionViewController.m in Sources */,
+				2C9489A21BD35FF00096F022 /* MemeCreatorViewController.m in Sources */,
 				7BB626381BCF521D00CA12C6 /* ViewController.m in Sources */,
 				7BB6266E1BCF706A00CA12C6 /* ScrollViewContainer.m in Sources */,
 				7BB626351BCF521D00CA12C6 /* AppDelegate.m in Sources */,
 				7BB626321BCF521D00CA12C6 /* main.m in Sources */,
+				2C9489A31BD35FF00096F022 /* MemeGeneratorCollectionViewCell.m in Sources */,
 				7BB626651BCF523100CA12C6 /* LandingScrollViewController.m in Sources */,
 				7BB626741BCF74CE00CA12C6 /* QuizViewController.m in Sources */,
 			);

@@ -7,7 +7,8 @@
 //
 
 #import "QuizViewController.h"
-
+#import <QuartzCore/QuartzCore.h>
+#import <AVFoundation/AVFoundation.h>
 
 
 
@@ -21,6 +22,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
+    
+   
+    
     
     // rounded corners for the buttons
     
@@ -73,6 +79,11 @@
     
     [self loadQuestions];
     
+
+    
+    
+    
+    
 }
 
 
@@ -116,7 +127,6 @@
     
     [self performSegueWithIdentifier:@"rightAnswer" sender:self];
     
-
     
     
     
@@ -340,7 +350,6 @@
 
 
 
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
@@ -349,19 +358,93 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // VIDEO PLAYER
 
--(IBAction)playMovie:(id)sender
-{
-    AVPlayerViewController *playerViewController = [[AVPlayerViewController alloc] init;
-    playerViewController.player = [AVPlayer playerWithURL:[[NSBundle mainBundle]
-                                                           URLForResource:@"Besan"
-                                                           withExtension:@"mp4"]];
-    [playerViewController.player play];
-}
+// -(IBAction)playMovie:(id)sender {
+//
+//     NSBundle *bundle = [NSBundle mainBundle];
+//     NSString *moviePath = [bundle pathForResource:@"FP_Damn" ofType:@"mp4"];
+////     CGFloat width = self.videoPlayer.width;
+////     CGFloat height = self.videoPlayer.height / 3.0;
+//     AVPlayer *player = [AVPlayer playerWithURL:[NSURL fileURLWithPath:moviePath]];
+//     AVPlayerLayer *playerLayer = [AVPlayerLayer layer];
+//     playerLayer.player = player;
+//    // playerLayer.frame = CGRectMake(.0, height, width, height);
+//     playerLayer.backgroundColor = [UIColor blackColor].CGColor;
+//     playerLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
+//     
+//     [self.videoPlayer addSubview:player];
+//     
+//     [player play]; }
+
+//                                                     
+//-(IBAction)playMovie:(id)sender {
+//    
+//    
+//    
+//    NSURL *videoURL = [[NSBundle mainBundle] URLForResource:@"FP_Damn" withExtension:@"mp4"];
+//    
+//    AVAsset *asset = [AVAsset assetWithURL:videoURL];
+//    AVPlayerItem *playerItem = [[AVPlayerItem alloc] initWithAsset:asset];
+//    AVPlayer *avPlayer = [AVPlayer playerWithPlayerItem:playerItem];
+//    AVPlayerLayer *avPlayerLayer = [AVPlayerLayer playerLayerWithPlayer:avPlayer];
+//    
+//    avPlayerLayer.frame = CGRectMake(10, 10, 300, 300);
+//    [self.videoPlayer.layer addSublayer:avPlayerLayer];
+//    [avPlayer play];
+//    
+//    
+//    
+//   
+//                                                     
+//                                                     
+//}
 
 
 
+
+
+
+//
+//-(IBAction)playMovie:(id)sender {
+//
+//
+//
+//    AVPlayer *videoPlayer;
+//    NSURL *videoURL = [[NSBundle mainBundle] URLForResource:@"FP_Damn" withExtension:@"mp4"];
+//    
+//
+//
+//    videoPlayer = [[AVPlayer alloc] initWithURL:videoURL];
+//    
+//    [videoPlayer play];
+//
+//
+//}
+//
 
 
 
@@ -383,35 +466,6 @@
 */
 
 
-
-//
-//- (void)nextQuizItem
-//{
-//    if (self.quizIndex == 999) {
-//        self.quizIndex = 0;
-//        self.statusLabel.text = @"";
-//    } else if ((self.quiz.quizCount-1) > self.quizIndex) {
-//        self.quizIndex++;
-//    } else {
-//        self.quizIndex = 0;
-//        self.statusLabel.text = @"";
-//    }
-//    
-//    if (self.quiz.quizCount >= self.quizIndex + 1) {
-//        [self.quiz nextQuestion:self.quizIndex];
-//        self.quizQuestion.text = self.quiz.quote;
-//        [self.answer1 setTitle: self.quiz.ans1 forState:UIControlStateNormal];
-//        [self.answer2 setTitle: self.quiz.ans2 forState:UIControlStateNormal];
-//        [self.answer3 setTitle: self.quiz.ans3 forState:UIControlStateNormal];
-//        [self.answer4 setTitle: self.quiz.ans4 forState:UIControlStateNormal];
-//    
-//        
-//    } else {
-//        self.quizIndex = 0;
-//        [self quizDone];
-//    }
-//    
-//}
 
 
 @end
