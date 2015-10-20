@@ -50,6 +50,11 @@
 		7BB626DD1BD4BC0300CA12C6 /* MemeGenerator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BB626DC1BD4BC0300CA12C6 /* MemeGenerator.storyboard */; settings = {ASSET_TAGS = (); }; };
 		7BB626DE1BD4C97400CA12C6 /* Impact.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C9489A41BD373350096F022 /* Impact.ttf */; settings = {ASSET_TAGS = (); }; };
 		7BB626E01BD4D11E00CA12C6 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BB626DF1BD4D11E00CA12C6 /* Social.framework */; };
+		7BB626E31BD6091A00CA12C6 /* Spotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BB626E21BD6091A00CA12C6 /* Spotify.framework */; settings = {ASSET_TAGS = (); }; };
+		7BB626E51BD60CA000CA12C6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BB626E41BD60CA000CA12C6 /* SystemConfiguration.framework */; };
+		7BB626E81BD6112400CA12C6 /* MusicTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BB626E71BD6112400CA12C6 /* MusicTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		7BB626EB1BD6117100CA12C6 /* MusicTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BB626EA1BD6117100CA12C6 /* MusicTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		7BB626F41BD6228A00CA12C6 /* brandy_acapella.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7BB626F31BD6228A00CA12C6 /* brandy_acapella.mp3 */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +130,13 @@
 		7BB626D21BD4A53500CA12C6 /* Quote Quiz Card@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Quote Quiz Card@3x.png"; sourceTree = "<group>"; };
 		7BB626DC1BD4BC0300CA12C6 /* MemeGenerator.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MemeGenerator.storyboard; sourceTree = "<group>"; };
 		7BB626DF1BD4D11E00CA12C6 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		7BB626E21BD6091A00CA12C6 /* Spotify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Spotify.framework; sourceTree = "<group>"; };
+		7BB626E41BD60CA000CA12C6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		7BB626E61BD6112400CA12C6 /* MusicTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicTableViewController.h; sourceTree = "<group>"; };
+		7BB626E71BD6112400CA12C6 /* MusicTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicTableViewController.m; sourceTree = "<group>"; };
+		7BB626E91BD6117100CA12C6 /* MusicTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicTableViewCell.h; sourceTree = "<group>"; };
+		7BB626EA1BD6117100CA12C6 /* MusicTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicTableViewCell.m; sourceTree = "<group>"; };
+		7BB626F31BD6228A00CA12C6 /* brandy_acapella.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = brandy_acapella.mp3; path = FreshPrince/brandy_acapella.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,8 +144,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BB626E51BD60CA000CA12C6 /* SystemConfiguration.framework in Frameworks */,
 				7BB626E01BD4D11E00CA12C6 /* Social.framework in Frameworks */,
 				2C6F11CD1BD2D0BF00E5FA0D /* CoreGraphics.framework in Frameworks */,
+				7BB626E31BD6091A00CA12C6 /* Spotify.framework in Frameworks */,
 				2C6F11C51BD2B1F300E5FA0D /* AVFoundation.framework in Frameworks */,
 				2C6F11C31BD2ABBA00E5FA0D /* QuartzCore.framework in Frameworks */,
 				2C6F11C11BD2A8F600E5FA0D /* AVKit.framework in Frameworks */,
@@ -208,12 +222,8 @@
 		7BB626241BCF521D00CA12C6 = {
 			isa = PBXGroup;
 			children = (
-				7BB626DF1BD4D11E00CA12C6 /* Social.framework */,
-				2C6F11CC1BD2D0BF00E5FA0D /* CoreGraphics.framework */,
-				2C6F11C41BD2B1F300E5FA0D /* AVFoundation.framework */,
-				2C6F11C21BD2ABBA00E5FA0D /* QuartzCore.framework */,
-				2C6F11C01BD2A8F600E5FA0D /* AVKit.framework */,
-				2C6F11BD1BD2A6D700E5FA0D /* MediaPlayer.framework */,
+				7BB626F31BD6228A00CA12C6 /* brandy_acapella.mp3 */,
+				7BB626E11BD608E600CA12C6 /* Frameworks */,
 				7BB6262F1BCF521D00CA12C6 /* FreshPrince */,
 				7BB626491BCF521D00CA12C6 /* FreshPrinceTests */,
 				7BB626541BCF521D00CA12C6 /* FreshPrinceUITests */,
@@ -239,6 +249,10 @@
 				2C94899D1BD35FBF0096F022 /* Meme Generator */,
 				2C94899C1BD35FAF0096F022 /* Quiz */,
 				7BB626781BCF760400CA12C6 /* FreshTunes.storyboard */,
+				7BB626E91BD6117100CA12C6 /* MusicTableViewCell.h */,
+				7BB626EA1BD6117100CA12C6 /* MusicTableViewCell.m */,
+				7BB626E61BD6112400CA12C6 /* MusicTableViewController.h */,
+				7BB626E71BD6112400CA12C6 /* MusicTableViewController.m */,
 				7BB6263C1BCF521D00CA12C6 /* Assets.xcassets */,
 				7BB6263E1BCF521D00CA12C6 /* LaunchScreen.storyboard */,
 				7BB626411BCF521D00CA12C6 /* Info.plist */,
@@ -289,6 +303,21 @@
 				7BB626571BCF521D00CA12C6 /* Info.plist */,
 			);
 			path = FreshPrinceUITests;
+			sourceTree = "<group>";
+		};
+		7BB626E11BD608E600CA12C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7BB626E41BD60CA000CA12C6 /* SystemConfiguration.framework */,
+				7BB626E21BD6091A00CA12C6 /* Spotify.framework */,
+				7BB626DF1BD4D11E00CA12C6 /* Social.framework */,
+				2C6F11CC1BD2D0BF00E5FA0D /* CoreGraphics.framework */,
+				2C6F11C41BD2B1F300E5FA0D /* AVFoundation.framework */,
+				2C6F11C21BD2ABBA00E5FA0D /* QuartzCore.framework */,
+				2C6F11C01BD2A8F600E5FA0D /* AVKit.framework */,
+				2C6F11BD1BD2A6D700E5FA0D /* MediaPlayer.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -394,6 +423,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BB626F41BD6228A00CA12C6 /* brandy_acapella.mp3 in Resources */,
 				7BB626721BCF749000CA12C6 /* QuoteQuiz.storyboard in Resources */,
 				7BB626D41BD4A53500CA12C6 /* Card - Meme Maker@3x.png in Resources */,
 				7BB626D61BD4A53500CA12C6 /* downArrow@2x.png in Resources */,
@@ -444,11 +474,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BB626EB1BD6117100CA12C6 /* MusicTableViewCell.m in Sources */,
 				2C9489991BD35F880096F022 /* MemeGeneratorCollectionViewController.m in Sources */,
 				2C9489A21BD35FF00096F022 /* MemeCreatorViewController.m in Sources */,
 				7BB626381BCF521D00CA12C6 /* ViewController.m in Sources */,
 				7BB6266E1BCF706A00CA12C6 /* ScrollViewContainer.m in Sources */,
 				7BB626351BCF521D00CA12C6 /* AppDelegate.m in Sources */,
+				7BB626E81BD6112400CA12C6 /* MusicTableViewController.m in Sources */,
 				7BB626321BCF521D00CA12C6 /* main.m in Sources */,
 				2C9489A31BD35FF00096F022 /* MemeGeneratorCollectionViewCell.m in Sources */,
 				7BB626651BCF523100CA12C6 /* LandingScrollViewController.m in Sources */,
@@ -591,8 +623,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = FreshPrince/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.latieshacaston.FreshPrince;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -602,8 +639,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = FreshPrince/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.latieshacaston.FreshPrince;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

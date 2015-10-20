@@ -4,14 +4,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
-        <!--LandingScrollView-->
-        <scene sceneID="sr8-AI-4yT">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="LandingScrollView" id="6NM-KP-RfQ" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xZJ-oR-4Hs" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="841.5" y="48"/>
-        </scene>
         <!--Meme Generator Collection View Controller-->
         <scene sceneID="4B8-lg-i97">
             <objects>

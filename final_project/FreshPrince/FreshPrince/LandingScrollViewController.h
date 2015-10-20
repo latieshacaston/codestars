@@ -7,8 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
-@interface LandingScrollViewController : UIViewController <UIScrollViewDelegate>
+@interface LandingScrollViewController : UIViewController <UIScrollViewDelegate, AVAudioPlayerDelegate, AVAudioSessionDelegate>
+
+
+// @property (nonatomic, retain) AVAudioPlayer *player;
+- (IBAction)buttonPressed:(id)sender;
+
+
 
 
 @property (nonatomic, strong) IBOutlet UIScrollView *scrollView;

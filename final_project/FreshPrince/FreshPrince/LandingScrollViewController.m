@@ -8,7 +8,14 @@
 
 #import "LandingScrollViewController.h"
 
-@interface LandingScrollViewController ()
+
+@interface LandingScrollViewController () {
+
+
+AVAudioPlayer *player;
+
+
+}
 
 @property (nonatomic, strong) NSArray *pageImages;
 @property (nonatomic, strong) NSMutableArray *pageViews;
@@ -23,6 +30,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+
+    
     
     
    
@@ -95,8 +105,8 @@
     
     else if (self.pageControl.currentPage == 2) {
         
-        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-        UIViewController *songs = (UIViewController *)[storyboard instantiateViewControllerWithIdentifier:@"songs"];
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"FreshTunes" bundle:nil];
+        UITableViewController *songs = (UITableViewController *)[storyboard instantiateViewControllerWithIdentifier:@"music"];
         // [self presentModalViewController:youDeedIt animated:YES];
         
         [self presentViewController:songs animated:YES completion:nil]; }
@@ -184,6 +194,59 @@
 }
 
 
+- (void) buttonPressed:(id)sender {
+    
+    
+  
+    
+    
+    
+    AVAudioSession *audioSession = [AVAudioSession sharedInstance];
+
+    [audioSession setActive:YES error:nil];
+    [audioSession setCategory:AVAudioSessionCategoryPlayback error:nil];
+
+    NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle]
+                                         pathForResource:@"brandy_acapella"
+                                         ofType:@"mp3"]];
+    
+    player = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
+    [player setDelegate:self];
+    [player play];
+    
+//    NSError *error;
+//    player = [[AVAudioPlayer alloc]
+//                    initWithContentsOfURL:url
+//                    error:&error];
+//    if (error)
+//    {
+//        NSLog(@"Error in audioPlayer: %@",
+//              [error localizedDescription]);
+//    } else {
+//       player.delegate = self;
+//        [player play];
+//    }
+
+
+
+}
+
+-(void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag
+{
+    
+}
+-(void)audioPlayerDecodeErrorDidOccur:(AVAudioPlayer *)player error:(NSError *)error
+{
+    
+}
+-(void)audioPlayerBeginInterruption:(AVAudioPlayer *)player
+{
+    
+}
+-(void)audioPlayerEndInterruption:(AVAudioPlayer *)player
+{
+    
+}
 
 
 
