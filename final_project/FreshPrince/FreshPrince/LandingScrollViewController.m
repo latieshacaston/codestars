@@ -10,13 +10,8 @@
 
 
 @interface LandingScrollViewController () {
-
-
-AVAudioPlayer *player;
-
-
+    AVAudioPlayer *_audioPlayer;
 }
-
 @property (nonatomic, strong) NSArray *pageImages;
 @property (nonatomic, strong) NSMutableArray *pageViews;
 
@@ -31,6 +26,20 @@ AVAudioPlayer *player;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
+    
+    
+      
+//        
+//        // Construct URL to sound file
+//        NSString *path = [NSString stringWithFormat:@"%@/brandy_acapella.mp3", [[NSBundle mainBundle] resourcePath]];
+//        NSURL *soundUrl = [NSURL URLWithString:path];
+//        
+//        // Create audio player object and initialize with URL to sound
+//        _audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl error:nil];
+//    
+//    
+//    
 
     
     
@@ -196,23 +205,35 @@ AVAudioPlayer *player;
 
 - (void) buttonPressed:(id)sender {
     
-    
-  
-    
-    
-    
-    AVAudioSession *audioSession = [AVAudioSession sharedInstance];
-
-    [audioSession setActive:YES error:nil];
-    [audioSession setCategory:AVAudioSessionCategoryPlayback error:nil];
-
     NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle]
                                          pathForResource:@"brandy_acapella"
                                          ofType:@"mp3"]];
     
-    player = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
-    [player setDelegate:self];
-    [player play];
+    NSError *error;
+    _audioPlayer = [[AVAudioPlayer alloc]
+                   initWithContentsOfURL:url
+                   error:&error];
+    
+    NSLog(@"%@", url);
+    
+    
+    if (error)
+    {
+        NSLog(@"Error in audioPlayer: %@",
+              [error localizedDescription]);
+    } else {
+        [_audioPlayer prepareToPlay];
+    }
+    [_audioPlayer play];
+    
+    
+    
+    
+  
+    
+    
+  //  [_audioPlayer play];
+    
     
 //    NSError *error;
 //    player = [[AVAudioPlayer alloc]
