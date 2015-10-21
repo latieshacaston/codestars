@@ -110,12 +110,20 @@
 }
 
 - (IBAction)donePressed:(id)sender {
-    
-    
+   
     scoreNumber = 0;
+    
+//    
+//    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+//    UIViewController *quizViewController = (UIViewController *)[storyboard instantiateViewControllerWithIdentifier:@"mainTabController"];
+//     [self presentViewController:quizViewController animated:YES completion:nil];
+//    
+    
     
     
 }
+
+
 
 
 
@@ -353,103 +361,6 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// VIDEO PLAYER
-
-// -(IBAction)playMovie:(id)sender {
-//
-//     NSBundle *bundle = [NSBundle mainBundle];
-//     NSString *moviePath = [bundle pathForResource:@"FP_Damn" ofType:@"mp4"];
-////     CGFloat width = self.videoPlayer.width;
-////     CGFloat height = self.videoPlayer.height / 3.0;
-//     AVPlayer *player = [AVPlayer playerWithURL:[NSURL fileURLWithPath:moviePath]];
-//     AVPlayerLayer *playerLayer = [AVPlayerLayer layer];
-//     playerLayer.player = player;
-//    // playerLayer.frame = CGRectMake(.0, height, width, height);
-//     playerLayer.backgroundColor = [UIColor blackColor].CGColor;
-//     playerLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
-//     
-//     [self.videoPlayer addSubview:player];
-//     
-//     [player play]; }
-
-//                                                     
-//-(IBAction)playMovie:(id)sender {
-//    
-//    
-//    
-//    NSURL *videoURL = [[NSBundle mainBundle] URLForResource:@"FP_Damn" withExtension:@"mp4"];
-//    
-//    AVAsset *asset = [AVAsset assetWithURL:videoURL];
-//    AVPlayerItem *playerItem = [[AVPlayerItem alloc] initWithAsset:asset];
-//    AVPlayer *avPlayer = [AVPlayer playerWithPlayerItem:playerItem];
-//    AVPlayerLayer *avPlayerLayer = [AVPlayerLayer playerLayerWithPlayer:avPlayer];
-//    
-//    avPlayerLayer.frame = CGRectMake(10, 10, 300, 300);
-//    [self.videoPlayer.layer addSublayer:avPlayerLayer];
-//    [avPlayer play];
-//    
-//    
-//    
-//   
-//                                                     
-//                                                     
-//}
-
-
-
-
-
-
-//
-//-(IBAction)playMovie:(id)sender {
-//
-//
-//
-//    AVPlayer *videoPlayer;
-//    NSURL *videoURL = [[NSBundle mainBundle] URLForResource:@"FP_Damn" withExtension:@"mp4"];
-//    
-//
-//
-//    videoPlayer = [[AVPlayer alloc] initWithURL:videoURL];
-//    
-//    [videoPlayer play];
-//
-//
-//}
-//
-
-
-
-
-
 
 
 

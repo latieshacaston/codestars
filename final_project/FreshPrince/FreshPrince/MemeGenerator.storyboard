@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
-        <!--Meme Generator Collection View Controller-->
+        <!--Select an image below-->
         <scene sceneID="4B8-lg-i97">
             <objects>
                 <collectionViewController storyboardIdentifier="memeGenerator" id="InR-Zu-F7q" customClass="MemeGeneratorCollectionViewController" sceneMemberID="viewController">
@@ -48,10 +48,17 @@
                         </connections>
                     </collectionView>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="uHR-Sj-AEw"/>
+                    <navigationItem key="navigationItem" title="Select an image below" id="uHR-Sj-AEw">
+                        <barButtonItem key="leftBarButtonItem" title="Home" id="kdf-40-exG">
+                            <connections>
+                                <segue destination="fKT-CR-FiF" kind="unwind" unwindAction="unwindToMain:" id="IuJ-jC-Ey1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8vv-KS-lCU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="fKT-CR-FiF" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1740" y="234"/>
         </scene>
@@ -165,13 +172,16 @@
             <objects>
                 <navigationController storyboardIdentifier="memeNavigator" automaticallyAdjustsScrollViewInsets="NO" id="loG-9V-KXm" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <nil key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="FxD-Jn-zqp">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="K4I-r8-OL1">
+                        <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="InR-Zu-F7q" kind="relationship" relationship="rootViewController" id="g3P-5Z-noP"/>
                     </connections>

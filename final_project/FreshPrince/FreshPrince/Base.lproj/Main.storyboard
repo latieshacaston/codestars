@@ -331,7 +331,7 @@
         <!--Home-->
         <scene sceneID="HEC-sX-faV">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eUN-NT-we3" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="scrollNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="eUN-NT-we3" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" id="XaT-3u-3Q8"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="w0y-zP-qax">
@@ -351,7 +351,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="Gh5-UA-yzg">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="iOJ-Hc-9K3" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="mainTabController" automaticallyAdjustsScrollViewInsets="NO" id="iOJ-Hc-9K3" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="zoP-Am-XjV">
                         <autoresizingMask key="autoresizingMask"/>
