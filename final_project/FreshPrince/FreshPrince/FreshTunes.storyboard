@@ -8,21 +8,54 @@
         <scene sceneID="1xZ-w1-wWe">
             <objects>
                 <tableViewController storyboardIdentifier="music" title="music" id="UGj-5P-rPr" customClass="MusicTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="1yy-bP-j7m">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="Cell" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="67" sectionHeaderHeight="28" sectionFooterHeight="28" id="1yy-bP-j7m">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="SiY-Mc-2sr" customClass="MusicTableViewCell">
-                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="67" id="SiY-Mc-2sr" customClass="MusicTableViewCell">
+                                <rect key="frame" x="0.0" y="92" width="320" height="67"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SiY-Mc-2sr" id="Kso-Ve-uvk">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="sv2-jN-xxn">
+                                            <rect key="frame" x="19" y="24" width="26" height="26"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <animations/>
+                                            <state key="normal" image="Play_Button.png"/>
+                                            <connections>
+                                                <action selector="pressedPlay:" destination="SiY-Mc-2sr" eventType="touchUpInside" id="NIA-DK-zuQ"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="songTitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0em-fZ-bsd">
+                                            <rect key="frame" x="59" y="17" width="248" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="artistName" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kof-y0-E64">
+                                            <rect key="frame" x="59" y="35" width="248" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                                            <color key="textColor" red="0.7702217487373737" green="0.7702217487373737" blue="0.7702217487373737" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                     <animations/>
                                 </tableViewCellContentView>
                                 <animations/>
+                                <color key="backgroundColor" red="0.32156862749999998" green="0.21960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="artistName" destination="kof-y0-E64" id="046-3c-op2"/>
+                                    <outlet property="playButton" destination="sv2-jN-xxn" id="dQ9-oz-Og0"/>
+                                    <outlet property="songTitle" destination="0em-fZ-bsd" id="zhC-c8-rLD"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -30,10 +63,42 @@
                             <outlet property="delegate" destination="UGj-5P-rPr" id="Uep-hH-oJY"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="mhn-nU-egu">
+                        <barButtonItem key="leftBarButtonItem" title="Item" systemItem="compose" id="uw1-oK-QpQ"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qcF-dw-x37" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="369.06666666666666" y="316.18666666666667"/>
+            <point key="canvasLocation" x="1445" y="294"/>
+        </scene>
+        <!--songNavigation-->
+        <scene sceneID="43Y-0J-O6c">
+            <objects>
+                <navigationController storyboardIdentifier="musicNavigation" title="songNavigation" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="currentContext" id="wOx-dD-WPl" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2Ly-3V-IHd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Jd9-G1-Flv">
+                        <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="UGj-5P-rPr" kind="relationship" relationship="rootViewController" id="MhA-Ag-mEl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ejP-SH-fHE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="901" y="316"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Play_Button.png" width="26" height="26"/>
+    </resources>
 </document>

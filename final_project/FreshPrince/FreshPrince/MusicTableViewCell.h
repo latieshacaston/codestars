@@ -9,6 +9,22 @@
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
 
-@interface MusicTableViewCell : UITableViewCell 
+@interface MusicTableViewCell : UITableViewCell <AVAudioPlayerDelegate, AVAudioSessionDelegate>
+
+
+@property (weak, nonatomic) IBOutlet UILabel *songTitle;
+
+@property (weak, nonatomic) IBOutlet UILabel *artistName;
+
+
+@property (weak, nonatomic) IBOutlet UIButton *playButton;
+
+- (IBAction)pressedPlay:(id)sender;
+
+@property (weak, nonatomic) NSString *stringSongTitle;
+
+
+
+
 
 @end

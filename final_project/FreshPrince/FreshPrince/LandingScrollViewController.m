@@ -26,24 +26,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
-    
-    
-      
-//        
-//        // Construct URL to sound file
-//        NSString *path = [NSString stringWithFormat:@"%@/brandy_acapella.mp3", [[NSBundle mainBundle] resourcePath]];
-//        NSURL *soundUrl = [NSURL URLWithString:path];
-//        
-//        // Create audio player object and initialize with URL to sound
-//        _audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl error:nil];
-//    
-//    
-//    
-
-    
-    
-    
    
     
     UIColor *myColor = [UIColor colorWithRed:(32.0/ 255.0) green:(20.0 / 255.0) blue:(72.0 / 255.0) alpha: 1];
@@ -97,7 +79,7 @@
     if (self.pageControl.currentPage == 0) {
         
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"QuoteQuiz" bundle:nil];
-        UIViewController *quizViewController = (UIViewController *)[storyboard instantiateViewControllerWithIdentifier:@"QuizQuestionVC"];
+        UIViewController *quizViewController = (UIViewController *)[storyboard instantiateViewControllerWithIdentifier:@"quizNavigator"];
         // [self presentModalViewController:youDeedIt animated:YES];
         
         [self presentViewController:quizViewController animated:YES completion:nil]; }
@@ -105,7 +87,7 @@
     else if (self.pageControl.currentPage == 1) {
         
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MemeGenerator" bundle:nil];
-        UICollectionViewController *memeGenerator = (UICollectionViewController *)[storyboard instantiateViewControllerWithIdentifier:@"memeGenerator"];
+        UICollectionViewController *memeGenerator = (UICollectionViewController *)[storyboard instantiateViewControllerWithIdentifier:@"memeNavigator"];
         // [self presentModalViewController:youDeedIt animated:YES];
         
         [self presentViewController:memeGenerator animated:YES completion:nil]; }
@@ -115,7 +97,7 @@
     else if (self.pageControl.currentPage == 2) {
         
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"FreshTunes" bundle:nil];
-        UITableViewController *songs = (UITableViewController *)[storyboard instantiateViewControllerWithIdentifier:@"music"];
+        UITableViewController *songs = (UITableViewController *)[storyboard instantiateViewControllerWithIdentifier:@"musicNavigation"];
         // [self presentModalViewController:youDeedIt animated:YES];
         
         [self presentViewController:songs animated:YES completion:nil]; }
@@ -203,54 +185,9 @@
 }
 
 
-- (void) buttonPressed:(id)sender {
-    
-    NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle]
-                                         pathForResource:@"brandy_acapella"
-                                         ofType:@"mp3"]];
-    
-    NSError *error;
-    _audioPlayer = [[AVAudioPlayer alloc]
-                   initWithContentsOfURL:url
-                   error:&error];
-    
-    NSLog(@"%@", url);
-    
-    
-    if (error)
-    {
-        NSLog(@"Error in audioPlayer: %@",
-              [error localizedDescription]);
-    } else {
-        [_audioPlayer prepareToPlay];
-    }
-    [_audioPlayer play];
-    
-    
-    
+
     
   
-    
-    
-  //  [_audioPlayer play];
-    
-    
-//    NSError *error;
-//    player = [[AVAudioPlayer alloc]
-//                    initWithContentsOfURL:url
-//                    error:&error];
-//    if (error)
-//    {
-//        NSLog(@"Error in audioPlayer: %@",
-//              [error localizedDescription]);
-//    } else {
-//       player.delegate = self;
-//        [player play];
-//    }
-
-
-
-}
 
 -(void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag
 {

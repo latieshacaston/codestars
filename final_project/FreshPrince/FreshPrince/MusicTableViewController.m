@@ -7,12 +7,20 @@
 //
 
 #import "MusicTableViewController.h"
+#import "MusicTableViewCell.h"
 #import <Spotify/Spotify.h>
 #import <AVFoundation/AVFoundation.h>
 
 @interface MusicTableViewController ()
 {
     AVAudioPlayer *_audioPlayer;
+    
+    NSArray *artistsNames;
+    NSArray *songTitles;
+    
+    
+    
+    
 }
 
 
@@ -25,29 +33,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-//    NSString *audioFilePath = [[NSBundle mainBundle] pathForResource:@"brandy_acapella" ofType:@"mp3"];
-//    NSURL *pathAsURL = [[NSURL alloc] initFileURLWithPath:audioFilePath];
-//    
-//    // Init the audio player.
-//    NSError *error;
-//    self.player = [[AVAudioPlayer alloc] initWithContentsOfURL:pathAsURL error:&error];
-//    
-//    
-//    
-//  
-//
-//    
-//    [self.player setDelegate:self];
-//    
+   
     
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    
-    
+    artistsNames = @[@"Brandy", @"The Fresh Prince", @"The Fresh Prince & Jazzy Jeff"];
+    songTitles = @[@"I Wanna Be Down", @"Theme Song", @"Parent's Just Dont Understand"];
     
     
     
@@ -60,23 +49,29 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Inomplete implementation, return the number of sections
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 1;
+
+    return songTitles.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+   
     
-    // Configure the cell...
+    static NSString *cellIdentifier = @"Cell";
+    MusicTableViewCell *cell = (MusicTableViewCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    
+    
+    
+    cell.artistName.text = [artistsNames objectAtIndex:indexPath.row];
+    cell.songTitle.text = [songTitles objectAtIndex:indexPath.row]; 
+    
+    cell.stringSongTitle = cell.songTitle.text;
     
     return cell;
 }
@@ -125,6 +120,14 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+
+- (void)viewWillAppear:(BOOL)animated {
+    
+    self.navigationController.navigationBarHidden = NO;
+    
+}
+
 
 
 @end

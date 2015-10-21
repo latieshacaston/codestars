@@ -13,7 +13,7 @@
 
 
 // @property (nonatomic, retain) AVAudioPlayer *player;
-- (IBAction)buttonPressed:(id)sender;
+
 
 
 
