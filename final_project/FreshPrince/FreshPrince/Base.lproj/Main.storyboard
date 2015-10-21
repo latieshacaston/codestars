@@ -57,7 +57,7 @@
         <!--Fresh Prince Wiki-->
         <scene sceneID="ESC-t6-lje">
             <objects>
-                <viewController title="Fresh Prince Wiki" id="EUv-x6-x7N" sceneMemberID="viewController">
+                <viewController title="Fresh Prince Wiki" id="EUv-x6-x7N" customClass="WebViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Tfp-zm-6dr"/>
                         <viewControllerLayoutGuide type="bottom" id="7gv-OB-Lgb"/>
@@ -65,10 +65,20 @@
                     <view key="view" contentMode="scaleToFill" id="58f-pX-1Nc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OP3-qe-KOX">
+                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="tXy-Jp-n7R"/>
+                    <connections>
+                        <outlet property="wikiWebView" destination="OP3-qe-KOX" id="CzJ-fR-Zz7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aMM-gs-5A4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -77,6 +87,7 @@
         <!--Fresh Prince Facts-->
         <scene sceneID="1YS-Yq-PIV">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c8W-pG-9iq" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController title="Fresh Prince Facts" id="3cK-rY-OZX" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tyt-kH-wwV"/>
@@ -90,29 +101,65 @@
                     </view>
                     <navigationItem key="navigationItem" id="f2O-b4-SwU"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="c8W-pG-9iq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1357" y="-29"/>
         </scene>
         <!--Episode Guide-->
         <scene sceneID="1Zg-WT-bVI">
             <objects>
-                <tableViewController title="Episode Guide" id="ooL-ZD-aSP" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="UGX-VW-nSP">
+                <tableViewController title="Episode Guide" id="ooL-ZD-aSP" customClass="EpisodeGuideTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" id="UGX-VW-nSP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="episodeGuideCell" id="5ee-dH-aWI">
-                                <rect key="frame" x="0.0" y="92" width="320" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="episodeGuideCell" rowHeight="80" id="5ee-dH-aWI" customClass="EpisodesTableViewCell">
+                                <rect key="frame" x="0.0" y="92" width="320" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5ee-dH-aWI" id="8TQ-fv-vcF">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="seasonEpisode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0gb-Fr-5bo">
+                                            <rect key="frame" x="17" y="0.0" width="116" height="21"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="episodeName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S0r-Uq-wm6">
+                                            <rect key="frame" x="17" y="20" width="116" height="21"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="firstAired" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kyT-5y-Hjy">
+                                            <rect key="frame" x="17" y="41" width="116" height="21"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W0N-vq-uiT">
+                                            <rect key="frame" x="262" y="20" width="30" height="30"/>
+                                            <animations/>
+                                            <state key="normal" title="fav"/>
+                                            <connections>
+                                                <action selector="favPressed:" destination="5ee-dH-aWI" eventType="touchUpInside" id="Keg-SY-Y2c"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
                                     <animations/>
                                 </tableViewCellContentView>
                                 <animations/>
+                                <connections>
+                                    <outlet property="episodeName" destination="S0r-Uq-wm6" id="aDi-t2-bHN"/>
+                                    <outlet property="favButton" destination="W0N-vq-uiT" id="eJC-cP-oic"/>
+                                    <outlet property="firstAired" destination="kyT-5y-Hjy" id="gIP-Bx-Nb4"/>
+                                    <outlet property="seasonEpisode" destination="0gb-Fr-5bo" id="QTs-Xa-lgG"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -120,11 +167,86 @@
                             <outlet property="delegate" destination="ooL-ZD-aSP" id="mPD-bc-B0O"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="yZj-q1-Eb7"/>
+                    <navigationItem key="navigationItem" id="yZj-q1-Eb7">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="wft-eX-kZs">
+                            <connections>
+                                <segue destination="UxP-Pd-MaA" kind="modal" id="2Cc-69-PVn"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dlk-wS-WlO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1357" y="1395"/>
+        </scene>
+        <!--Favorites Table View Controller-->
+        <scene sceneID="Kzl-A2-61l">
+            <objects>
+                <tableViewController id="6Z0-tp-9nh" customClass="FavoritesTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" id="bK4-Z0-vNF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="favoritesCell" rowHeight="80" id="bpM-C6-srV" customClass="FavoritesTableViewCell">
+                                <rect key="frame" x="0.0" y="92" width="320" height="80"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bpM-C6-srV" id="7Ed-e3-IQM">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="favseasonEpisode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ER8-v7-S9c">
+                                            <rect key="frame" x="17" y="4" width="116" height="21"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="favepisodeName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oln-fG-pdU">
+                                            <rect key="frame" x="17" y="24" width="116" height="21"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="favFirstAired" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ou-5t-qeW">
+                                            <rect key="frame" x="17" y="45" width="116" height="21"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AoT-7j-clh">
+                                            <rect key="frame" x="258" y="18" width="38" height="30"/>
+                                            <animations/>
+                                            <state key="normal" title="unfav"/>
+                                            <connections>
+                                                <action selector="unfavPressed:" destination="bpM-C6-srV" eventType="touchUpInside" id="vVo-Ir-VEe"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <animations/>
+                                </tableViewCellContentView>
+                                <animations/>
+                                <connections>
+                                    <outlet property="favEpisodeName" destination="oln-fG-pdU" id="4sA-D0-2YP"/>
+                                    <outlet property="favFirstAired" destination="1ou-5t-qeW" id="Z7i-2J-2r2"/>
+                                    <outlet property="favSeasonEpisode" destination="ER8-v7-S9c" id="8js-fu-hib"/>
+                                    <outlet property="unfav" destination="AoT-7j-clh" id="qXT-Nc-W3u"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="6Z0-tp-9nh" id="CEO-c7-v4F"/>
+                            <outlet property="delegate" destination="6Z0-tp-9nh" id="F6D-cv-g5V"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="DIz-Bo-ekr"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dDn-qt-ZjP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2043" y="1395"/>
         </scene>
         <!--Wiki-->
         <scene sceneID="UqX-PG-DXk">
@@ -226,6 +348,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qms-Jd-o9P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="161" y="260"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Gsr-zL-nXr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UxP-Pd-MaA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3Py-N7-u4Q">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="6Z0-tp-9nh" kind="relationship" relationship="rootViewController" id="QqT-Nq-wvo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fVy-EA-jgW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1705" y="1395"/>
         </scene>
     </scenes>
 </document>

@@ -60,6 +60,11 @@
 		7BB626FB1BD72F9900CA12C6 /* 01_FPThemeSong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7BB626F91BD72F9900CA12C6 /* 01_FPThemeSong.mp3 */; settings = {ASSET_TAGS = (); }; };
 		7BB626FD1BD7411D00CA12C6 /* Pause_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BB626FC1BD7411D00CA12C6 /* Pause_Button.png */; settings = {ASSET_TAGS = (); }; };
 		7BB626FF1BD7426800CA12C6 /* Pause Button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BB626FE1BD7426800CA12C6 /* Pause Button@2x.png */; settings = {ASSET_TAGS = (); }; };
+		7BB627021BD7526D00CA12C6 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BB627011BD7526D00CA12C6 /* WebViewController.m */; settings = {ASSET_TAGS = (); }; };
+		7BB627051BD7535900CA12C6 /* EpisodeGuideTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BB627041BD7535900CA12C6 /* EpisodeGuideTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		7BB627081BD755E400CA12C6 /* FavoritesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BB627071BD755E400CA12C6 /* FavoritesTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		7BB6270B1BD75D7D00CA12C6 /* EpisodesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BB6270A1BD75D7D00CA12C6 /* EpisodesTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		7BB6270E1BD75FA200CA12C6 /* FavoritesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BB6270D1BD75FA200CA12C6 /* FavoritesTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -147,6 +152,16 @@
 		7BB626F91BD72F9900CA12C6 /* 01_FPThemeSong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 01_FPThemeSong.mp3; sourceTree = "<group>"; };
 		7BB626FC1BD7411D00CA12C6 /* Pause_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pause_Button.png; sourceTree = "<group>"; };
 		7BB626FE1BD7426800CA12C6 /* Pause Button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pause Button@2x.png"; sourceTree = "<group>"; };
+		7BB627001BD7526D00CA12C6 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		7BB627011BD7526D00CA12C6 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		7BB627031BD7535900CA12C6 /* EpisodeGuideTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EpisodeGuideTableViewController.h; sourceTree = "<group>"; };
+		7BB627041BD7535900CA12C6 /* EpisodeGuideTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EpisodeGuideTableViewController.m; sourceTree = "<group>"; };
+		7BB627061BD755E400CA12C6 /* FavoritesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritesTableViewController.h; sourceTree = "<group>"; };
+		7BB627071BD755E400CA12C6 /* FavoritesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesTableViewController.m; sourceTree = "<group>"; };
+		7BB627091BD75D7D00CA12C6 /* EpisodesTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EpisodesTableViewCell.h; sourceTree = "<group>"; };
+		7BB6270A1BD75D7D00CA12C6 /* EpisodesTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EpisodesTableViewCell.m; sourceTree = "<group>"; };
+		7BB6270C1BD75FA200CA12C6 /* FavoritesTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritesTableViewCell.h; sourceTree = "<group>"; };
+		7BB6270D1BD75FA200CA12C6 /* FavoritesTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +216,16 @@
 				7BB626631BCF523100CA12C6 /* LandingScrollViewController.h */,
 				7BB626641BCF523100CA12C6 /* LandingScrollViewController.m */,
 				7BB626391BCF521D00CA12C6 /* Main.storyboard */,
+				7BB6270C1BD75FA200CA12C6 /* FavoritesTableViewCell.h */,
+				7BB6270D1BD75FA200CA12C6 /* FavoritesTableViewCell.m */,
+				7BB627091BD75D7D00CA12C6 /* EpisodesTableViewCell.h */,
+				7BB6270A1BD75D7D00CA12C6 /* EpisodesTableViewCell.m */,
+				7BB627061BD755E400CA12C6 /* FavoritesTableViewController.h */,
+				7BB627071BD755E400CA12C6 /* FavoritesTableViewController.m */,
+				7BB627031BD7535900CA12C6 /* EpisodeGuideTableViewController.h */,
+				7BB627041BD7535900CA12C6 /* EpisodeGuideTableViewController.m */,
+				7BB627001BD7526D00CA12C6 /* WebViewController.h */,
+				7BB627011BD7526D00CA12C6 /* WebViewController.m */,
 			);
 			name = "Landing Scroll VIew";
 			sourceTree = "<group>";
@@ -502,15 +527,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BB627051BD7535900CA12C6 /* EpisodeGuideTableViewController.m in Sources */,
 				7BB626EB1BD6117100CA12C6 /* MusicTableViewCell.m in Sources */,
 				2C9489991BD35F880096F022 /* MemeGeneratorCollectionViewController.m in Sources */,
 				2C9489A21BD35FF00096F022 /* MemeCreatorViewController.m in Sources */,
 				7BB626381BCF521D00CA12C6 /* ViewController.m in Sources */,
+				7BB6270B1BD75D7D00CA12C6 /* EpisodesTableViewCell.m in Sources */,
 				7BB6266E1BCF706A00CA12C6 /* ScrollViewContainer.m in Sources */,
 				7BB626351BCF521D00CA12C6 /* AppDelegate.m in Sources */,
 				7BB626E81BD6112400CA12C6 /* MusicTableViewController.m in Sources */,
+				7BB6270E1BD75FA200CA12C6 /* FavoritesTableViewCell.m in Sources */,
+				7BB627021BD7526D00CA12C6 /* WebViewController.m in Sources */,
 				7BB626321BCF521D00CA12C6 /* main.m in Sources */,
 				2C9489A31BD35FF00096F022 /* MemeGeneratorCollectionViewCell.m in Sources */,
+				7BB627081BD755E400CA12C6 /* FavoritesTableViewController.m in Sources */,
 				7BB626651BCF523100CA12C6 /* LandingScrollViewController.m in Sources */,
 				7BB626741BCF74CE00CA12C6 /* QuizViewController.m in Sources */,
 			);
