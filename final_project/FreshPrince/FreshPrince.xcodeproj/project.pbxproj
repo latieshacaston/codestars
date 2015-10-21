@@ -23,6 +23,7 @@
 		2C9489A21BD35FF00096F022 /* MemeCreatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C94899F1BD35FF00096F022 /* MemeCreatorViewController.m */; settings = {ASSET_TAGS = (); }; };
 		2C9489A31BD35FF00096F022 /* MemeGeneratorCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9489A11BD35FF00096F022 /* MemeGeneratorCollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		2CA9E1091BD820F5008D37C7 /* FPFacts.html in Resources */ = {isa = PBXBuildFile; fileRef = 2CA9E1081BD820F5008D37C7 /* FPFacts.html */; settings = {ASSET_TAGS = (); }; };
+		2CA9E10B1BD83D6C008D37C7 /* butler.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 2CA9E10A1BD83D6C008D37C7 /* butler.jpeg */; settings = {ASSET_TAGS = (); }; };
 		7BB626321BCF521D00CA12C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BB626311BCF521D00CA12C6 /* main.m */; };
 		7BB626351BCF521D00CA12C6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BB626341BCF521D00CA12C6 /* AppDelegate.m */; };
 		7BB626381BCF521D00CA12C6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BB626371BCF521D00CA12C6 /* ViewController.m */; };
@@ -104,6 +105,7 @@
 		2C9489A11BD35FF00096F022 /* MemeGeneratorCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemeGeneratorCollectionViewCell.m; sourceTree = "<group>"; };
 		2C9489A41BD373350096F022 /* Impact.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Impact.ttf; sourceTree = "<group>"; };
 		2CA9E1081BD820F5008D37C7 /* FPFacts.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = FPFacts.html; sourceTree = "<group>"; };
+		2CA9E10A1BD83D6C008D37C7 /* butler.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = butler.jpeg; sourceTree = "<group>"; };
 		7BB6262D1BCF521D00CA12C6 /* FreshPrince.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreshPrince.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BB626311BCF521D00CA12C6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7BB626331BCF521D00CA12C6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -297,6 +299,7 @@
 		7BB626301BCF521D00CA12C6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2CA9E10A1BD83D6C008D37C7 /* butler.jpeg */,
 				7BB626F31BD6228A00CA12C6 /* brandy_acapella.mp3 */,
 				7BB626F81BD72F9900CA12C6 /* 02_ParentsJustDont.mp3 */,
 				7BB626FC1BD7411D00CA12C6 /* Pause_Button.png */,
@@ -487,6 +490,7 @@
 				2C6F11B61BD29A1200E5FA0D /* right_answer.png in Resources */,
 				7BB626D71BD4A53500CA12C6 /* downArrow@3x.png in Resources */,
 				7BB6263D1BCF521D00CA12C6 /* Assets.xcassets in Resources */,
+				2CA9E10B1BD83D6C008D37C7 /* butler.jpeg in Resources */,
 				7BB6266A1BCF6DFC00CA12C6 /* Meme_Maker_Card.png in Resources */,
 				7BB626791BCF760400CA12C6 /* FreshTunes.storyboard in Resources */,
 				7BB6266B1BCF6DFC00CA12C6 /* Quote_Quiz_Card.png in Resources */,

@@ -64,10 +64,15 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="mhn-nU-egu">
-                        <barButtonItem key="leftBarButtonItem" title="Item" systemItem="compose" id="uw1-oK-QpQ"/>
+                        <barButtonItem key="leftBarButtonItem" title="Home" style="plain" id="uw1-oK-QpQ">
+                            <connections>
+                                <segue destination="tm6-Hz-ZXP" kind="unwind" unwindAction="unwindToMain:" id="ucT-pC-ouY"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qcF-dw-x37" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="tm6-Hz-ZXP" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1445" y="294"/>
         </scene>

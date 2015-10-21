@@ -47,8 +47,7 @@ finalFaveEpisodeNumbers = [[NSMutableArray alloc] init];
 
     NSLog (@"%@", finalFaveEpisodeNames);
  
-
-    
+[self.tableView reloadData]; 
     
 }
 
