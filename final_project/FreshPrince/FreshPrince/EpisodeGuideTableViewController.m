@@ -23,6 +23,8 @@
     NSArray *episodeNames;
     NSArray *airDates;
 
+    NSArray *searchResults;
+    
 
 
 }
@@ -31,7 +33,6 @@
     [super viewDidLoad];
     
 
-    // Add sections later
     
     seasonsAndEpisodes = @[@"S01E01", @"S01E02", @"S01E03"];
     
@@ -40,8 +41,7 @@
     
     
     airDates = @[@"September 10, 1990", @"September 17, 1990", @"September 24, 1990"];
-    
-    
+   
     
     
     // Uncomment the following line to preserve selection between presentations.
@@ -50,6 +50,23 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
+
+
+
+
+
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+
+
+
+
+    return seasonsAndEpisodes.count;
+
+
+}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -62,20 +79,23 @@
     return 1;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-
-    return seasonsAndEpisodes.count;
-}
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
    EpisodesTableViewCell *cell = (EpisodesTableViewCell *)[tableView dequeueReusableCellWithIdentifier:@"episodeGuideCell"forIndexPath:indexPath];
+    
+    
+    
+    
     
     cell.seasonEpisode.text = [seasonsAndEpisodes objectAtIndex:indexPath.row];
     
     cell.episodeName.text = [episodeNames objectAtIndex:indexPath.row];
     
     cell.firstAired.text = [airDates objectAtIndex:indexPath.row];
+    
+    
+    
     
     
     
@@ -117,14 +137,13 @@
 }
 */
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+
+
+    
+    
+    
+
+
 
 @end

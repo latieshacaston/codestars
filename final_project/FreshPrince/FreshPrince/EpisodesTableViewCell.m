@@ -27,39 +27,57 @@
 - (IBAction)favPressed:(id)sender {
     
     
+    NSUserDefaults *favorites = [NSUserDefaults standardUserDefaults];
     
-    FavoritesTableViewCell *FavTableViewController = [[FavoritesTableViewCell alloc] init];
+    [favorites setValue:self.seasonEpisode.text forKey:@"Season and Episode"];
     
+    [favorites setValue:self.episodeName.text forKey:@"Episode Name"];
     
-    FavTableViewController.stringFavEpisodeName = self.episodeName.text;
-    FavTableViewController.stringFavSeasonEpisode = self.seasonEpisode.text;
-    FavTableViewController.stringFavFirstAired = self.firstAired.text;
-    
-    NSLog(@"%@ is the episode name on the episodes table", self.episodeName.text);
-    NSLog(@"%@ is the episode name being passed to a string in the Fav Cell", FavTableViewController.stringFavEpisodeName);
-    
-    FavoritesTableViewController *favtabviewcontroller = [[FavoritesTableViewController alloc] init];
-    
-    favtabviewcontroller.favSeasonEpisodeArray = [[NSMutableArray alloc] init];
-    favtabviewcontroller.favEpisodeNameArray = [[NSMutableArray alloc] init];
-    favtabviewcontroller.favFirstAiredArray = [[NSMutableArray alloc] init];
-
-    
-    [favtabviewcontroller.favSeasonEpisodeArray addObject:FavTableViewController.stringFavSeasonEpisode];
-    
-
+    [favorites setValue:self.firstAired.text forKey:@"air Date"];
     
     
-    [favtabviewcontroller.favEpisodeNameArray addObject:FavTableViewController.stringFavEpisodeName];
-    [favtabviewcontroller.favEpisodeNameArray addObject:FavTableViewController.stringFavFirstAired];
+//    FavoritesTableViewController *favetableviewcontroller = [[FavoritesTableViewController alloc] init];
+//    
+//    favetableviewcontroller.passMeTheSeasonAndDateArray = [[NSMutableArray alloc] init];
+//    favetableviewcontroller.passMeTheFavEpisodeNameArray = [[NSMutableArray alloc] init];
+//    
+//    favetableviewcontroller.passMeTheAirDateArray = [[NSMutableArray alloc] init];
+//    
+//    
+//    [favetableviewcontroller.passMeTheAirDateArray addObject:self.firstAired.text];
+//    
+//    [favetableviewcontroller.passMeTheSeasonAndDateArray addObject:self.seasonEpisode.text];
+//    
+//    [favetableviewcontroller.passMeTheFavEpisodeNameArray addObject:self.episodeName.text];
     
-    
-
+   // NSLog(@"%@", favetableviewcontroller.passMeTheFavEpisodeNameArray);
     
     
     
+  
+//    favetableviewcontroller.stringFavEpisodeName = self.episodeName.text;
+//    
+//    NSLog (@"%@", favetableviewcontroller.stringFavEpisodeName);
+//    
+//    NSLog(@"%@", self.episodeName.text); 
+//    
+//    
+//    favetableviewcontroller.stringFavSeasonEpisode = self.seasonEpisode.text;
+//    
+//    favetableviewcontroller.stringFavFirstAired = self.firstAired.text;
     
-    NSLog(@"%@ is the episode being passed into the mutable array", favtabviewcontroller.favEpisodeNameArray);
+    
+//    
+//    
+//     self.episodeName.text = favetableviewcontroller.stringFavEpisodeName;
+//    
+//       self.seasonEpisode.text =  favetableviewcontroller.stringFavSeasonEpisode;
+//    
+//        self.firstAired.text = favetableviewcontroller.stringFavFirstAired;
+    
+    
+    
+//     NSLog(@"%@ is the episode being passed into the mutable array", favtabviewcontroller.favEpisodeNameArray);
     
 
     

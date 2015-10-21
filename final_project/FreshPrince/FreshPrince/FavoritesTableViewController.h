@@ -11,9 +11,11 @@
 @interface FavoritesTableViewController : UITableViewController
 
 
-@property (strong, nonatomic) NSMutableArray *favSeasonEpisodeArray;
-@property (strong, nonatomic) NSMutableArray *favEpisodeNameArray;
-@property (strong, nonatomic) NSMutableArray *favFirstAiredArray;
+
+@property (strong, nonatomic) NSMutableArray *passMeTheSeasonAndDateArray;
+@property (strong, nonatomic) NSMutableArray *passMeTheFavEpisodeNameArray;
+
+@property (strong, nonatomic) NSMutableArray*passMeTheAirDateArray;
 
 
 

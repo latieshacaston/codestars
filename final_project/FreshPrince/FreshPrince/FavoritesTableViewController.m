@@ -8,6 +8,8 @@
 
 #import "FavoritesTableViewController.h"
 #import "FavoritesTableViewCell.h"
+#import "EpisodesTableViewCell.h"
+#import "EpisodeGuideTableViewController.h"
 
 @interface FavoritesTableViewController ()
 
@@ -26,18 +28,25 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-
- 
-
-    finalFaveEpisodeAirDates = [NSMutableArray arrayWithArray:self.favFirstAiredArray];
-    NSLog(@"%@", finalFaveEpisodeAirDates);
     
-    finalFaveEpisodeNumbers = [NSMutableArray arrayWithArray:self.favSeasonEpisodeArray];
+    
+    NSUserDefaults *favorites = [NSUserDefaults standardUserDefaults];
+    
+finalFaveEpisodeNumbers = [[NSMutableArray alloc] init];
+    finalFaveEpisodeNames = [[NSMutableArray alloc] init];
+    finalFaveEpisodeAirDates = [[NSMutableArray alloc] init];
+    
+    [ finalFaveEpisodeNumbers addObject:[favorites objectForKey:@"Season and Episode"]];
+    
     NSLog(@"%@", finalFaveEpisodeNumbers);
     
-    finalFaveEpisodeNames = [NSMutableArray arrayWithArray:self.favEpisodeNameArray];
-    NSLog(@"%@", finalFaveEpisodeNames);
+    [finalFaveEpisodeNames addObject:[favorites objectForKey:@"Episode Name"]];
+    [finalFaveEpisodeAirDates addObject:[favorites objectForKey:@"air Date"]];
     
+    
+
+    NSLog (@"%@", finalFaveEpisodeNames);
+ 
 
     
     

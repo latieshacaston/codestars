@@ -22,12 +22,6 @@
 - (IBAction)unfavPressed:(id)sender;
 
 
-@property (weak, nonatomic) NSString *stringFavSeasonEpisode;
-@property (weak, nonatomic) NSString *stringFavEpisodeName;
-
-@property (weak, nonatomic) NSString *stringFavFirstAired;
-
-
 
 
 

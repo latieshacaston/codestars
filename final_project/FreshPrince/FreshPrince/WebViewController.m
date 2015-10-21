@@ -22,6 +22,10 @@
     NSURLRequest *request=[NSURLRequest requestWithURL:url];
     [self.wikiWebView loadRequest:request];
     
+    NSURL *factsURL = [NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:@"FPFacts" ofType:nil]];
+    NSURLRequest *factsRequest = [NSURLRequest requestWithURL:factsURL];
+    [self.factsWebView loadRequest:factsRequest];
+    
     
     
     

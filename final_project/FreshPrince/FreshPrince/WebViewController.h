@@ -12,6 +12,7 @@
 
 @property (weak, nonatomic) IBOutlet UIWebView *wikiWebView;
 
+@property (weak, nonatomic) IBOutlet UIWebView *factsWebView;
 
 
 

@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FavoritesTableViewController.h"
 
 @interface EpisodesTableViewCell : UITableViewCell
 
+
+@property (nonatomic, weak) FavoritesTableViewController *favetableviewcontroller;
 
 @property (weak, nonatomic) IBOutlet UILabel *seasonEpisode;
 

@@ -23,6 +23,15 @@
 
 - (IBAction)unfavPressed:(id)sender {
     
+    NSUserDefaults *favorites = [NSUserDefaults standardUserDefaults];
+    
+    [favorites removeObjectForKey:@"Season and Episode"];
+    
+    [favorites removeObjectForKey:@"Episode Name"];
+    
+    [favorites removeObjectForKey:@"air Date"];
+    
+    
     
     
 }
