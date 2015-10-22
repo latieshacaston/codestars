@@ -8,7 +8,7 @@
 
 #import "MusicTableViewController.h"
 #import "MusicTableViewCell.h"
-#import <Spotify/Spotify.h>
+
 #import <AVFoundation/AVFoundation.h>
 
 @interface MusicTableViewController ()

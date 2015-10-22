@@ -69,7 +69,6 @@
 		7BB626DD1BD4BC0300CA12C6 /* MemeGenerator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BB626DC1BD4BC0300CA12C6 /* MemeGenerator.storyboard */; settings = {ASSET_TAGS = (); }; };
 		7BB626DE1BD4C97400CA12C6 /* Impact.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C9489A41BD373350096F022 /* Impact.ttf */; settings = {ASSET_TAGS = (); }; };
 		7BB626E01BD4D11E00CA12C6 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BB626DF1BD4D11E00CA12C6 /* Social.framework */; };
-		7BB626E31BD6091A00CA12C6 /* Spotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BB626E21BD6091A00CA12C6 /* Spotify.framework */; settings = {ASSET_TAGS = (); }; };
 		7BB626E51BD60CA000CA12C6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BB626E41BD60CA000CA12C6 /* SystemConfiguration.framework */; };
 		7BB626E81BD6112400CA12C6 /* MusicTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BB626E71BD6112400CA12C6 /* MusicTableViewController.m */; settings = {ASSET_TAGS = (); }; };
 		7BB626EB1BD6117100CA12C6 /* MusicTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BB626EA1BD6117100CA12C6 /* MusicTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
@@ -180,7 +179,6 @@
 		7BB626D21BD4A53500CA12C6 /* Quote Quiz Card@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Quote Quiz Card@3x.png"; sourceTree = "<group>"; };
 		7BB626DC1BD4BC0300CA12C6 /* MemeGenerator.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MemeGenerator.storyboard; sourceTree = "<group>"; };
 		7BB626DF1BD4D11E00CA12C6 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
-		7BB626E21BD6091A00CA12C6 /* Spotify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Spotify.framework; sourceTree = "<group>"; };
 		7BB626E41BD60CA000CA12C6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		7BB626E61BD6112400CA12C6 /* MusicTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicTableViewController.h; sourceTree = "<group>"; };
 		7BB626E71BD6112400CA12C6 /* MusicTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicTableViewController.m; sourceTree = "<group>"; };
@@ -214,7 +212,6 @@
 				7BB626E51BD60CA000CA12C6 /* SystemConfiguration.framework in Frameworks */,
 				7BB626E01BD4D11E00CA12C6 /* Social.framework in Frameworks */,
 				2C6F11CD1BD2D0BF00E5FA0D /* CoreGraphics.framework in Frameworks */,
-				7BB626E31BD6091A00CA12C6 /* Spotify.framework in Frameworks */,
 				2C6F11C51BD2B1F300E5FA0D /* AVFoundation.framework in Frameworks */,
 				2C6F11C31BD2ABBA00E5FA0D /* QuartzCore.framework in Frameworks */,
 				2C6F11C11BD2A8F600E5FA0D /* AVKit.framework in Frameworks */,
@@ -408,7 +405,6 @@
 			isa = PBXGroup;
 			children = (
 				7BB626E41BD60CA000CA12C6 /* SystemConfiguration.framework */,
-				7BB626E21BD6091A00CA12C6 /* Spotify.framework */,
 				7BB626DF1BD4D11E00CA12C6 /* Social.framework */,
 				2C6F11CC1BD2D0BF00E5FA0D /* CoreGraphics.framework */,
 				2C6F11C41BD2B1F300E5FA0D /* AVFoundation.framework */,
