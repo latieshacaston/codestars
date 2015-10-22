@@ -31,7 +31,8 @@
 - (IBAction)favPressed:(id)sender {
         NSUserDefaults *favorites = [NSUserDefaults standardUserDefaults];
     
-    
+    [self.favButton setImage:[UIImage imageNamed:@"Pause_Button.png"]
+                     forState:UIControlStateSelected];
     
     
     if (!gottadefault) {

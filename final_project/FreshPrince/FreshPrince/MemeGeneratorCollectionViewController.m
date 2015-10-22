@@ -28,6 +28,11 @@ static NSString * const reuseIdentifier = @"MemeGeneratorCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
+    UIColor *myColor = [UIColor colorWithRed:(32.0/ 255.0) green:(20.0 / 255.0) blue:(72.0 / 255.0) alpha: 1];
+    self.view.backgroundColor = myColor;
+
+    
     //searchBar
 
     

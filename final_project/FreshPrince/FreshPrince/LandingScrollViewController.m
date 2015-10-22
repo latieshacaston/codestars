@@ -26,6 +26,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
+    
+    
+    
+    [self.navigationController setNavigationBarHidden:NO];
+    
    
     
     UIColor *myColor = [UIColor colorWithRed:(32.0/ 255.0) green:(20.0 / 255.0) blue:(72.0 / 255.0) alpha: 1];

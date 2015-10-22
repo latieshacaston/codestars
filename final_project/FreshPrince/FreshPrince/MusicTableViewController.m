@@ -32,11 +32,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    
+    // styling
+ [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
+    
+  UIImageView *bg = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Music_Background@2x.png"]];
+    [self.tableView setBackgroundView:bg];
+    
+    
+//    [self.navigationController.navigationBar setBackgroundImage:[UIImage new]
+//                                                  forBarMetrics:UIBarMetricsDefault];
+//    self.navigationController.navigationBar.shadowImage = [UIImage new];
+//    self.navigationController.navigationBar.translucent = YES;
+//    self.navigationController.view.backgroundColor = [UIColor clearColor];
+//    self.navigationController.navigationBar.backgroundColor = [UIColor clearColor];
+    
+    // end styling
    
     
-    artistsNames = @[@"Brandy", @"The Fresh Prince", @"The Fresh Prince & Jazzy Jeff"];
-    songTitles = @[@"I Wanna Be Down", @"Theme Song", @"Parent's Just Dont Understand"];
+    artistsNames = @[@"The Fresh Prince", @"Naughty By Nature", @"Tom Jones",  @"The Fresh Prince & Jazzy Jeff", @"Digital Underground", @"Captain & Tennille", @"The Sugarhill Gang", @"Parliament", @"Soul II Soul"];
+    songTitles = @[@"Theme Song", @"OPP", @"It's Not Unusual", @"Parents Just Dont Understand", @"The Humpty Hump", @"Love Will Keep Us Together", @"Apache", @"Flash Light", @"Back To Live (However Do You Want Me)"];
     
     
     

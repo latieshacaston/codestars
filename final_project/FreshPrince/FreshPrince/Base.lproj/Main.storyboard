@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="iOJ-Hc-9K3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="iOJ-Hc-9K3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
@@ -39,11 +39,24 @@
                                     <outlet property="scrollView" destination="naS-eR-czD" id="2Hw-u9-WcL"/>
                                 </connections>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose an activity below to get started! " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bsd-dE-l6s">
+                                <rect key="frame" x="48" y="88" width="224" height="72"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="downArrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="PEj-wP-bG0">
+                                <rect key="frame" x="151" y="161" width="18" height="11"/>
+                                <animations/>
+                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.32156862749999998" green="0.21960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="OY2-Wo-h9k"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="pageControl" destination="dnJ-Na-qpl" id="qhc-vi-JY3"/>
                         <outlet property="scrollView" destination="naS-eR-czD" id="ob4-AW-TcF"/>
@@ -84,35 +97,6 @@
             </objects>
             <point key="canvasLocation" x="1357" y="-680"/>
         </scene>
-        <!--Fresh Prince Facts-->
-        <scene sceneID="1YS-Yq-PIV">
-            <objects>
-                <viewController title="Fresh Prince Facts" id="3cK-rY-OZX" customClass="WebViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="tyt-kH-wwV"/>
-                        <viewControllerLayoutGuide type="bottom" id="RR7-1l-3OS"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="voF-jx-oKP">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Gh-GU-mjp">
-                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </webView>
-                        </subviews>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="f2O-b4-SwU"/>
-                    <connections>
-                        <outlet property="factsWebView" destination="3Gh-GU-mjp" id="GZC-Dk-smm"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="c8W-pG-9iq" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1357" y="-29"/>
-        </scene>
         <!--Episode Guide-->
         <scene sceneID="1Zg-WT-bVI">
             <objects>
@@ -127,20 +111,20 @@
                                 <rect key="frame" x="0.0" y="92" width="320" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5ee-dH-aWI" id="8TQ-fv-vcF">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="79.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="seasonEpisode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0gb-Fr-5bo">
                                             <rect key="frame" x="17" y="0.0" width="116" height="21"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" red="0.55294117649999996" green="0.28627450980000002" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="episodeName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S0r-Uq-wm6">
-                                            <rect key="frame" x="17" y="20" width="116" height="21"/>
+                                            <rect key="frame" x="17" y="20" width="261" height="21"/>
                                             <animations/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -148,13 +132,13 @@
                                             <rect key="frame" x="17" y="41" width="116" height="21"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" red="0.77022174870000004" green="0.77022174870000004" blue="0.77022174870000004" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W0N-vq-uiT">
-                                            <rect key="frame" x="262" y="20" width="30" height="30"/>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W0N-vq-uiT">
+                                            <rect key="frame" x="292" y="21" width="20" height="20"/>
                                             <animations/>
-                                            <state key="normal" title="fav"/>
+                                            <state key="normal" title="fav" image="UnFav.png"/>
                                             <connections>
                                                 <action selector="favPressed:" destination="5ee-dH-aWI" eventType="touchUpInside" id="Keg-SY-Y2c"/>
                                             </connections>
@@ -177,7 +161,8 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Episode List" id="yZj-q1-Eb7">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="wft-eX-kZs">
+                        <barButtonItem key="rightBarButtonItem" title="Favorites" id="wft-eX-kZs">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="UxP-Pd-MaA" kind="modal" identifier="segueToFavorites" id="2Cc-69-PVn"/>
                             </connections>
@@ -213,34 +198,34 @@
                                 <rect key="frame" x="0.0" y="92" width="320" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bpM-C6-srV" id="7Ed-e3-IQM">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="79.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="favseasonEpisode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ER8-v7-S9c">
-                                            <rect key="frame" x="17" y="4" width="116" height="21"/>
+                                            <rect key="frame" x="17" y="18" width="116" height="21"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" red="0.55294117649999996" green="0.28627450980000002" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="favepisodeName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oln-fG-pdU">
-                                            <rect key="frame" x="17" y="24" width="116" height="21"/>
+                                            <rect key="frame" x="17" y="38" width="233" height="21"/>
                                             <animations/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="favFirstAired" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ou-5t-qeW">
-                                            <rect key="frame" x="17" y="45" width="116" height="21"/>
+                                            <rect key="frame" x="17" y="59" width="116" height="21"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" red="0.77022174870000004" green="0.77022174870000004" blue="0.77022174870000004" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AoT-7j-clh">
-                                            <rect key="frame" x="258" y="18" width="38" height="30"/>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AoT-7j-clh">
+                                            <rect key="frame" x="292" y="38" width="20" height="20"/>
                                             <animations/>
-                                            <state key="normal" title="unfav"/>
+                                            <state key="normal" title="unfav" image="Fav.png"/>
                                             <connections>
                                                 <action selector="unfavPressed:" destination="bpM-C6-srV" eventType="touchUpInside" id="vVo-Ir-VEe"/>
                                             </connections>
@@ -264,6 +249,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Your Favorites" id="DIz-Bo-ekr">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="czE-g1-Ae3">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="d7I-Za-ktt" kind="unwind" unwindAction="unwindToEpisodeGuide:" id="X4A-KR-IYq"/>
                             </connections>
@@ -279,7 +265,15 @@
         <scene sceneID="UqX-PG-DXk">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Agp-Ka-Zz4" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Wiki" id="o8Q-su-iS1"/>
+                    <tabBarItem key="tabBarItem" title="Wiki" id="o8Q-su-iS1">
+                        <inset key="imageInsets" minX="7" minY="6" maxX="4" maxY="5"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-15"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.0" green="0.92941176470588238" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="NzB-D2-PSf">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -295,36 +289,28 @@
             </objects>
             <point key="canvasLocation" x="831" y="-680"/>
         </scene>
-        <!--Facts-->
-        <scene sceneID="hj0-wE-BiH">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="STB-6z-UQa" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Facts" id="vx7-8d-Ioc"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ei3-NG-sIU">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <animations/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="3cK-rY-OZX" kind="relationship" relationship="rootViewController" id="IE9-vX-zTE"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QZB-SR-8ll" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="831" y="-19"/>
-        </scene>
         <!--Episode Guide-->
         <scene sceneID="D0w-72-6pI">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QwH-RK-pnn" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Episode Guide" id="dAj-9v-10S"/>
+                    <tabBarItem key="tabBarItem" title="Episode Guide" id="dAj-9v-10S">
+                        <inset key="imageInsets" minX="5" minY="5" maxX="4" maxY="4"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-15"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.0" green="0.92941176470588238" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="szC-fX-als">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
+                        <color key="barTintColor" red="0.19120985779999999" green="0.17271630199999999" blue="0.66688368060000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -338,8 +324,16 @@
         <!--Home-->
         <scene sceneID="HEC-sX-faV">
             <objects>
-                <navigationController storyboardIdentifier="scrollNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="eUN-NT-we3" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" id="XaT-3u-3Q8"/>
+                <navigationController storyboardIdentifier="scrollNavigationController" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="eUN-NT-we3" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" id="XaT-3u-3Q8">
+                        <inset key="imageInsets" minX="5" minY="6" maxX="0.0" maxY="0.0"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-15"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.0" green="0.92941176470588238" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="w0y-zP-qax">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -360,16 +354,17 @@
             <objects>
                 <tabBarController storyboardIdentifier="mainTabController" automaticallyAdjustsScrollViewInsets="NO" id="iOJ-Hc-9K3" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="zoP-Am-XjV">
+                    <tabBar key="tabBar" contentMode="scaleToFill" itemPositioning="fill" id="zoP-Am-XjV">
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="selectedImageTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="eUN-NT-we3" kind="relationship" relationship="viewControllers" id="zAp-aI-lXu"/>
                         <segue destination="QwH-RK-pnn" kind="relationship" relationship="viewControllers" id="fNf-jS-lda"/>
                         <segue destination="Agp-Ka-Zz4" kind="relationship" relationship="viewControllers" id="csc-62-czL"/>
-                        <segue destination="STB-6z-UQa" kind="relationship" relationship="viewControllers" id="R4A-e5-vXW"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qms-Jd-o9P" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -385,6 +380,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
+                        <color key="barTintColor" red="0.19120985779999999" green="0.17271630199999999" blue="0.66688368060000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -396,4 +395,9 @@
             <point key="canvasLocation" x="1883" y="1395"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Fav.png" width="51" height="51"/>
+        <image name="UnFav.png" width="51" height="51"/>
+        <image name="downArrow.png" width="18" height="11"/>
+    </resources>
 </document>

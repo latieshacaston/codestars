@@ -43,12 +43,10 @@
     
     NSString *theSongTitle = self.stringSongTitle;
     
-    if ([theSongTitle isEqualToString:@"I Wanna Be Down"]) {
-        
-        
+    if ([theSongTitle isEqualToString:@"It's Not Unusual"]) {
         
         NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle]
-                                             pathForResource:@"brandy_acapella"
+                                             pathForResource:@"Tom_Jones_Its_Not_Unusual"
                                              ofType:@"mp3"]];
         
         NSLog(@"%@", url);
@@ -57,7 +55,6 @@
         audioPlayer = [[AVAudioPlayer alloc]
                        initWithContentsOfURL:url
                        error:&error];
-        
         
         if (error)
         {
@@ -80,7 +77,6 @@
                        error:&error];
         
         
-        
         if (error)
         {
             NSLog(@"Error in audioPlayer: %@",
@@ -101,6 +97,46 @@
         audioPlayer = [[AVAudioPlayer alloc]
                        initWithContentsOfURL:url
                        error:&error];
+       
+        if (error)
+        {
+            NSLog(@"Error in audioPlayer: %@",
+                  [error localizedDescription]);
+        } else {
+            [audioPlayer prepareToPlay];
+        }
+        
+    
+    } else if ([theSongTitle isEqualToString:@"OPP"]) {
+        
+        NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle]
+                                             pathForResource:@"naughty_by_nature_OPP"
+                                             ofType:@"mp3"]];
+        NSLog(@"%@", url);
+        NSError *error;
+        audioPlayer = [[AVAudioPlayer alloc]
+                       initWithContentsOfURL:url
+                       error:&error];
+        
+        if (error)
+        {
+            NSLog(@"Error in audioPlayer: %@",
+                  [error localizedDescription]);
+        } else {
+            [audioPlayer prepareToPlay];
+        } 
+
+        
+    } else if ([theSongTitle isEqualToString:@"The Humpty Hump"]) {
+        
+        NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle]
+                                             pathForResource:@"Digital_Underground_Humpty_Dance"
+                                             ofType:@"mp3"]];
+        NSLog(@"%@", url);
+        NSError *error;
+        audioPlayer = [[AVAudioPlayer alloc]
+                       initWithContentsOfURL:url
+                       error:&error];
         
         
         if (error)
@@ -111,9 +147,28 @@
             [audioPlayer prepareToPlay];
         }
         
-    
-    }
-    
+    } else if ([theSongTitle isEqualToString:@"Love Will Keep Us Together"]) {
+        
+        NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle]
+                                             pathForResource:@"Captain_and_Tenille_Love_Will_Keep_Us_Together"
+                                             ofType:@"mp3"]];
+        NSLog(@"%@", url);
+        NSError *error;
+        audioPlayer = [[AVAudioPlayer alloc]
+                       initWithContentsOfURL:url
+                       error:&error];
+        
+        
+        if (error)
+        {
+            NSLog(@"Error in audioPlayer: %@",
+                  [error localizedDescription]);
+        } else {
+            [audioPlayer prepareToPlay];
+        } }
+
+        
+        
         musicPlaying = YES;
     
         [audioPlayer play];
@@ -129,14 +184,11 @@
     
     
     }
+    
+    
         
+    }
         
-}
-
-
-
-
-
 
 
 

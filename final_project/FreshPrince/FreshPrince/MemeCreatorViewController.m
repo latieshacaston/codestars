@@ -26,6 +26,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
+    UIColor *myColor = [UIColor colorWithRed:(32.0/ 255.0) green:(20.0 / 255.0) blue:(72.0 / 255.0) alpha: 1];
+    self.view.backgroundColor = myColor;
+
+    
     self.memeTextField.layer.shadowOpacity = 1.0;
     self.memeTextField.layer.shadowRadius = 0.0;
     self.memeTextField.layer.shadowColor = [UIColor blackColor].CGColor;

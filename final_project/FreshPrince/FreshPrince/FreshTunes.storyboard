@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
@@ -18,7 +18,7 @@
                                 <rect key="frame" x="0.0" y="92" width="320" height="67"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SiY-Mc-2sr" id="Kso-Ve-uvk">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="66.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="sv2-jN-xxn">
@@ -43,14 +43,14 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
-                                            <color key="textColor" red="0.7702217487373737" green="0.7702217487373737" blue="0.7702217487373737" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" red="0.86923926767676762" green="0.86923926767676762" blue="0.86923926767676762" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <animations/>
                                 </tableViewCellContentView>
                                 <animations/>
-                                <color key="backgroundColor" red="0.32156862749999998" green="0.21960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="artistName" destination="kof-y0-E64" id="046-3c-op2"/>
                                     <outlet property="playButton" destination="sv2-jN-xxn" id="dQ9-oz-Og0"/>
@@ -64,7 +64,8 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="mhn-nU-egu">
-                        <barButtonItem key="leftBarButtonItem" title="Home" style="plain" id="uw1-oK-QpQ">
+                        <barButtonItem key="leftBarButtonItem" image="Side_Arrows.png" style="plain" id="uw1-oK-QpQ">
+                            <color key="tintColor" red="0.55294117649999996" green="0.28627450980000002" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="tm6-Hz-ZXP" kind="unwind" unwindAction="unwindToMain:" id="ucT-pC-ouY"/>
                             </connections>
@@ -87,6 +88,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
+                        <color key="barTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Jd9-G1-Flv">
@@ -105,5 +107,6 @@
     </scenes>
     <resources>
         <image name="Play_Button.png" width="26" height="26"/>
+        <image name="Side_Arrows.png" width="8" height="14"/>
     </resources>
 </document>

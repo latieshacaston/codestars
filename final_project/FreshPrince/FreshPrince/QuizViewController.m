@@ -72,7 +72,7 @@
     
     // Take the integer called questionSelected and set it to a random value from 0 - 4. 5 possible options. Used to select which question will be picked.
     
-    questionSelected = arc4random() % 5;
+    questionSelected = arc4random() % 10;
     
     NSLog (@"%d", questionSelected);
     
@@ -248,6 +248,96 @@
             
             NSLog (@"%d, %@, @%d", questionSelected, self.questionLabel.text, answer4Correct );
             break;
+            
+        case 5:
+            
+            self.questionLabel.text = [NSString stringWithFormat:@"Bing, Bang, Bloozy, you and me in the _________"];
+            
+            [self.answer1Button setTitle: @"Smoothie" forState: UIControlStateNormal];
+            [self.answer2Button setTitle: @"Jacuzzi" forState: UIControlStateNormal];
+            [self.answer3Button setTitle: @"Fugees" forState: UIControlStateNormal];
+            [self.answer4Button setTitle: @"Bougie" forState: UIControlStateNormal];
+            
+            answer2Correct = YES;
+            
+            
+            NSLog (@"%d, %@, @%d", questionSelected, self.questionLabel.text, answer4Correct );
+            break;
+            
+        case 6:
+            
+            self.questionLabel.text = [NSString stringWithFormat:@"Eeny, Meeny, Minie, Mo, some of yalls ________ gots to go"];
+            
+            [self.answer1Button setTitle: @"Men" forState: UIControlStateNormal];
+            [self.answer2Button setTitle: @"Friends" forState: UIControlStateNormal];
+            [self.answer3Button setTitle: @"Bras" forState: UIControlStateNormal];
+            [self.answer4Button setTitle: @"Clothes" forState: UIControlStateNormal];
+            
+            answer4Correct = YES;
+            
+            
+            NSLog (@"%d, %@, @%d", questionSelected, self.questionLabel.text, answer4Correct );
+            break;
+            
+        case 7:
+            
+            self.questionLabel.text = [NSString stringWithFormat:@"How about some fries to go with that ________?"];
+            
+            [self.answer1Button setTitle: @"Frosty" forState: UIControlStateNormal];
+            [self.answer2Button setTitle: @"Burger" forState: UIControlStateNormal];
+            [self.answer3Button setTitle: @"Shake" forState: UIControlStateNormal];
+            [self.answer4Button setTitle: @"Ketchup" forState: UIControlStateNormal];
+            
+            answer3Correct = YES;
+            
+            
+            NSLog (@"%d, %@, @%d", questionSelected, self.questionLabel.text, answer4Correct );
+            break;
+            
+        case 8:
+            
+            self.questionLabel.text = [NSString stringWithFormat:@"You all that and a bag of ________"];
+            
+            [self.answer1Button setTitle: @"Chips" forState: UIControlStateNormal];
+            [self.answer2Button setTitle: @"Potatoes" forState: UIControlStateNormal];
+            [self.answer3Button setTitle: @"Stars" forState: UIControlStateNormal];
+            [self.answer4Button setTitle: @"Nothing" forState: UIControlStateNormal];
+            
+            answer1Correct = YES;
+            
+            
+            NSLog (@"%d, %@, @%d", questionSelected, self.questionLabel.text, answer4Correct );
+            break;
+            
+        case 9:
+            
+            self.questionLabel.text = [NSString stringWithFormat:@"That suit looks like a piece of 'Good God' wrapped up in some 'Have Mercy,' with a side of ________"];
+            
+            [self.answer1Button setTitle: @"OOWEEE!" forState: UIControlStateNormal];
+            [self.answer2Button setTitle: @"UNGH!" forState: UIControlStateNormal];
+            [self.answer3Button setTitle: @"WOOO!" forState: UIControlStateNormal];
+            [self.answer4Button setTitle: @"DAMN!" forState: UIControlStateNormal];
+            
+            answer2Correct = YES;
+            
+            
+            NSLog (@"%d, %@, @%d", questionSelected, self.questionLabel.text, answer4Correct );
+            break;
+            
+        case 10:
+            
+            self.questionLabel.text = [NSString stringWithFormat:@"You look so good, I'd marry your ________ just to get in your family"];
+            
+            [self.answer1Button setTitle: @"Aunt" forState: UIControlStateNormal];
+            [self.answer2Button setTitle: @"Second cousin" forState: UIControlStateNormal];
+            [self.answer3Button setTitle: @"Mother" forState: UIControlStateNormal];
+            [self.answer4Button setTitle: @"Brother" forState: UIControlStateNormal];
+            
+            answer4Correct = YES;
+            
+            
+            NSLog (@"%d, %@, @%d", questionSelected, self.questionLabel.text, answer4Correct );
+            break;
       
             
             
@@ -264,25 +354,6 @@
 }
 
 
-
-//
-//- (void) rightAnswer {
-//    
-//    scoreNumber = scoreNumber + 1;
-//    self.score.text = [NSString stringWithFormat:@"%i", scoreNumber];
-//    
-//    
-//    [self performSegueWithIdentifier:@"rightAnswer" sender:self];
-//    
-//    
-//}
-//
-//- (void) wrongAnswer {
-//    
-//    [self performSegueWithIdentifier:@"wrongAnswer" sender:self];
-//    
-//    
-//}
 
 
 
