@@ -273,7 +273,6 @@
 			isa = PBXGroup;
 			children = (
 				7BB626751BCF74D600CA12C6 /* QuizViewController.h */,
-				7BB626731BCF74CE00CA12C6 /* QuizViewController.m */,
 				7BB627111BD881D000CA12C6 /* QuoteQuiz.storyboard */,
 			);
 			name = Quiz;
@@ -286,6 +285,7 @@
 				2C94899F1BD35FF00096F022 /* MemeCreatorViewController.m */,
 				2C9489A01BD35FF00096F022 /* MemeGeneratorCollectionViewCell.h */,
 				2C9489A11BD35FF00096F022 /* MemeGeneratorCollectionViewCell.m */,
+				7BB626731BCF74CE00CA12C6 /* QuizViewController.m */,
 				2C9489971BD35F880096F022 /* MemeGeneratorCollectionViewController.h */,
 				2C9489981BD35F880096F022 /* MemeGeneratorCollectionViewController.m */,
 				7BB626DC1BD4BC0300CA12C6 /* MemeGenerator.storyboard */,
